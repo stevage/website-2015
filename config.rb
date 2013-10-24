@@ -68,3 +68,16 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+
+# Activate sync extension
+activate :sync do |sync|
+  sync.fog_provider = 'AWS' # Your storage provider
+  sync.fog_directory = 'healthhackmelb.com' # Your bucket name
+  sync.fog_region = 'ap-southeast-2' # The region your storage bucket is in (eg us-east-1, us-west-1, eu-west-1, ap-southeast-1 )
+  sync.aws_access_key_id =   ENV['ACCESS_KEY']
+  sync.aws_secret_access_key = ENV['SECRET_KEY']
+  sync.existing_remote_files = 'keep' # What to do with your existing remote files? ( keep or delete )
+  # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
+  # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
+end
