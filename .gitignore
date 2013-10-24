@@ -34,3 +34,4 @@ doc/
 .DS_Store
 build/
 secret
+README.html

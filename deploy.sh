@@ -6,6 +6,6 @@ fi
 
 source secret
 
-echo $ACCESS_KEY 
-echo ";;;;;"
+echo "Deploying with the credentials found in ./secret (access key  $ACCESS_KEY )"
+
 middleman sync
