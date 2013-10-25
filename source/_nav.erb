@@ -1,0 +1,35 @@
+<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+	      <span class="sr-only">Navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	    <%= link_to "HealthHack", "/", title: "Home" , :class => 'navbar-brand'%>
+	  </div>
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse navbar-ex1-collapse">
+		  <ul class="nav navbar-nav">
+	  	<li><%= link_to "About", "/about", title: "about" %></li>
+	  	<li><%= link_to "Scientists &amp; problems", "/problems", title: "problems" %></li>
+<!--	  	<li class="dropdown">
+	      	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Teams <span class="caret"></span>
+	      </a>
+	      <ul class="dropdown-menu">
+	  		<li><%= link_to "Team A", "/teams/a", title: "team a" %></li>
+	  		<li><%= link_to "Team B", "/teams/b", title: "team b" %></li>
+	  		<li><%= link_to "Team C", "/teams/c", title: "team c" %></li>
+	      </ul>
+	    </li>-->
+	</ul>
+	  </div><!-- /.navbar-collapse -->
+</nav>
+<div class="page-header">
+	<img src="img/healthhack-logo-300x221.jpg" class="img-rounded visible-xs">
+	<img src="img/healthhack-logo-300x221.jpg" class="pull-right img-rounded hidden-xs" style="margin-left:20px;">
+       <h1 style="font-variant:small-caps;font-weight:800;">HealthHack</h1>
+       <h2 class="lead">A datahack for medical research problems</h2>
+	   <p>HealthHack is a weekend datahack working on problems that medical researchers face. Medical researchers create vast amounts of data, but don’t always have good ways to analyse, visualise and communicate it. On the weekend we’ll have available for you real life medical researchers, their problems, their data.</p>
+	   <p class="clearfix"></p>
+</div>

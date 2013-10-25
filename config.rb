@@ -39,17 +39,26 @@
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
+ helpers do
 #   def some_helper
 #     "Helping"
 #   end
-# end
+
+  def nav_link(link_text, url, options = {})  
+    options[:class] ||= ""
+    options[:class] << " active" if url == current_page.url
+    link_to(link_text, url, options)
+  end 
+end
+
 
 set :css_dir, 'css'
 
 set :js_dir, 'js'
 
 set :images_dir, 'img'
+
+activate :directory_indexes
 
 # Build-specific configuration
 configure :build do
@@ -65,6 +74,8 @@ configure :build do
   # Use relative URLs
   # activate :relative_assets
 
+
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  
 end
