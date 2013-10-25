@@ -2,8 +2,8 @@
     <head>
         <title><%= current_page.data.title || "HTML5 Boilerplate" %></title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-		<link href="css/main.css" rel="stylesheet" media="screen">
+	    <%= stylesheet_link_tag 'bootstrap.min' %>
+		<%= stylesheet_link_tag 'main' %>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,700italic,400,700,300,800' rel='stylesheet' type='text/css'>
 	    <!--[if lt IE 9]>
 	      <script src="../../assets/js/html5shiv.js"></script>
@@ -39,6 +39,6 @@
         </footer>
 	</div>
 		<script src="//code.jquery.com/jquery.js"></script>
-	    <script src="js/vendor/bootstrap.min.js"></script>
+		<%= javascript_include_tag 'bootstrap.min' %>
     </body>
 </html>
