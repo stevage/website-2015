@@ -3,7 +3,7 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-h1, h2, h3, h4, h4, h6, p, span, li, blockquote{font-family: 'Open Sans', sans-serif;}
+body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote{font-family: 'Open Sans', sans-serif;}
 body {background:url(/img/background.jpg) no-repeat top left;}
 
 
