@@ -1,0 +1,16 @@
+		<%= javascript_include_tag 'galleria/galleria-1.3.min' %>
+		<%= javascript_include_tag 'galleria/plugins/flickr/galleria.flickr.min' %>
+		<script>
+		    Galleria.loadTheme('js/galleria/themes/classic/galleria.classic.min.js');
+			Galleria.configure({
+			    clicknext: true,
+				showInfo: true
+			});
+		    Galleria.run('#galleria', {
+				flickr: 'set:72157636952845235',
+				flickrOptions: {
+					sort: 'date-posted-asc',
+					description: true
+				}
+			});
+		</script>
