@@ -111,6 +111,10 @@ components it uses ("Invalid Excon request keys: :scheme, :host"). But
 if you go to (http://healthhackmelb.com) your changes will be there!
 
 
+Editing pages
+----------
 
+Pages with .markdown in the file extension are built in kramdown
+Check out (http://kramdown.rubyforge.org/syntax.html) for syntax
 
 

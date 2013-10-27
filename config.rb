@@ -1,3 +1,5 @@
+require 'kramdown'
+
 ###
 # Compass
 ###
@@ -39,17 +41,11 @@
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
- helpers do
+# helpers do
 #   def some_helper
 #     "Helping"
 #   end
-
-  def nav_link(link_text, url, options = {})  
-    options[:class] ||= ""
-    options[:class] << " active" if url == current_page.url
-    link_to(link_text, url, options)
-  end 
-end
+# end
 
 
 set :css_dir, 'css'
@@ -58,7 +54,14 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+
 activate :directory_indexes
+
+set :markdown_engine, :kramdown
+set :markdown, :layout_engine => :erb, 
+               :tables => true, 
+               :autolink => true,
+               :smartypants => true
 
 # Build-specific configuration
 configure :build do
@@ -77,6 +80,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  
 
 end
 
@@ -92,3 +96,7 @@ activate :sync do |sync|
   # sync.gzip_compression = false # Automatically replace files with their equivalent gzip compressed version
   # sync.after_build = false # Disable sync to run after Middleman build ( defaults to true )
 end
+
+
+
+

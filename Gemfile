@@ -16,3 +16,5 @@ platforms :mri_18 do
 end
 
 gem "middleman-sync", "~> 3.0.12"
+
+gem "kramdown"
