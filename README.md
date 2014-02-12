@@ -1,9 +1,26 @@
 HealthHackMelb.com website
 =======
 
+
 This is the source for the HealthHackMelb website - it is written using [middleman](http://middlemanapp.com).
 
 The site is actually static HTML that is generated and pushed to an AWS S3 bucket. Right now we build it locally on our machines and push to S3. Middleman happily takes care of all of this.
+
+
+To run a local server so you can see the changes:
+
+```
+middleman
+```
+
+To deploy your changes to the live site:
+
+```
+middleman build
+./deploy.sh
+```
+
+
 
 Getting started
 --------------
