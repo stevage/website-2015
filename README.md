@@ -21,8 +21,33 @@ middleman build
 ```
 
 
+Getting started: The "shut my eyes and run stuff" approach
+-----------------------------------------
+```
+# On a clean Ubuntu Precise:
+sudo apt-get install -y curl git-core ruby-bundler rubygems nodejs
 
-Getting started
+\curl -sSL https://get.rvm.io | bash -s stable --ruby
+source ~/.rvm/scripts/rvm
+git clone git@github.com:healthhack-melb/website.git
+cd website 
+
+# Copy-paste the contents of the secret file that someone has given you:
+nano secret
+
+bundle install
+
+# Build the content:
+middleman build
+
+# Run locally:
+middleman server
+
+# Deploy to Amazon S3:
+./deploy.sh
+```
+
+Getting started: the more considered approach
 --------------
 
 Follow these instructions apart from bits you know already and you can
