@@ -10,11 +10,15 @@ footer{margin-top:20px;}
 #hhhead{font-variant:small-caps;font-weight:800;}
 
 .img-small { width: 250px; }
+.callToAction {
+	font-size: 1.0em; 	
+}
+
 .hipsterteal { 
-	font-size: 1.0em; 
 	color:white !important; 
 	background-color : #17AA9D !important; 
-	border-color:#17A195 !important;}
+	border-color:#17A195 !important;
+}
 
 .register {
 margin-top: 42px;
@@ -24,8 +28,16 @@ margin-top: 42px;
 margin-top: 9px;
 }
 
+.title2013 {
+	margin-left: 13px;
+	padding-top: 20px;
+	font-size: 2.0em;
+	border-top: 1px solid #eee;
+}
 
-
+.thumbtext {
+	font-size: 0.8em;
+}
 
 
 
