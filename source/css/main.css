@@ -4,15 +4,25 @@
    Author's custom styles
    ========================================================================== */
 body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote{font-family: 'Open Sans', sans-serif;}
-body {background:url(/img/background.jpg) no-repeat top left;}
+body {background:url(/img/background.png) no-repeat top right}
 #galleria{height:320px;}
 footer{margin-top:20px;}
 #hhhead{font-variant:small-caps;font-weight:800;}
 
 .img-small { width: 250px; }
+.hipsterteal { 
+	font-size: 1.0em; 
+	color:white !important; 
+	background-color : #17AA9D !important; 
+	border-color:#17A195 !important;}
 
+.register {
+margin-top: 36px;
+}
 
-
+.sponsor {
+margin-top: 14px;
+}
 
 
 
