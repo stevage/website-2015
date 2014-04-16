@@ -39,9 +39,14 @@ margin-top: 9px;
 	font-size: 0.8em;
 }
 
+.offset {
+	margin-top: 27px;
+}
 
 
-
+.sideoffset {
+	margin-left: 30px;
+}
 
 
 
