@@ -88,7 +88,7 @@ end
 # Activate sync extension
 activate :sync do |sync|
   sync.fog_provider = 'AWS' # Your storage provider
-  sync.fog_directory = 'healthhackmelb.com' # Your bucket name
+  sync.fog_directory = 'www.healthhack.com.au' # Your bucket name
   sync.fog_region = 'ap-southeast-2' # The region your storage bucket is in (eg us-east-1, us-west-1, eu-west-1, ap-southeast-1 )
   sync.aws_access_key_id =   ENV['ACCESS_KEY']
   sync.aws_secret_access_key = ENV['SECRET_KEY']
