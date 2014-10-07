@@ -11,8 +11,6 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
 <div class="collapse navbar-collapse navbar-ex1-collapse">
 	<ul class="nav navbar-nav">
-		
-		<li><%= link_to "About", "/about", title: "about" %></li>
 		<li class="dropdown">
 			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Locations<span class="caret"></span></a>
 			<ul class="dropdown-menu">
@@ -34,6 +32,10 @@
 				<li><%= link_to "TiSM", "https://github.com/healthhack-melb/wiki/wiki/TiSM--%28This-is-Serious-Mum%29-or--Targeted-Somantic-Mutation", title: "tism" %></li>
 			</ul>
 		</li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li><%= link_to "FAQ", "/faq", title: "faq" %></li>	
+		<li><a href="mailto:info@healthhack.com.au">Contact</a></li>	
 	</ul>
 </div><!-- /.navbar-collapse -->
 </nav>
