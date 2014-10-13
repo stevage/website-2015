@@ -35,7 +35,12 @@ title: Sydney
 
     <div class="row">
       <div class="col-md-9">
-        <h3>Problems</h3>
+        <h3><b>Sydney HealthHack Challenges</b></h3>
+
+<div markdown="block">
+***  
+</div>    
+
          <div class="row">
           <div class="col-md-9">
             <h3> Pedigree tree drawing tool </h3>
@@ -49,11 +54,15 @@ title: Sydney
 
 <div markdown="block">
 
+***
+
 A pedigree chart is a diagram that shows the occurrence and appearance or phenotypes of a particular gene or organism and its ancestors from one generation to the next, most commonly humans, show dogs, and race horses.
 
 Pedigrees are commonly used in families to find out the probability of a child having a disorder in a particular family. its two most prominent goals are to discover where the genes in question are located (x, y, or autosome chromosome), and to determine whether a trait is dominant or reccessive. 
 
 My proposition for the HealthHack is to build a prototype of a tool which will allow to draw pedigree charts with capability to import and export existing data.
+
+***
 
 </div>
         <div class="row">
@@ -66,6 +75,10 @@ My proposition for the HealthHack is to build a prototype of a tool which will a
           </div>
         </div>
         <br/>
+
+<div markdown="block">
+***  
+</div>    
 
         <div>
 
@@ -86,6 +99,69 @@ My proposition for the HealthHack is to build a prototype of a tool which will a
           Although this problem outline is centred on microscopy data, the essence of the problem is in processing and representing single cell data. As further technological progress is made, more single cell based assays will become available. This will increase the amount of single cell data generated all of which will require representation in a way that shows population behaviour as a consequence of its member responses. As such the solution to this specific problem will no doubt be useful as other single cell assays are developed.
 
         </div>
+
+<div markdown="block">
+***  
+</div>    
+
+         <div class="row">
+          <div class="col-md-8">
+            <h3>Life expectancy calculations for Aboriginal and Torres Strait Islander</h3>
+            <em><h4>Presented by Clare Coleman, Senior Research Fellow, Sydney Centre for Aboriginal and Torres Strait Islander Statistics (SCATSIS) | Faculty of Health Sciences, The University of Sydney </h4></em>
+          </div>
+          <div class="col-md-4">
+              <a href="http://sydney.edu.au/" target="_blank"><%= image_tag 'img/sponsors/usyd.png', :alt => 'The University of Sydney' %></a>
+          </div>
+        </div> 
+
+<div markdown="block">
+
+***  
+
+Life expectancy calculations for Aboriginal and Torres Strait Islander men and women are subject to a large number of assumptions.
+I would like a model that shows the differences that differing underlying assumptions make. The ABS and AIHW both have different assumptions of under-identification in different age groups, they don’t put errors around that but we could! We could look at a variety of models and see what we come up with, and if it is different from the official statistics.
+Something graphical that lets people get away from the life tables.
+
+***
+
+</div>
+
+         <div class="row">
+          <div class="col-md-9">
+            <h3>Automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format</h3>
+            <em><h4>Presented by Dr Tyani Chan, Garvan Institute</h4></em>
+          </div>
+          <div class="col-md-3">
+            <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
+          </div>
+        </div> 
+
+<div markdown="block">
+
+***  
+
+Our lab needs an automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format. 
+
+### The Significance of Our Research
+Our Immunology research explores Germinal Centres, discrete structures found in lymphoid tissues (such as spleen and lymph nodes), that underpin current vaccine strategies and also form the basis of long-lived antibody protection from viruses & bacteria. We use experimental mouse models to study the Somatic Hypermutation (SHM) process that occurs within B Cell Antigen Receptors in the Germinal Centre, which generates high-affinity B cells and therefore high-quality, long-lived antibody protection. When tight control systems within the Germinal Centre break down, this results in immune disorders such as autoimmune disease and allergy.
+
+### The Problem
+After performing flow cytometry based experiments that sort single spleen cells from mice responding to an infection, we PCR amplify the DNA from a single cell’s B Cell Antigen Receptor using a nested PCR approach, and obtain sequencing results covering the region of interest, which is 113 amino acids long.  
+
+We would love to have a tool or application that allows us to fully automate our analyses, which currently costs us several days of researcher time, which we imagine could be reduced to several minutes. 
+
+The manual analysis currently involves the following steps: 
+1) Compare sequencing results (.seq file) to wild-type template
+2) Identify where the mutations lie
+3) Check the validity and quality of the read by studying the chromatogram trace (.ab1 file)
+4) If the quality is sufficient, trim the sequence result such that only the region of interest remains, and translate the nucleic acids into amino acids. 
+5) In an Excel spreadsheet (with the help of some basic macros), we copy the amino acid sequence from ApE or DNA Strider into Excel, convert text to columns (to get 1 letter in 1 cell) and then copy /paste the 113 amino acid sequence into a separate Excel spreadsheet.
+6) Using some basic formulae, these sequences are placed into a table that only shows the amino acid substitions and not those amino acids that match the original template (germline sequence). Please see attached example table.
+7) This table is then converted to pdf format to allow manipulation of colours, line weights etc in Adobe Illustrator, ready for manuscript submission or conference presentations.
+
+***
+
+</div>
 
       </div>
       <div class="col-md-3">
