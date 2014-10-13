@@ -43,8 +43,8 @@ title: Sydney
 
          <div class="row">
           <div class="col-md-9">
-            <h3> Pedigree tree drawing tool </h3>
-            <em><h4>Presented by Andreas Zankl, Garvan Institute</h4></em>
+            <h3> An online pedigree drawing tool that can that can be linked to patient data </h3>
+            <em><h4>Presented by <a href="http://sydney.edu.au/medicine/people/academics/profiles/andreas.zankl.php" target="_blank">Professor Andreas Zankl</a>, Garvan Institute</h4></em>
           </div>
           <div class="col-md-3">
 <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
@@ -56,11 +56,22 @@ title: Sydney
 
 ***
 
-A pedigree chart is a diagram that shows the occurrence and appearance or phenotypes of a particular gene or organism and its ancestors from one generation to the next, most commonly humans, show dogs, and race horses.
+  Tracking clinical features through families and linking them to
+  genetic variants is a frequent task in clinical genetics and genetics
+  research. This is frequently done through pedigree drawings (family
+  trees). Unfortunately, due to the lack of easy to use pedigree drawing
+  programs, this is usually done manually on a piece of paper. This
+  makes pedigree drawings difficult to handle and also precludes any
+  computational analysis. For example, you cannot click on an individual
+  in a paper-drawn pedigree to open the associated database record.
 
-Pedigrees are commonly used in families to find out the probability of a child having a disorder in a particular family. its two most prominent goals are to discover where the genes in question are located (x, y, or autosome chromosome), and to determine whether a trait is dominant or reccessive. 
-
-My proposition for the HealthHack is to build a prototype of a tool which will allow to draw pedigree charts with capability to import and export existing data.
+  My proposition for the HealthHack is to build a prototype of a tool
+  which will allow to draw pedigree charts and export the drawn
+  information in a standard file format. The tool should be easy to use
+  and also easy to integrate into existing frameworks. There are a
+  number of existing pedigree drawing open source projects but none of
+  them offer the functionality described above. Maybe we can hack some
+  of those into doing what we need.
 
 ***
 
