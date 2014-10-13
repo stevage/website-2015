@@ -44,11 +44,10 @@ title: Sydney
           <div class="col-md-3">
 <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
           </div>
-        </div> 
+        </div>
+        <br/>
 
 <div markdown="block">
-
-***  
 
 A pedigree chart is a diagram that shows the occurrence and appearance or phenotypes of a particular gene or organism and its ancestors from one generation to the next, most commonly humans, show dogs, and race horses.
 
@@ -56,8 +55,38 @@ Pedigrees are commonly used in families to find out the probability of a child h
 
 My proposition for the HealthHack is to build a prototype of a tool which will allow to draw pedigree charts with capability to import and export existing data.
 
-
 </div>
+        <div class="row">
+          <div class="col-md-9">
+            <h3> I want to process and elegantly read a mountain of dynamic single cell data </h3>
+            <em><h4>Presented by James Burchfield, Garvan Institute</h4></em>
+          </div>
+          <div class="col-md-3">
+            <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
+          </div>
+        </div>
+        <br/>
+
+        <div>
+
+          <h4>The problem</h4>
+          A large proportion of currently known biological knowledge was historically obtained using population based experiment. However, technological advances have enabled the behaviour of single cells to be studied in real time. Using microscopy, we have found that the behaviour of single cells significantly varies from one another and from population averages via conventional assays. The resulting avalanche of data has been difficult to manually process and visualise without obscuring individual behaviours, leaving broad biological insights difficult to determine.
+
+          <h4>The dream</h4>
+          The dream solution would be a self-contained tool that integrates the workflow required to analyse single cell microscopy data and allows visualisation of data from multiple cells in an intuitive and elegant manner. Ideally the program would be able to read time sequence of images, isolate cells and extract biological data from the cell such as fluorescence, mobility and cell size in preparation for further processing within an analytical part of the toolbox (both automated for standard analysis methods as well as manual for data exploration). The generated data would then be displayed and aggregated/clustered based on the cells selected by the user and can then be related back to the original cell by displaying the data in conjunction with the source image.
+
+          <h4>The hack</h4>
+          Although we are a long way from the dream solution, the pressing problems in the current workflow can be summarised into three components: data processing, data quantification and cluster analysis.
+          The image processing, although performed manually, is significantly advanced. However, the normalisation and signal processing methods are very crude. As such it is difficult to obtain robust quantifications of the system behaviour. More specifically, the noisiness of the data makes curve fitting and the robust identification of primary and subsequent responses from stimulations difficult. Processing methods such as low pass filtering are inappropriate as they distort the temporal data, causing inaccuracies in the quantification of dynamical parameters such as half times and initiation time of post-primary responses.
+            <br/>
+          Secondly, although dynamic traits of the population, such as translocation dynamics, cannot be easily visualised: graphing them individually is difficult to visualise; graphing them together creates a messy plot of overlapping lines; and graphing their statistical parameters (mean and standard deviation) obscures the underlying distribution. As such, it is difficult to understand the global consequence of the distribution profile of the heterogeneous cell responses.
+          Finally, the data would be ideally clustered based on the previously determined dynamical parameters and the temporal dynamics such that subpopulations of cells with similar behaviours can be identified which would potentially provide another source of biological insight that can explain the population behaviour and disease.
+
+          <h4>The future</h4>
+          Although this problem outline is centred on microscopy data, the essence of the problem is in processing and representing single cell data. As further technological progress is made, more single cell based assays will become available. This will increase the amount of single cell data generated all of which will require representation in a way that shows population behaviour as a consequence of its member responses. As such the solution to this specific problem will no doubt be useful as other single cell assays are developed.
+
+        </div>
+
       </div>
       <div class="col-md-3">
         <div id="map_canvas"></div>
