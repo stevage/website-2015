@@ -1,0 +1,109 @@
+---
+title: Sydney
+---
+
+<html>
+  <head>
+    <title>sdfsdf</title>
+    <style>
+      #map_canvas {
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-33.863001,151.208787),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(-33.863001,151.208787),
+            map: map,
+            title: 'Sydney'
+        });
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="col-md-9">
+        <h3><b>Sydney HealthHack Challenges</b></h3>
+
+        <ul class="pagination">
+          <li><a href="/locations/sydney/challenge3">&laquo;</a></li>
+          <li><a href="/locations/sydney/challenge1">1</a></li>
+          <li><a href="/locations/sydney/challenge2">2</a></li>
+          <li><a href="/locations/sydney/challenge3">3</a></li>
+          <li class="active"><a href="/locations/sydney/challenge4">4</a></li>
+          <li class="disabled"><a href="/locations/sydney/challenge4">&raquo;</a></li>
+        </ul>
+
+        <div markdown="block">
+***
+</div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <h3>Automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format</h3>
+            <em><h4>Presented by Dr Tyani Chan, Garvan Institute</h4></em>
+          </div>
+          <div class="col-md-3">
+            <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
+          </div>
+        </div>
+
+<div markdown="block">
+
+***
+</div>
+<div>
+          Our lab needs an automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format.
+
+          <h4> The Significance of Our Research </h4>
+          Our Immunology research explores Germinal Centres, discrete structures found in lymphoid tissues (such as spleen and lymph nodes), that underpin current vaccine strategies and also form the basis of long-lived antibody protection from viruses & bacteria. We use experimental mouse models to study the Somatic Hypermutation (SHM) process that occurs within B Cell Antigen Receptors in the Germinal Centre, which generates high-affinity B cells and therefore high-quality, long-lived antibody protection. When tight control systems within the Germinal Centre break down, this results in immune disorders such as autoimmune disease and allergy.
+
+          <h4> The Problem </h4>
+          After performing flow cytometry based experiments that sort single spleen cells from mice responding to an infection, we PCR amplify the DNA from a single cell’s B Cell Antigen Receptor using a nested PCR approach, and obtain sequencing results covering the region of interest, which is 113 amino acids long.
+
+          We would love to have a tool or application that allows us to fully automate our analyses, which currently costs us several days of researcher time, which we imagine could be reduced to several minutes.
+
+          The manual analysis currently involves the following steps:
+          1) Compare sequencing results (.seq file) to wild-type template
+          2) Identify where the mutations lie
+          3) Check the validity and quality of the read by studying the chromatogram trace (.ab1 file)
+          4) If the quality is sufficient, trim the sequence result such that only the region of interest remains, and translate the nucleic acids into amino acids.
+          5) In an Excel spreadsheet (with the help of some basic macros), we copy the amino acid sequence from ApE or DNA Strider into Excel, convert text to columns (to get 1 letter in 1 cell) and then copy /paste the 113 amino acid sequence into a separate Excel spreadsheet.
+          6) Using some basic formulae, these sequences are placed into a table that only shows the amino acid substitions and not those amino acids that match the original template (germline sequence). Please see attached example table.
+          7) This table is then converted to pdf format to allow manipulation of colours, line weights etc in Adobe Illustrator, ready for manuscript submission or conference presentations.
+
+</div>
+<div markdown="block">
+***
+
+</div>
+
+
+        <%= partial "disqus" %>
+      </div>
+      <div class="col-md-3">
+        <div id="map_canvas"></div>
+        <h3>Address:</h3>
+        <p>ThoughtWorks Australia Pty. Ltd.
+            8/51 Pitt Street
+            Sydney NSW 2000</p>
+        <h3>Organisers:</h3>
+        <p>Kelvin Nicholson</p>
+        <p>Svetlana Filimonova</p>
+      </div> 
+    </div> 
+  </body>
+  <%= partial "sponsors" %>
+</html>

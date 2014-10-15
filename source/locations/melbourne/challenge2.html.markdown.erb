@@ -1,0 +1,90 @@
+---
+title: Melbourne
+---
+
+<html>
+  <head>
+    <title>sdfsdf</title>
+    <style>
+      #map_canvas {
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-33.863001,151.208787),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(-33.863001,151.208787),
+            map: map,
+            title: 'Sydney'
+        });
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="col-md-9">
+        <h3><b>Melbourne HealthHack Challenges</b></h3>
+
+        <ul class="pagination">
+          <li><a href="/locations/melbourne/challenge1">&laquo;</a></li>
+          <li><a href="/locations/melbourne/challenge1">1</a></li>
+          <li class="active"><a href="/locations/melbourne/challenge2">2</a></li>
+          <li><a href="/locations/melbourne/challenge3">3</a></li>
+          <li><a href="/locations/melbourne/challenge4">4</a></li>
+          <li><a href="/locations/melbourne/challenge3">&raquo;</a></li>
+        </ul>
+
+        <div markdown="block">
+***  
+</div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h3>I want to know if flies can adapt to climate change</h3>
+            <em><h4>Presented by Philippa Clare Griffin, The University of Melbourne </h4></em>
+          </div>
+          <div class="col-md-4">
+            <a href="http://www.unimelb.edu.au/" target="_blank"><%= image_tag 'img/sponsors/unimelb.jpg', :alt => 'The University of Melbourne' %></a>
+          </div>
+        </div>
+
+<div markdown="block">
+
+***
+
+Thanks to next-generation DNA sequencing technologies, evolutionary biologists can now regularly tackle important questions like “What are the genes involved in adaptation to climate?” and “What genomic factors prevent climate-sensitive species from adapting?”
+
+The bottleneck in our research is the computational work involved in processing huge amounts of raw DNA sequence data. VLSCI researchers have developed a pipeline, Rubra, built on the Ruffus Python library, that allows us to process and analyse genomic data on the powerful VLSCI computing cluster. However this pipeline needs improvement to make it more generally usable and flexible. Within our research group, this will make Rubra accessible to biologists with limited programming skills, and allow us to easily customise our workflow for each new experiment. This will take us closer to understanding the genomic basis for climate adaptation, which in turn will let us identify the types of species most in need of protection under climate change.
+
+***
+
+</div>
+
+      <%= partial "disqus" %>
+      </div>
+      <div class="col-md-3">
+        <div id="map_canvas"></div>
+        <h3>Address:</h3>
+        <p>ThoughtWorks Australia Pty. Ltd.
+            8/51 Pitt Street
+            Sydney NSW 2000</p>
+        <h3>Organisers:</h3>
+        <p>Kelvin Nicholson</p>
+        <p>Svetlana Filimonova</p>
+      </div> 
+    </div> 
+  </body>
+  <%= partial "sponsors" %>
+</html>

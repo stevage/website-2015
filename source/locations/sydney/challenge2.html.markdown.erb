@@ -1,0 +1,107 @@
+---
+title: Sydney
+---
+
+<html>
+  <head>
+    <title>sdfsdf</title>
+    <style>
+      #map_canvas {
+        width: 250px;
+        height: 250px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map_canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-33.863001,151.208787),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(-33.863001,151.208787),
+            map: map,
+            title: 'Sydney'
+        });
+
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+
+    <div class="row">
+      <div class="col-md-9">
+        <h3><b>Sydney HealthHack Challenges</b></h3>
+
+        <ul class="pagination">
+          <li><a href="/locations/sydney/challenge1">&laquo;</a></li>
+          <li><a href="/locations/sydney/challenge1">1</a></li>
+          <li class="active"><a href="/locations/sydney/challenge2">2</a></li>
+          <li><a href="/locations/sydney/challenge3">3</a></li>
+          <li><a href="/locations/sydney/challenge4">4</a></li>
+          <li><a href="/locations/sydney/challenge3">&raquo;</a></li>
+        </ul>
+
+        <div markdown="block">
+***  
+</div>    
+
+        <div class="row">
+          <div class="col-md-9">
+            <h3> I want to process and elegantly read a mountain of dynamic single cell data </h3>
+            <em><h4>Presented by James Burchfield, Garvan Institute</h4></em>
+          </div>
+          <div class="col-md-3">
+            <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
+          </div>
+        </div>
+        <br/>
+
+<div markdown="block">
+***
+</div>
+
+        <div>
+
+          <h4>The problem</h4>
+          A large proportion of currently known biological knowledge was historically obtained using population based experiment. However, technological advances have enabled the behaviour of single cells to be studied in real time. Using microscopy, we have found that the behaviour of single cells significantly varies from one another and from population averages via conventional assays. The resulting avalanche of data has been difficult to manually process and visualise without obscuring individual behaviours, leaving broad biological insights difficult to determine.
+
+          <h4>The dream</h4>
+          The dream solution would be a self-contained tool that integrates the workflow required to analyse single cell microscopy data and allows visualisation of data from multiple cells in an intuitive and elegant manner. Ideally the program would be able to read time sequence of images, isolate cells and extract biological data from the cell such as fluorescence, mobility and cell size in preparation for further processing within an analytical part of the toolbox (both automated for standard analysis methods as well as manual for data exploration). The generated data would then be displayed and aggregated/clustered based on the cells selected by the user and can then be related back to the original cell by displaying the data in conjunction with the source image.
+
+          <h4>The hack</h4>
+          Although we are a long way from the dream solution, the pressing problems in the current workflow can be summarised into three components: data processing, data quantification and cluster analysis.
+          The image processing, although performed manually, is significantly advanced. However, the normalisation and signal processing methods are very crude. As such it is difficult to obtain robust quantifications of the system behaviour. More specifically, the noisiness of the data makes curve fitting and the robust identification of primary and subsequent responses from stimulations difficult. Processing methods such as low pass filtering are inappropriate as they distort the temporal data, causing inaccuracies in the quantification of dynamical parameters such as half times and initiation time of post-primary responses.
+            <br/>
+          Secondly, although dynamic traits of the population, such as translocation dynamics, cannot be easily visualised: graphing them individually is difficult to visualise; graphing them together creates a messy plot of overlapping lines; and graphing their statistical parameters (mean and standard deviation) obscures the underlying distribution. As such, it is difficult to understand the global consequence of the distribution profile of the heterogeneous cell responses.
+          Finally, the data would be ideally clustered based on the previously determined dynamical parameters and the temporal dynamics such that subpopulations of cells with similar behaviours can be identified which would potentially provide another source of biological insight that can explain the population behaviour and disease.
+
+          <h4>The future</h4>
+          Although this problem outline is centred on microscopy data, the essence of the problem is in processing and representing single cell data. As further technological progress is made, more single cell based assays will become available. This will increase the amount of single cell data generated all of which will require representation in a way that shows population behaviour as a consequence of its member responses. As such the solution to this specific problem will no doubt be useful as other single cell assays are developed.
+
+        </div>
+
+<div markdown="block">
+***
+</div>
+
+      <%= partial "disqus" %>
+      </div>
+      <div class="col-md-3">
+        <div id="map_canvas"></div>
+        <h3>Address:</h3>
+        <p>ThoughtWorks Australia Pty. Ltd.
+            8/51 Pitt Street
+            Sydney NSW 2000</p>
+        <h3>Organisers:</h3>
+        <p>Kelvin Nicholson</p>
+        <p>Svetlana Filimonova</p>
+      </div> 
+    </div> 
+  </body>
+  <%= partial "sponsors" %>
+</html>
