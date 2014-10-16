@@ -24,8 +24,14 @@ footer{margin-top:20px;}
 margin-top: 5px;
 }
 
+.sponsors {
+  line-height: 120px;
+}
+
 .sponsor {
-margin-top: 9px;
+  max-width: 250px;
+  padding: 5px;
+  vertical-align: middle;
 }
 
 .title2013 {
