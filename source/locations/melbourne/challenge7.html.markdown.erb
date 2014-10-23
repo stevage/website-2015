@@ -38,15 +38,15 @@ title: Melbourne
         <h3><b>Melbourne HealthHack Challenges</b></h3>
 
         <ul class="pagination">
-          <li><a href="/locations/melbourne/challenge2">&laquo;</a></li>
+          <li><a href="/locations/melbourne/challenge6">&laquo;</a></li>
           <li><a href="/locations/melbourne/challenge1">1</a></li>
           <li><a href="/locations/melbourne/challenge2">2</a></li>
-          <li class="active"><a href="/locations/melbourne/challenge3">3</a></li>
+          <li><a href="/locations/melbourne/challenge3">3</a></li>
           <li><a href="/locations/melbourne/challenge4">4</a></li>
           <li><a href="/locations/melbourne/challenge5">5</a></li>
           <li><a href="/locations/melbourne/challenge6">6</a></li>
-          <li><a href="/locations/melbourne/challenge7">7</a></li>
-          <li><a href="/locations/melbourne/challenge4">&raquo;</a></li>
+          <li class="active"><a href="/locations/melbourne/challenge7">7</a></li>
+          <li class="disabled"><a href="/locations/melbourne/challenge7">&raquo;</a></li>
         </ul>
 
         <div markdown="block">
@@ -55,11 +55,10 @@ title: Melbourne
 
         <div class="row">
           <div class="col-md-8">
-            <h3>We want a data visualisation tool to simplify a person’s epilepsy story</h3>
-            <em><h4>Presented by Kate Birch and Anne Mcintosh, The University of Melbourne </h4></em>
+            <h3>Superbug Analytics</h3>
           </div>
           <div class="col-md-4">
-            <a href="http://www.unimelb.edu.au/" target="_blank"><%= image_tag 'img/sponsors/unimelb.jpg', :alt => 'The University of Melbourne' %></a>
+            <!--<a href="http://www.monash.edu.au/" target="_blank"><%= image_tag 'img/sponsors/monash.jpg', :style => 'width:300px;',:alt => 'Monash University' %></a>-->
           </div>
         </div>
 
@@ -67,17 +66,21 @@ title: Melbourne
 
 ***
 
-Epilepsy is a disorder of brain functions that takes the form of recurring seizures. 3-4% of the Australian population will be diagnosed with epilepsy. There are a range of seizure types that people can experience, a variety of seizure triggers, a wide range of antiepileptic drugs and therapeutic doses, and over the course of a person's epilepsy story the impact of epilepsy on a their life will vary.
-Patient history information is usually stored in narrative text making longitudinal analysis difficult. The tool that we would like to developed will be used by clinicians to visualise patient data, and find correlations between seizure frequency, medication, severity of impact on life, and any potential surgery.
+The rise of antibiotic-resistant bacteria, or Superbugs, has become a serious threat to public health and the economy worldwide. This is exemplified by Barack Obama recently announcing a new Executive Order together with a National Strategy for combating antibiotic-resistant bacteria (18/09/2014). In this HealthHack challenge, we will explore if social media data mining can be used for microbial prevalence monitoring.
 
-To help understand the problem you can view some typical <%= link_to "patient stories", "../melbourne/patient_stories/PatientStories.docx", title: "patient stories", target: "_blank" %>. They are fictional representations that are typical to the situations we are trying to deal with.
+The key steps will involve:<br/>
+1. Filtering Twitter tweets based on a list of keywords related to microbial, antimicrobial and superbug topics<br/>
+2. Analysing the tweets using advance data analytics techniques<br/>
+3. Interactive reporting
+
+The tool will allow the establishment of a baseline, the exploration of trends, and the detection of unusual events.
 
 ***
 
 </div>
 
 
-      <%= partial "disqus" %>
+        <%= partial "disqus" %>
       </div>
       <div class="col-md-3">
         <div id="map_canvas"></div>
