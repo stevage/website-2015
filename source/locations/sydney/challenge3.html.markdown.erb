@@ -46,7 +46,6 @@ title: Sydney
           <li><a href="/locations/sydney/challenge5">5</a></li>
           <li><a href="/locations/sydney/challenge6">6</a></li>
           <li><a href="/locations/sydney/challenge7">7</a></li>
-          <li><a href="/locations/sydney/challenge8">8</a></li>
           <li><a href="/locations/sydney/challenge4">&raquo;</a></li>
         </ul>
 
@@ -55,29 +54,54 @@ title: Sydney
 </div>
 
         <div class="row">
-          <div class="col-md-8">
-            <h3>Life expectancy calculations for Aboriginal and Torres Strait Islander</h3>
-            <em><h4>Presented by <a href="http://sydney.edu.au/health-sciences/about/people/profiles/clare.coleman.php" target="_blank">Dr Clare Coleman</a>, Senior Research Fellow, Sydney Centre for Aboriginal and Torres Strait Islander Statistics (SCATSIS) | Faculty of Health Sciences, The University of Sydney </h4></em>
+          <div class="col-md-9">
+            <h3>Automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format</h3>
+            <em><h4>Presented by Dr Tyani Chan and Dr Liviu Constantinescu, Garvan Institute</h4></em>
           </div>
-          <div class="col-md-4">
-            <a href="http://sydney.edu.au/" target="_blank"><%= image_tag 'img/sponsors/usyd.png', :alt => 'The University of Sydney' %></a>
+          <div class="col-md-3">
+            <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
           </div>
         </div>
 
 <div markdown="block">
-***
-
-Life expectancy calculations for Aboriginal and Torres Strait Islander men and women are subject to a large number of assumptions.
-I would like a model that shows the differences that differing underlying assumptions make. The ABS and AIHW both have different assumptions of under-identification in different age groups, they don’t put errors around that but we could! We could look at a variety of models and see what we come up with, and if it is different from the official statistics.
-Something graphical that lets people get away from the life tables.
-
-I am only using publicly available data and I will have it and background documentation available on the day.
 
 ***
+
+Our lab needs an automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format.
+
+#### The Significance of Our Research
+Our Immunology research explores Germinal Centres, discrete structures found in lymphoid tissues (such as spleen and lymph nodes), that underpin current vaccine strategies and also form the basis of long-lived antibody protection from viruses & bacteria. We use experimental mouse models to study the Somatic Hypermutation (SHM) process that occurs within B Cell Antigen Receptors in the Germinal Centre, which generates high-affinity B cells and therefore high-quality, long-lived antibody protection. When tight control systems within the Germinal Centre break down, this results in immune disorders such as autoimmune disease and allergy.
+
+#### The Problem
+After performing flow cytometry based experiments that sort single spleen cells from mice responding to an infection, we PCR amplify the DNA from a single cell’s B Cell Antigen Receptor using a nested PCR approach, and obtain sequencing results covering the region of interest, which is 113 amino acids long.
+
+We would love to have a tool or application that allows us to fully automate our analyses, which currently costs us several days of researcher time, which we imagine could be reduced to several minutes.
+
+The manual analysis currently involves the following steps:<br/>
+1) Compare sequencing results (.seq file) to wild-type template<br/>
+2) Identify where the mutations lie<br/>
+3) Check the validity and quality of the read by studying the chromatogram trace (.ab1 file)<br/>
+4) If the quality is sufficient, trim the sequence result such that only the region of interest remains, and translate the nucleic acids into amino acids.<br/>
+5) In an Excel spreadsheet (with the help of some basic macros), we copy the amino acid sequence from ApE or DNA Strider into Excel, convert text to columns (to get 1 letter in 1 cell) and then copy /paste the 113 amino acid sequence into a separate Excel spreadsheet.<br/>
+6) Using some basic formulae, these sequences are placed into a table that only shows the amino acid substitions and not those amino acids that match the original template (germline sequence). Please see attached example table.<br/>
+7) This table is then converted to pdf format to allow manipulation of colours, line weights etc in Adobe Illustrator, ready for manuscript submission or conference presentations.
+
+#### In an Ideal World…
+We would have the ability to:<br/>
+1) Upload/ attach our sequencing results<br/>
+2) Have the software tool do the rest, including the ‘human’ part of checking the quality of the read by studying the chromatogram trace (.ab1 file).<br/>
+3) Perhaps even apply this to the nucleic acids and not just the amino acids, although the amino acid sequences are the main priority.
+
+#### What this achieves, how it would help us, and challenges
+A tool such as this would save us a huge amount of researcher time! We would generate approximately 100 sequences per treatment group, and on average we’d have 6 groups per experiment.<br/>
+We do individual sequences one by one, and this becomes incredibly tiring (especially for the eyes) which makes human-error highly likely. We have been fortunate to have had some help on this problem before, but sadly we’ve only managed to get some of the way. The main challenge has been identifying a high quality sequencing read from a poor-quality read.
+
+***
+
 </div>
 
 
-      <%= partial "disqus" %>
+        <%= partial "disqus" %>
       </div>
       <div class="col-md-3">
         <div id="map_canvas"></div>

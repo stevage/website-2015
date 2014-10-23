@@ -46,7 +46,6 @@ title: Sydney
           <li class="active"><a href="/locations/sydney/challenge5">5</a></li>
           <li><a href="/locations/sydney/challenge6">6</a></li>
           <li><a href="/locations/sydney/challenge7">7</a></li>
-          <li><a href="/locations/sydney/challenge8">8</a></li>
           <li><a href="/locations/sydney/challenge6">&raquo;</a></li>
         </ul>
 
@@ -56,8 +55,8 @@ title: Sydney
 
         <div class="row">
           <div class="col-md-9">
-            <h3>Building a Platform to Aggregate and Visualize Genome Sequencing Metrics</h3>
-            <em><h4>Presented by Dr Liviu Constantinescu and Dr Mark Cowley, Garvan Institute</h4></em>
+            <h3>Visualising what PubMedSaid</h3>
+            <em><h4>Presented by <a href="http://www.garvan.org.au/research/cancer/epigenetics-research/fabbus" target="_blank">Dr Fabian Buske</a>, Quek Xiu Cheng and Kenneth Sabir, Garvan Institute</h4></em>
           </div>
           <div class="col-md-3">
             <a href="http://www.garvan.org.au/" target="_blank"><%= image_tag 'img/sponsors/garvan.jpg', :style => 'width:150px;',:alt => 'Garvan Institute' %></a>
@@ -69,16 +68,22 @@ title: Sydney
 ***
 
 #### The problem
-We find ourselves in the era of personalised medicine, in part due to amazing advances in DNA sequencing technology. Using this technology, we aim to improve patient healthcare, through improved diagnosis, and tailoring treatments to match the unique genetic makeup of a patient. The problem is that the analytical pipelines to go from raw sequencing data to medically actionable information are complex, and consist of dozens of software components and databases. We’d like to be able to integrate, visualise and interpret the information that the sequencing pipelines generate in real-time, to substantially improve data quality & prevent poor data being used to guide clinical decision making.
+The rapidly growing body of scientific literature contains a wealth of information that is specifically written for a human audience. Reading through this information to extract links between data entities is however a time-consuming effort that requires expert knowledge.<br/>
+While previously biologists have focused on understanding a small handful of genes, new experimental techniques can provide sets of hundreds of genes that can be overwhelming to comprehend. We need to understand what these large gene sets have in common and how they link to diseases such as cancer and diabetes.
 
 #### The dream
-We would love to develop a genome pipeline visualisation platform, which tracked and monitored NGS analysis pipelines in real-time, presenting the key metrics at each stage of the process to the analysts, via informative visualisations. This would aggregate and compare data over time, so that deviations can be easily identified. It would cross reference the metrics and meta-data associated with each sample, so that anomalies could be tracked back to a bad batch of reagents, a particular sequencing machine, or a particular operator for instance.
+The dream is to understand what makes a given large set of genes special. We have performed text mining against all public full text articles and we want an intuitive system to understand and query relationships contained within this data. As scientific discoveries are made by drawing new links between previously unconnected components such a framework would achieve both: facilitate as well as accelerate scientific discoveries across a broad range of scientific disciplines.
+
+#### The status
+We have processed more than 2 million full-text scientific articles on biological and medical sciences contained within Pubmed Central, extracted meaningful keywords and associated these with categories such as disease, genes, biological pathways, cellular function and many more. The resulting 6 billion data points have been deposited in a document database (MongoDB), that is available through a Web API.<br/>
+Using Map-Reduce techniques we have created a table where each human protein-coding gene is mapped to every PubMed article it appears in along with every term found in these papers. We have algorithms for aggregating multiple genes and for performing basic statistics for over-representation.
 
 #### The hack
-We would love to build a solution to import the metrics from key steps of the sequencing analysis pipeline, ingest these metrics into a database, and visualise these in an interactive fashion. We already have code for parsing most of the metrics, and a data-model for tracking the relationships between objects (like sequencing runs and samples). We are missing the bits that harvest this information in real-time, ingest into a database, and visualise this information; to this end, we have been considering building our own D3-based visualisation platform, or perhaps configuring a fluentd, splunk or tableau platform.
+Curiosity - having an question and going after the answer - is what drives science. To facilitate this process we require an interactive web front-end that allows intuitive querying across the various categories contained in our 'little' database as well as a visual presentation layer to convey the returned information and illustrate the connectivity between the discoveries.<br/>
+Ideally, we let the data speak for itself such as getting ranked recommendations via collaborative filtering or consensus via aggregations but also link back to the original publications to enable further in-depth studies.
 
-#### The future
-We see clinical genomics becoming a mainstream part of healthcare, where for babies with inherited genetic diseases, or patients with cancer, it will make more sense to sequence a patient’s genome & use this information to guide improved healthcare. As we scale up to reach tens of thousands of patients per year, this platform will become an indispensible piece of the clinical genomics puzzle.
+#### How this helps us
+Not being able to go after the answer at the opportune moment an idea strikes can stop new discoveries in its tracks. Thus, a framework that can reveal the connections between distinct scientific fields or discoveries on the spot has the potential to facilitate future Eureka moments.
 
 ***
 
