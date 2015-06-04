@@ -11,9 +11,14 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li><%= link_to "Sydney", "/locations/sydney/challenge1", title: "sydney" %></li>
-      <li><%= link_to "Melbourne", "/locations/melbourne/challenge1", title: "melbourne" %></li>
-
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">2014<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><%= link_to "2014 Problems (Sydney)", "/problems2014/sydney/challenge1", title: "problems-sydney" %></li>
+          <li><%= link_to "2014 Problems (Melbourne)", "/problems2014/melbourne/challenge1", title: "problems-melbourne" %></li>
+          <li><%= link_to "2014 Winners", "/winners2014", title: "winners" %></li>
+        </ul>
+      </li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">2013<span class="caret"></span></a>
         <ul class="dropdown-menu">
