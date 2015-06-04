@@ -23,7 +23,7 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
-    eventmachine (1.0.3)
+    eventmachine (1.0.4)
     excon (0.27.6)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -134,3 +134,6 @@ DEPENDENCIES
   middleman-sync (~> 3.0.12)
   ruby18_source_location
   wdm (~> 0.1.0)
+
+BUNDLED WITH
+   1.10.3
