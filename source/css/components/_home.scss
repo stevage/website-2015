@@ -1,0 +1,58 @@
+.top-container {
+  background: url("../img/top-image.jpg") no-repeat top right;
+  height: 600px;
+  margin-top: -20px;
+  padding: 50px 1.2em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.top-container .row {
+  padding: 10px 0;
+}
+
+.top-container h1 {
+  font-weight: 100;
+}
+
+.top-container-col {
+  margin-top: 20px;
+  padding: 2.2em;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #000000;
+}
+
+.top-container-col h2 {
+  font-weight: 100;
+}
+
+.top-container-text {
+  padding: 2em;
+}
+
+
+.row-involved {
+  margin-top: -160px;
+  padding: 0 10%;
+}
+
+
+.event-description {
+  text-align: center;
+  width: 70%;
+  margin: 30px auto;
+
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+
+}
