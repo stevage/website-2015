@@ -115,39 +115,28 @@
    }
 
 
-  .carousel-indicators {
-    bottom: -50px;
-  }
 
-  .carousel-indicators li {
-    background-color: #BDBDBD;
-    width: 10px !important;
-    height: 10px !important;
-
-  }
-
-  .carousel-indicators li.active {
-    background-color: #2375D2;
-    margin: 1px;
-  }
-
-  .carousel-control {
-     width: 5%;
-  }
 }
 
-.carousel-content {
 
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  left: 50%;
-  text-align: left;
-  vertical-align: middle;
-  margin-top: -90px;
+.container-sponsors {
+   padding: 70px 10px 0 10px;
+}
+
+.twitter-panel {
   padding: 0 5%;
+  width: 100%;
+  text-align: center;
 }
 
+.footer-okfna {
+   width: 30px;
+}
+
+footer {
+  padding: 10px 10%;
+  line-height: 30px;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -159,10 +148,15 @@
     font-size: 1em;
   }
 
+  .event-description {
+    width: 90%;
+  }
+
   .event-regions .col-sm-3 {
     margin: 10px 0;
     padding: 10px;
   }
+
 
 
 }
