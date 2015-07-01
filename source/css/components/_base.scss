@@ -8,23 +8,39 @@ body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote{font-family: 'Open Sans', 
 body {
   background-color: #EFF0F1;
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 
+.light-bg {
+  background-color: #FFFFFF;
+}
+
 .navbar-nav {
   margin-top:15px;
+
+
+  a {
+    color: #FFFFFF;
+    font-size: 1em;
+  }
+
 }
 
 .navbar-default {
   border: none;
   background: #FFFFFF;
 }
+
 .btn {
   color: #FFFFFF;
   border-radius: 40px;
-  padding: 10px 25px;
+  padding: 15px 25px;
+  min-width: 200px;
   border: none;
-  font-size: 0.8em;
+  font-size: 0.9em;
+  font-weight: bold;
 }
 .btn:hover {
   color: #FFFFFF;
@@ -39,26 +55,34 @@ body {
 }
 
 .btn-primary {
-  background-color: #08B3A6;
+  background-color: $btn-default-color;
 }
 
 .btn-primary:hover {
-  background-color: #089388;
+  background-color: $btn-defaul-hovert-color;
 }
 
+.btn-link {
+  color: $btn-default-color;
+}
+
+.btn-link:hover {
+  color: $btn-defaul-hovert-color;
+}
+
+a {
+  color: $btn-default-color;
+}
+
+a:hover {
+  color: $btn-defaul-hovert-color;
+}
 
 li .btn {
   margin-top: -10px;
 }
 
 
-.light-bg {
-  background-color: #FFFFFF;
-}
-
-a {
-  color: #FFFFFF;
-}
 
 p{
   font-size: 1.2em;
@@ -66,11 +90,29 @@ p{
 
 }
 
-
 .taller-line-height {
   line-height: 1.7;
 }
 
 h1 {
   font-size: 4em;
+}
+
+.font-light {
+  font-weight: 100;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.half-width {
+   width: 50%;
+   display: inline-block;
 }
