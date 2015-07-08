@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-		<%= partial "head" %>
+		<%= partial "partials/head" %>
 	</head>
     <body>
         <!--[if lt IE 7]>
@@ -10,11 +10,10 @@
 		<div class="container">
 	        <div class="header">
 	        </div>
-			<%= partial "nav" %>
-			<%= partial "top" %>
+			<%= partial "partials/nav" %>
 			<%= yield %>
-			<%= partial "footer" %>
+			<%= partial "partials/footer" %>
 	</div>
-	<%= partial "end" %>
+	<%= partial "partials/end" %>
     </body>
 </html>

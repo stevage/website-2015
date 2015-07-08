@@ -1,0 +1,76 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote{font-family: 'Open Sans', sans-serif;}
+
+body {
+  background-color: #EFF0F1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.navbar-nav {
+  margin-top:15px;
+}
+
+.navbar-default {
+  border: none;
+  background: #FFFFFF;
+}
+.btn {
+  color: #FFFFFF;
+  border-radius: 40px;
+  padding: 10px 25px;
+  border: none;
+  font-size: 0.8em;
+}
+.btn:hover {
+  color: #FFFFFF;
+}
+
+.btn-default {
+  background-color: #404141;
+}
+
+.btn-default:hover {
+  background-color: #000000;
+}
+
+.btn-primary {
+  background-color: #08B3A6;
+}
+
+.btn-primary:hover {
+  background-color: #089388;
+}
+
+
+li .btn {
+  margin-top: -10px;
+}
+
+
+.light-bg {
+  background-color: #FFFFFF;
+}
+
+a {
+  color: #FFFFFF;
+}
+
+p{
+  font-size: 1.2em;
+  line-height: 1.6;
+
+}
+
+
+.taller-line-height {
+  line-height: 1.7;
+}
+
+h1 {
+  font-size: 4em;
+}

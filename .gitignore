@@ -35,6 +35,9 @@ doc/
 build/
 secret
 README.html
+.idea/
+secret.save
+Gemfile.lock
 
 .gitignore.BACKUP.28737.gitignore
 
@@ -43,3 +46,4 @@ README.html
 .gitignore.LOCAL.28737.gitignore
 
 .gitignore.REMOTE.28737.gitignore
+

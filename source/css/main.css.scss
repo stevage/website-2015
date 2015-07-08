@@ -1,10 +1,7 @@
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote{font-family: 'Open Sans', sans-serif;}
-body {background:url(/img/background.png) no-repeat top right}
+@import 'components/base';
+
 #galleria{height:620px;}
 footer{margin-top:20px;}
 #hhhead{font-variant:small-caps;font-weight:800;}
@@ -64,3 +61,6 @@ margin-top: 5px;
 
 
 
+
+
+@import 'components/home';
