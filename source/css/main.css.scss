@@ -3,17 +3,17 @@
 @import 'components/base';
 
 #galleria{height:620px;}
-footer{margin-top:20px;}
+
 #hhhead{font-variant:small-caps;font-weight:800;}
 
 .img-small { width: 250px; }
 .callToAction {
-	font-size: 1.0em; 	
+	font-size: 1.0em;
 }
 
-.hipsterteal { 
-	color:white !important; 
-	background-color : #17AA9D !important; 
+.hipsterteal {
+	color:white !important;
+	background-color : #17AA9D !important;
 	border-color:#17A195 !important;
 }
 
@@ -139,3 +139,4 @@ margin-top: 5px;
 
 
 @import 'components/home';
+@import 'components/pages';
