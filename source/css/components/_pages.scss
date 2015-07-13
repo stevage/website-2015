@@ -28,6 +28,39 @@
     }
 }
 
+.location-side {
+  background-color: #EAEBEC;
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: lighter;
+  h3 {
+    font-weight: lighter;
+  }
+}
+.text-side {
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: lighter;
+  h3 {
+    font-weight: lighter;
+  }
+  hr {
+    border-bottom: 1px dashed #ccc;
+  }
+  button {
+    float: right;
+  }
+}
+
+.white-background {
+  background-color: white;
+}
+
+#map_canvas {
+  width: 100%;
+  height: 200px;
+}
+
 .bottom-container {
   background-color: #363435;
   text-align: center;
@@ -44,5 +77,4 @@
     font-weight: lighter;
     margin-bottom: 20px;
   }
-
 }

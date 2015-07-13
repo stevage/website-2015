@@ -32,12 +32,16 @@ body {
 .navbar-default {
   border: none;
   background: #FFFFFF;
+  padding-top: 0px;
+  .btn {
+    margin-top: -9px;
+  }
 }
 
 .btn {
   color: #FFFFFF;
   border-radius: 40px;
-  padding: 15px 25px;
+  padding: 10px 25px;
   min-width: 200px;
   border: none;
   font-size: 0.9em;
