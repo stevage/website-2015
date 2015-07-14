@@ -1,79 +1,73 @@
 ---
 title: Brisbane
 ---
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script>
+  function initialize() {
+    var mapCanvas = document.getElementById('map_canvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(-27.465824,153.02759),
+      zoom: 16,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapCanvas, mapOptions)
+    var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(-27.465824,153.02759),
+        map: map,
+        title: 'Hello World!'
+    });
+    google.maps.event.addDomListener(window, "resize", function() {
+      var center = new google.maps.LatLng(-27.465824,153.02759);
+      google.maps.event.trigger(map, "resize");
+      map.setCenter(center);
+    });
 
-<html>
-  <head>
-    <title>sdfsdf</title>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map_canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(-27.465824,153.02759),
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-        var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(-27.465824,153.02759),
-            map: map,
-            title: 'Hello World!'
-        });
-        google.maps.event.addDomListener(window, "resize", function() {
-          var center = new google.maps.LatLng(-27.465824,153.02759);
-          google.maps.event.trigger(map, "resize");
-          map.setCenter(center);
-        });
-
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-  </head>
-  <body class="white-background">
-    <div class="container-fluid top-container-normal">
-        <div class="row">
-           <h1>Brisbane</h1>
-           <h3>19/127 Creek St</h3>
-        </div>
-    </div>
-    <div class="thin-container-normal">
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<div class="container-white-background">
+  <div class="container-fluid top-container-normal">
       <div class="row">
-        <div class="col-md-9 text-side">
-          <h3>What To Expect</h3>
+         <h1>Brisbane</h1>
+         <h3>19/127 Creek St</h3>
+      </div>
+  </div>
+  <div class="thin-container-normal">
+    <div class="row">
+      <div class="col-md-9 text-side">
+        <h3>What To Expect</h3>
+        <p>TBA</p>
+        <hr>
+        <h3>Submit A Challenge</h3>
+        <p>TBA</p>
+        <div class="clearfix"><button type="submit" class="btn-primary btn">SUBMIT A CHALLENGE</button></div>
+        <hr>
+        <h3>Get Involved, join the Health Hack</h3>
+        <p>TBA</p>
+        <div class="clearfix"><button type="submit" class="btn-default btn">GET INVOLVED</button></div>
+        <hr>
+      </div>
+      <div class="col-md-3">
+        <div class="location-side">
+          <h3>When</h3>
           <p>TBA</p>
-          <hr>
-          <h3>Submit A Challenge</h3>
-          <p>TBA</p>
-          <div class="clearfix"><button type="submit" class="btn-primary btn">SUBMIT A CHALLENGE</button></div>
-          <hr>
-          <h3>Get Involved, join the Health Hack</h3>
-          <p>TBA</p>
-          <div class="clearfix"><button type="submit" class="btn-default btn">GET INVOLVED</button></div>
-          <hr>
+          <h3>Where</h3>
+          <p>ThoughtWorks Brisbane
+              19/127 Creek St
+              Brisbane QLD 4000</p>
+          <div id="map_canvas"></div>
+          <h3>Contact</h3>
+          <p>Hugo Leroux</p>
+          <p>Alejandro Metke</p>
         </div>
-        <div class="col-md-3">
-          <div class="location-side">
-            <h3>When</h3>
-            <p>TBA</p>
-            <h3>Where</h3>
-            <p>ThoughtWorks Brisbane
-                19/127 Creek St
-                Brisbane QLD 4000</p>
-            <div id="map_canvas"></div>
-            <h3>Contact</h3>
-            <p>Hugo Leroux</p>
-            <p>Alejandro Metke</p>
-          </div>
-          <div class="quote-side">
-            <div class="circular-centered" style="background-image: url('../img/top-image.jpg')"></div>
-            <div class="quotes">This is a sample quote that is not very inspiring but still somewhat helpful</div>
-            <p>John Smith <br>
-                ThoughtWorks Sydney</p>
-            <div id="triangle-down"></div>
-          </div>
+        <div class="quote-side">
+          <div class="circular-centered" style="background-image: url('../img/top-image.jpg')"></div>
+          <div class="quotes">This is a sample quote that is not very inspiring but still somewhat helpful</div>
+          <p>John Smith <br>
+              ThoughtWorks Sydney</p>
+          <div id="triangle-down"></div>
         </div>
       </div>
     </div>
-  </body>
-</html>
+  </div>
+</div>
