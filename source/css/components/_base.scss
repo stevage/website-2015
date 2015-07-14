@@ -12,7 +12,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
-
+a:focus {
+  outline: none;
+}
 
 .light-bg {
   background-color: #FFFFFF;
@@ -21,12 +23,10 @@ body {
 .navbar-nav {
   margin-top:15px;
 
-
   a {
     color: #FFFFFF;
     font-size: 1em;
   }
-
 }
 
 .navbar-default {
@@ -131,7 +131,6 @@ h1 {
 
 .carousel-control {
   width: 5%;
-  outline: 0;
 }
 
 .carousel-inner-left,
@@ -154,6 +153,7 @@ h1 {
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
+  outline: 0;
 
   .glyphicon {
     width: 40px;

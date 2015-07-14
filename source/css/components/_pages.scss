@@ -11,7 +11,6 @@
 .container-normal {
   padding-left: 5px;
   padding-right:5px;
-  margin:0px 100px 0px 100px;
   height: 550px;
 }
 .thin-container-normal {
@@ -41,7 +40,7 @@
   padding: 10px 20px;
   text-align: left;
   font-weight: lighter;
-  h3 {
+  h3, h2 {
     font-weight: lighter;
   }
   hr {
@@ -49,6 +48,23 @@
   }
   button {
     float: right;
+  }
+  img {
+    border: .5px solid #ccc;
+    float:left;
+    height: 100px;
+    width: 150px;
+    margin-right: 20px;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.challenge-title {
+  .organiser-details {
+    margin-top: 45px;
+
   }
 }
 
@@ -76,5 +92,123 @@
   h4 {
     font-weight: lighter;
     margin-bottom: 20px;
+  }
+}
+
+.quote-side {
+  background-color: #EAEBEC;
+  padding: 10px 20px 0 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: lighter;
+  word-wrap: break-word;
+  h3 {
+    font-weight: lighter;
+  }
+}
+.quotes{
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 2em;
+    margin-top: -1em;
+    padding: 0.35em 30px;
+    line-height: 1.45;
+    position: relative;
+    color: black;
+}
+.quotes:before {
+  display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -25px;
+}
+.quotes:after {
+  display: block;
+    content: "\201D";
+    font-size: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: -70px;
+}
+#triangle-down {
+  width: 10px;
+  bottom:-30px;
+  margin: 0px auto;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #EAEBEC;
+}
+.circular-centered {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 350%;
+  border-radius: 50%;
+	width: 100px;
+	height: 100px;
+  position:relative;
+  top: -40px;
+  margin: 0px auto;
+}
+
+.organiser-image {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  border-radius: 50%;
+  float:left;
+  width: 100px;
+  height: 100px;
+  position:relative;
+  top: 15px;
+  margin-right: 20px;
+}
+
+.organiser-details {
+  float:left;
+  margin-bottom: 20px;
+
+}
+
+.right-info-box {
+  background-color: #EAEBEC;
+  padding: 20px 20px;
+  text-align: center;
+  font-weight: lighter;
+  h3 {
+    font-weight: lighter;
+  }
+  border-bottom: 5px solid #c9c9c9;
+  margin-bottom: 20px;
+  .btn {
+    min-width: 0;
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.challenge-row{
+  .btn {
+    float: left;
+    margin: 10px 10px 10px 0;
+  }
+  .grey-btn {
+    background-color: #718795;
+    color: #ffffff;
+  }
+  .grey-btn:hover {background-color: #3e5564}
+  .white-btn {
+    background-color: #ffffff;
+    color: #718795;
+    border: 1px #718795 solid;
+  }
+  .white-btn:hover {
+    color: #3e5564;
+    border: 1px #3e5564 solid;
+    background-color: #e1e8ec;
   }
 }

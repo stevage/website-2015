@@ -1,5 +1,5 @@
 ---
-title: Perth
+title: Sydney
 ---
 
 <html>
@@ -10,22 +10,21 @@ title: Perth
       function initialize() {
         var mapCanvas = document.getElementById('map_canvas');
         var mapOptions = {
-          center: new google.maps.LatLng(-31.955214,115.859343),
+          center: new google.maps.LatLng(-33.879144,151.221782),
           zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(-31.955214,115.859343),
+            position: new google.maps.LatLng(-33.879144,151.221782),
             map: map,
             title: 'Hello World!'
         });
         google.maps.event.addDomListener(window, "resize", function() {
-          var center = new google.maps.LatLng(-31.955214,115.859343);
+          var center = new google.maps.LatLng(-33.879144,151.221782);
           google.maps.event.trigger(map, "resize");
           map.setCenter(center);
         });
-
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
@@ -33,7 +32,7 @@ title: Perth
   <body class="white-background">
     <div class="container-fluid top-container-normal">
         <div class="row">
-           <h1>Perth</h1>
+           <h1>Sydney</h1>
            <h3>The Garvin Institute, Darlinghurst</h3>
         </div>
     </div>
@@ -41,30 +40,28 @@ title: Perth
       <div class="row">
         <div class="col-md-9 text-side">
           <h3>What To Expect</h3>
-          <p>In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</p>
+          <p>TBA</p>
           <hr>
           <h3>Submit A Challenge</h3>
-          <p>In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</p>
+          <p>TBA</p>
           <div class="clearfix"><button type="submit" class="btn-primary btn">SUBMIT A CHALLENGE</button></div>
           <hr>
           <h3>Get Involved, join the Health Hack</h3>
-          <p>In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</p>
+          <p>TBA</p>
           <div class="clearfix"><button type="submit" class="btn-default btn">GET INVOLVED</button></div>
           <hr>
         </div>
         <div class="col-md-3">
           <div class="location-side">
             <h3>When</h3>
-            <p>ThoughtWorks Perth
-                20/44 St Georges Terrace
-                Perth WA 6000</p>
+            <p>TBA</p>
             <h3>Where</h3>
-            <p>ThoughtWorks Perth
-                20/44 St Georges Terrace
-                Perth WA 6000</p>
+            <p>The Garvin Institute<br>
+               384 Victoria Street, Darlinghurst<br>
+               Sydney NSW 2010</p>
             <div id="map_canvas"></div>
             <h3>Contact</h3>
-            <p>Maia Sauren</p>
+            <p>TBA</p>
           </div>
           <div class="quote-side">
             <div class="circular-centered" style="background-image: url('../img/top-image.jpg')"></div>
