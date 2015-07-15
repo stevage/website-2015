@@ -2,28 +2,11 @@
 title: Melbourne
 ---
 <script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="../js/load_google_maps.js"></script>
 <script>
-  function initialize() {
-    var mapCanvas = document.getElementById('map_canvas');
-    var mapOptions = {
-      center: new google.maps.LatLng(-37.816685, 144.963967),
-      zoom: 16,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions)
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(-37.816685, 144.963967),
-        map: map,
-        title: 'Hello World!'
-    });
-    google.maps.event.addDomListener(window, "resize", function() {
-      var center = new google.maps.LatLng(-37.816685, 144.963967);
-      google.maps.event.trigger(map, "resize");
-      map.setCenter(center);
-    });
-
-  }
-  google.maps.event.addDomListener(window, 'load', initialize);
+  google.maps.event.addDomListener(window, 'load', function () {
+   initialize(-37.816685, 144.963967);
+  });
 </script>
 
 <div class="container-white-background">
