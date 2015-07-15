@@ -5,17 +5,13 @@
 .top-container {
   background: url("../img/top-image.jpg") no-repeat top right;
   height: 525px;
-  margin-top: -20px 20px 0 20px;
-  padding: 50px 1.2em;
+  margin-top: -20px;
+  padding: 20px 20px;
   text-align: center;
   color: #FFFFFF;
   h1 {
     font-weight: 100;
   }
-}
-
-.top-container {
-  padding: 10px 20px;
 }
 
 .row {
@@ -115,9 +111,6 @@
      margin-top: 30px;
      background-color: #ffffff;
    }
-
-
-
 }
 
 .container-sponsors {
@@ -141,6 +134,13 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
+  .top-container {
+    padding: 20px 25px;
+  }
+  .row-involved {
+    margin-top: -30%;
+  }
+
   .event-description {
     width: 90%;
   }
@@ -149,4 +149,5 @@ footer {
     margin: 10px 0;
     padding: 10px;
   }
+
 }

@@ -117,14 +117,11 @@ margin-top: 5px;
 		height: 1px;
 		width: 80%;
 		border-bottom: 1px dotted #ccc;
-
 	}
-
-
+	.container {
+			max-width: none;
+	}
 }
-
-
-
 
 .boldbrand {
     font-weight: bold;

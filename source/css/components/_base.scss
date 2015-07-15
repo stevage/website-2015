@@ -22,10 +22,13 @@ a:focus {
 
 .navbar-nav {
   margin-top:15px;
-
   a {
     color: #FFFFFF;
     font-size: 1em;
+  }
+  .btn {
+    width: 100%;
+    max-width: 150px;
   }
 }
 
@@ -41,7 +44,7 @@ a:focus {
 .btn {
   color: #FFFFFF;
   border-radius: 40px;
-  padding: 10px 25px;
+  padding: 10px 5px;
   min-width: 200px;
   border: none;
   font-size: 0.9em;
