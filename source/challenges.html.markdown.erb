@@ -11,7 +11,83 @@ title: Challenges
   <div class="thin-container-normal">
     <div class="row">
       <div class="col-md-9 text-side">
+
+<script src="../js/list.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://listjs.com/no-cdn/list.js"></script>
+<script src="http://listjs.com/no-cdn/list.pagination.js"></script>
+
+<div id="challenge-list">
+  Search Challenges: <input class="search" placeholder="Search" />
+  <hr/>
+  <div class="list">
+      <div class="challenge-row">
+        <div class="clearfix">
+          <h3 class="name">Health and Society Expeditions</h3>
+          <p class="city"> Melbourne | <a href="">Monash University</a></p>
+          <p class="description">Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open.</p>
+          <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
+          <a href="/challenges_template"><button class="btn-primary btn white-btn">DETAILS</button></a>
+        </div>
         <hr/>
+      </div>
+      <div class="challenge-row">
+        <div class="clearfix">
+          <h3 class="name">Mindy Chang</h3>
+          <p class="city"> Sydney | <a href="">Monash University</a></p>
+          <p class="description">Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open.</p>
+          <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
+          <a href="/challenges_template"><button class="btn-primary btn white-btn">DETAILS</button></a>
+        </div>
+        <hr/>
+      </div>
+      <div class="challenge-row">
+        <div class="clearfix">
+          <h3 class="name">Maggie Zong</h3>
+          <p class="city"> Sydney | <a href="">Monash University</a></p>
+          <p class="description">Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open.</p>
+          <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
+          <a href="/challenges_template"><button class="btn-primary btn white-btn">DETAILS</button></a>
+        </div>
+        <hr/>
+      </div>
+      <div class="challenge-row">
+        <div class="clearfix">
+          <h3 class="name">Olivier Murtle</h3>
+          <p class="city"> Sydney | <a href="">Monash University</a></p>
+          <p class="description">Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open.</p>
+          <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
+          <a href="/challenges_template"><button class="btn-primary btn white-btn">DETAILS</button></a>
+        </div>
+        <hr/>
+      </div>
+      <div class="challenge-row">
+        <div class="clearfix">
+          <h3 class="name">Sam McKendrick</h3>
+          <p class="city"> Sydney | <a href="">Monash University</a></p>
+          <p class="description">Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open.</p>
+          <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
+          <a href="/challenges_template"><button class="btn-primary btn white-btn">DETAILS</button></a>
+        </div>
+        <hr/>
+      </div>
+    </div>
+  <div class="pagination-container"><span class="pagination"></span></div>
+</div>
+
+<script>
+  var monkeyList = new List('challenge-list', {
+  valueNames: [ 'name', 'city', 'description' ],
+  page: 3,
+  plugins: [ ListPagination({}) ]
+});
+</script>
+
+
+
+
+
+        <!--<hr/>
         <div class="challenge-row clearfix">
           <h3>Health and Society Expeditions</h3>
           <p> Melbourne | <a href="">Monash University</a></p>
@@ -19,7 +95,7 @@ title: Challenges
           <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
           <a href="/challenges_template"><button class="btn-primary btn white-btn">DETAILS</button></a>
         </div>
-        <hr/>
+        <hr/>-->
       </div>
       <div class="col-md-3">
         <div class="right-info-box">
