@@ -24,11 +24,8 @@ title: Challenges
 }
 </style>
 
-
-<div id="users">
+<div id="test-list">
   Search Challenges: <input class="search" placeholder="Search" />
-
-  <div id="test-list">
   <ul class="list">
     <li>
       <div class="challenge-row clearfix">
@@ -80,15 +77,7 @@ title: Challenges
   <ul class="pagination"></ul>
 </div>
 
-</div>
-
 <script>
-  var options = {
-    valueNames: [ 'name', 'city', 'description' ]
-  };
-
-  var userList = new List('users', options);
-
   var monkeyList = new List('test-list', {
   valueNames: [ 'name', 'city', 'description' ],
   page: 3,
