@@ -17,7 +17,7 @@ title: Challenges
 <script src="http://listjs.com/no-cdn/list.js"></script>
 <script src="http://listjs.com/no-cdn/list.pagination.js"></script>
 
-<div id="test-list">
+<div id="challenge-list">
   Search Challenges: <input class="search" placeholder="Search" />
   <hr/>
   <div class="list">
@@ -72,11 +72,11 @@ title: Challenges
         <hr/>
       </div>
     </div>
-  <div class="pagination"></div>
+  <div class="pagination-container"><span class="pagination"></span></div>
 </div>
 
 <script>
-  var monkeyList = new List('test-list', {
+  var monkeyList = new List('challenge-list', {
   valueNames: [ 'name', 'city', 'description' ],
   page: 3,
   plugins: [ ListPagination({}) ]

@@ -67,7 +67,6 @@
 .challenge-title {
   .organiser-details {
     margin-top: 45px;
-
   }
 }
 
@@ -219,6 +218,40 @@
     background-color: #e1e8ec;
   }
 }
+.pagination {
+  margin: 0 0 10px 0;
+  li {
+    display:inline-block;
+    padding:5px;
+  }
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #08b3a6;
+    border-color: #08b3a6;
+    color: #fff;
+    cursor: default;
+    z-index: 1;
+}
+.pagination > li > a, .pagination > li > span {
+    background-color: #fff;
+    border: none;
+    float: none;
+    line-height: 1.42857;
+    margin: 0 auto;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:last-child > a:hover, .pagination > li:last-child > span:hover,.pagination > li:first-child > a, .pagination > li:first-child > span,  .pagination > li:first-child > a:hover,  .pagination > li:first-child > span:hover {
+    border-radius: 20px;
+}
+
+.pagination-container {
+  text-align: center;
+}
+
 
 @media only screen and (max-width: 768px) {
   .form-control {
