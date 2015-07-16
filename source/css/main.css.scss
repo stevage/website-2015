@@ -103,11 +103,25 @@ margin-top: 5px;
 	height:20px;
 	width:30px;
 }
+@media (min-width: 1200px) {
+	body .light-bg > .container {
+    max-width: none;
+	}
+}
+@media only screen and (min-width: 922px) {
+	body .light-bg > .container {
+			max-width: none;
+	}
+}
+@media only screen and (min-width: 768px) {
+	body .light-bg > .container {
+			max-width: none;
+	}
+}
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1013px) {
 	.row-social {
 		border-right: 0;
-
 	}
 	.row-social:before {
 		content: "";
@@ -118,10 +132,29 @@ margin-top: 5px;
 		width: 80%;
 		border-bottom: 1px dotted #ccc;
 	}
-	.container {
+	body .light-bg > .container {
 			max-width: none;
+			.nav-btn {
+				display:block;
+				margin-bottom: 5px;
+			}
+			li > a {
+				padding-top: 2px;
+			}
 	}
 }
+@media only screen and (max-width: 767px) {
+	body .light-bg > .container {
+			.btn {
+				min-width: 150px;
+			}
+			.btn-default {
+				width: 100%;
+				min-width: 125px;
+			}
+}
+}
+
 
 .boldbrand {
     font-weight: bold;
@@ -131,6 +164,15 @@ margin-top: 5px;
     text-align: justify;
 }
 
+.navbar-default .btn {
+	margin-top: 5px;
+	margin-bottom: 8px;
+	margin-left: 0;
+
+}
+.nav-btn {
+	display: inline-block;
+}
 
 @import 'components/home';
 @import 'components/pages';
