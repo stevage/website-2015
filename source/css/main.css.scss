@@ -170,7 +170,20 @@ margin-top: 5px;
 }
 .nav-btn {
 	display: inline-block;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.nav-btn {
+  	display: inline;
+  }
+	.navbar-right {
+		min-width: 830px;
+	}
+	@media only screen and (max-width: 1013px) {
 
+		body .light-bg > .container .navbar-right {
+			min-width: 500px;
+		}
+}
 }
 
 @import 'components/home';
