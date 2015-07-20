@@ -1,3 +1,17 @@
+Skip to content
+This repository  
+Pull requests
+Issues
+Gist
+ @minillinim
+ Watch 4
+  Star 0
+ Fork 7HealthHackAu/website-2015
+forked from healthhack-melb/website
+ branch: master  website-2015/source/.htaccess
+@nicsmythenicsmythe on 24 Oct 2013 Added middleman stuff
+1 contributor
+RawBlameHistory    541 lines (406 sloc)  19.99 kB
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
@@ -538,3 +552,5 @@ AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 <IfModule php5_module>
   php_value session.cookie_httponly true
 </IfModule>
+Status API Training Shop Blog About Help
+© 2015 GitHub, Inc. Terms Privacy Security Contact
