@@ -1,54 +1,33 @@
-HealthHackMelb.com website
+healthhack.com.au website
 =======
 
+This is the source for the Health Hack website (static HTML) - it is written using [middleman](http://middlemanapp.com).
 
-This is the source for the HealthHackMelb website - it is written using [middleman](http://middlemanapp.com).
+NOTE: This README is part of the 'slim' branch - a cut down version of the site which has A LOT of cruft removed. If you add something new to the site, please add a description here. 
 
-The site is actually static HTML that is generated and pushed to an AWS S3 bucket. Right now we build it locally on our machines and push to S3. Middleman happily takes care of all of this.
-
-
-To run a local server so you can see the changes:
-
-```
-middleman
-```
-
-To deploy your changes to the live site:
-
-```
-middleman build
-./deploy.sh
-```
-
+To help develop the site you'll need to install middleman.
 
 Getting started: The "shut my eyes and run stuff" approach
------------------------------------------
-```
-# On a clean Ubuntu Precise:
-sudo apt-get install -y curl git-core ruby-bundler rubygems nodejs
+----------
 
-\curl -sSL https://get.rvm.io | bash -s stable --ruby
-source ~/.rvm/scripts/rvm
-git clone git@github.com:healthhack-melb/website.git
-cd website 
+    # On a clean Ubuntu Precise:
+    sudo apt-get install -y curl git-core ruby-bundler rubygems nodejs
 
-# Copy-paste the contents of the secret file that someone has given you:
-nano secret
+    \curl -sSL https://get.rvm.io | bash -s stable --ruby
+    source ~/.rvm/scripts/rvm
+    git clone https://github.com/HealthHackAu/website-2015.git
+    cd website 
 
-bundle install
+    bundle install
 
-# Build the content:
-middleman build
+    # Build the content:
+    middleman build
 
-# Run locally:
-middleman server
-
-# Deploy to Amazon S3:
-./deploy.sh
-```
+    # Run locally:
+    middleman server
 
 Getting started: the more considered approach
---------------
+----------
 
 Follow these instructions apart from bits you know already and you can
 just ignore :D.
@@ -60,8 +39,9 @@ You need the following:
 
 + Check out the source code for the website:
 
+
 ```
-   git clone git@github.com:healthhack-melb/website.git
+    https://github.com/HealthHackAu/website-2015.git
 ```
 
 Or use the GitHub client.
@@ -72,86 +52,57 @@ Or use the GitHub client.
 
 + Install the gems:
 
+
 ```
-  bundle install
+    bundle install
 ```
 
 + To build the website:
 
+
 ```
-   middleman build
+    middleman build
 ```
 
 This generates all the static html to a folder called build/
 
 + To see the website running:
 
+
 ```
-   middleman server
+    middleman server
 ```
 
 This will start serving the site and give you an address to go to in
 your browser.
 
 Changing + previewing
------
+----------
 
 You can keep the server running, make changes to the source files and
 rebuild the site files. Should be a fairly low-friction workflow.
 
-+ Edit files in the source folder, for example source/index.html.erb
++ Edit files in the source folder, for example source/index.html.markdown.erb
   (the template file for the home page)
 + Rebuild:
 
+
 ```
-   middleman build
+    middleman build
 ```
 
 + Your changes should be available from the same address as before -
   if the server is not running start it again:
   
+
 ```
-   middleman server
+    middleman server
 ```
 
 Checking in your changes!
---------
-
-You don't technically need to do this to deploy, but please do - else
-if I deploy and I don't have your changes, your changes are history!
-
-Assuming some basic GH workflow stuff is covered, but I can help with
-that over the next 48 hours.
-
-Deploying to the live site
 ----------
 
-As I said before, this is just a case of generating the site and
-syncing it with the S3 bucket sitting behind
-(http://healthhackmelb.com). OK that doesn't sound simple, luckily
-enough a middleman gem does the hard work for us.
-
-+ One time setup! You need to make sure you have a file called
-  'secret' in the root of the project. This has the credentials for s3
-  deployment so it obviously does not go into github. I will send this
-  file to anyone who needs to do deployment.
-  
-+ Firstly make sure everything is built:
-
-```
-   middleman build
-```
-
-Then deploy:
-
-```
-   ./deploy.sh
-```
-
-This has a bunch of warnings/errors due to a bug in one of the
-components it uses ("Invalid Excon request keys: :scheme, :host"). But
-if you go to (http://healthhackmelb.com) your changes will be there!
-
+Do this!
 
 Editing pages
 ----------
@@ -159,4 +110,90 @@ Editing pages
 Pages with .markdown in the file extension are built in kramdown
 Check out (http://kramdown.rubyforge.org/syntax.html) for syntax
 
+Working with specific pages:
+----------
 
+As of June 2015 there are specific page types that need content:
+
+All paths are given relative to the 'source' folder
+
+Sponsors:
+----------
+
+The erb file containing sponsor-related markup is located at:
+
+
+```
+    partials/_sponsors.erb
+```
+
+Any related images should be placed in:
+
+
+```
+    images/sponsors
+```
+
+Past Challenges (on the main page):
+----------
+This is handled in:
+
+
+```
+    index.html.markdown.erb
+```
+
+Challenges:
+----------
+
+The erb file containing challenges related markup is located at:
+
+
+```
+    challenges.html.markdown.erb
+```
+
+There are currently no related images for this page
+
+Organisers:
+----------
+
+The erb file containing organisers related markup is located at:
+
+
+```
+    organisers.html.markdown.erb
+```
+
+Any related images should be placed in:
+
+
+```
+    images/organisers
+```
+
+Images should be named "firstname.lastname.ext" and organisers *should* be added to the page in alphabetical order.
+
+Locations:
+----------
+
+Each of the four locations has its own page located at:
+
+
+```
+    locations/city.erb
+```
+
+The images for each city are located at:
+
+
+```
+    images/locations/city.png
+```
+
+NOTE: If you are taking responsibility for updating a cities page then you need to modify the <p>Area Location/Date</p> field in:
+
+
+```
+    index.html.markdown.erb
+```
