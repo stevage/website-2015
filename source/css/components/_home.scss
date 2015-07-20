@@ -3,7 +3,15 @@
 
 // Top container which including registration sections
 .top-container {
-  background: url("../img/top-image.jpg") no-repeat top right;
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.4),
+      rgba(16, 101, 167, 1)
+    ),
+    url("../img/main-img2.jpg")
+    no-repeat right;
+    background-size: 1500px 1000px;
+    background-position:0 -200px;
   height: 525px;
   margin-top: -20px;
   padding: 20px 20px;
