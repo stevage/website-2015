@@ -1,0 +1,902 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/* line 7, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+body, h1, h2, h3, h4, h4, h6, p, span, li, blockquote {
+  font-family: 'Open Sans', sans-serif; }
+
+/* line 9, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+body {
+  background-color: #EAEBEC;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; }
+
+/* line 16, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+a:focus {
+  outline: none; }
+
+/* line 20, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.light-bg {
+  background-color: #FFFFFF; }
+
+/* line 24, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.navbar-nav {
+  margin-top: 15px; }
+  /* line 26, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .navbar-nav a {
+    color: #FFFFFF;
+    font-size: 1em; }
+  /* line 30, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .navbar-nav .btn {
+    width: 100%;
+    max-width: 150px; }
+
+/* line 36, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.navbar-default {
+  border: none;
+  background: #FFFFFF;
+  padding-top: 0px; }
+  /* line 40, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .navbar-default .btn {
+    margin-top: -9px; }
+
+/* line 45, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn {
+  color: #FFFFFF;
+  border-radius: 40px;
+  padding: 10px 5px;
+  min-width: 200px;
+  border: none;
+  font-size: 0.9em;
+  font-weight: bold; }
+
+/* line 55, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn:hover {
+  color: #FFFFFF; }
+
+/* line 59, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn-default {
+  background-color: #404141; }
+
+/* line 63, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn-default:hover {
+  background-color: #000000; }
+
+/* line 67, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn-primary {
+  background-color: #08B3A6; }
+
+/* line 71, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn-primary:hover {
+  background-color: #089388; }
+
+/* line 75, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn-link {
+  color: #08B3A6; }
+
+/* line 79, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.btn-link:hover {
+  color: #089388; }
+
+/* line 83, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+a {
+  color: #08B3A6; }
+
+/* line 87, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+a:hover {
+  color: #089388; }
+
+/* line 91, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+li .btn {
+  margin-top: -15px; }
+
+/* line 97, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+p {
+  font-size: 1.2em;
+  line-height: 1.6; }
+
+/* line 103, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.taller-line-height {
+  line-height: 1.7; }
+
+/* line 107, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+h1 {
+  font-size: 4em; }
+
+/* line 111, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.font-light {
+  font-weight: 100; }
+
+/* line 115, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.text-center {
+  text-align: center; }
+
+/* line 119, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.carousel-indicators {
+  bottom: -50px; }
+
+/* line 124, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.carousel-indicators li {
+  background-color: #BDBDBD;
+  width: 10px !important;
+  height: 10px !important; }
+
+/* line 131, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.carousel-indicators li.active {
+  background-color: #2375D2;
+  margin: 1px; }
+
+/* line 136, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.carousel-control {
+  width: 5%; }
+
+/* line 140, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.carousel-inner-left,
+.carousel-inner-right {
+  width: 50%;
+  display: inline-block; }
+
+/* line 147, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.carousel-inner-right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  vertical-align: middle;
+  transform: translateY(-50%);
+  padding: 0 5%; }
+
+/* line 157, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+  outline: 0; }
+  /* line 162, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .carousel-control.left .glyphicon,
+  .carousel-control.right .glyphicon {
+    width: 40px;
+    height: 40px;
+    background-color: #EFF0F1;
+    border-radius: 100%;
+    padding: 7px 0;
+    color: black;
+    font-weight: 100;
+    margin-top: -20px;
+    margin-left: -20px; }
+
+/* line 176, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+.panel {
+  background-color: transparent; }
+
+@media only screen and (max-width: 768px) {
+  /* line 181, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  h1 {
+    font-size: 3em; }
+
+  /* line 185, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  h3 {
+    font-size: 20px; }
+
+  /* line 188, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  h4 {
+    font-size: 16px; }
+
+  /* line 191, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  p {
+    font-size: 1em; }
+
+  /* line 195, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .carousel-inner-left,
+  .carousel-inner-right {
+    width: 100%;
+    display: block; }
+
+  /* line 201, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .carousel-inner-right {
+    position: relative;
+    transform: none;
+    left: 0;
+    padding: 10px;
+    margin-top: 40px;
+    text-align: center; }
+
+  /* line 211, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .container-past-challenges .carousel-control {
+    width: 50%; }
+
+  /* line 219, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .carousel-control.left .glyphicon,
+  .carousel-control.right .glyphicon {
+    margin-top: 5px; }
+  /* line 223, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .carousel-control.left .glyphicon-chevron-left,
+  .carousel-control.right .glyphicon-chevron-left {
+    margin-left: 25%; }
+  /* line 227, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .carousel-control.left .glyphicon-chevron-right,
+  .carousel-control.right .glyphicon-chevron-right {
+    left: 20px; }
+
+  /* line 232, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_base.scss */
+  .carousel-indicators {
+    display: none; } }
+/* line 5, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+#galleria {
+  height: 620px; }
+
+/* line 7, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+#hhhead {
+  font-variant: small-caps;
+  font-weight: 800; }
+
+/* line 9, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.img-small {
+  width: 250px; }
+
+/* line 10, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.callToAction {
+  font-size: 1.0em; }
+
+/* line 14, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.hipsterteal {
+  color: white !important;
+  background-color: #17AA9D !important;
+  border-color: #17A195 !important; }
+
+/* line 20, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.register {
+  margin-top: 5px; }
+
+/* line 24, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.sponsors {
+  line-height: 150px; }
+
+/* line 28, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.sponsor {
+  max-width: 250px;
+  padding: 5px;
+  vertical-align: middle; }
+
+/* line 34, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.title2013 {
+  margin-left: 13px;
+  padding-top: 20px;
+  font-size: 2.0em;
+  border-top: 1px solid #eee; }
+
+/* line 41, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.thumbtext {
+  font-size: 0.8em; }
+
+/* line 45, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.offset {
+  margin-top: 27px; }
+
+/* line 50, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.sideoffset {
+  margin-left: 30px; }
+
+/* line 55, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.col-md-6 h3.sideoffset {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 20px;
+  font-weight: lighter; }
+/* line 61, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.col-md-6 a {
+  vertical-align: baseline;
+  font-size: 18px;
+  font-weight: 600; }
+
+/* line 68, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.col-footer {
+  padding: 20px 0 30px 0; }
+
+/* line 72, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.less-padding-centred {
+  text-align: center;
+  padding-right: 0;
+  word-wrap: break-word; }
+
+/* line 78, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.row-sponsors, .row-social {
+  width: 100%; }
+  /* line 80, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  .row-sponsors .col-md-4, .row-sponsors .col-xs-6, .row-social .col-md-4, .row-social .col-xs-6 {
+    min-height: 120px; }
+  /* line 83, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  .row-sponsors .min-height, .row-social .min-height {
+    min-height: 380px; }
+
+/* line 87, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.row-social {
+  padding: 0 10px; }
+
+/* line 91, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.row-social:after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 80%;
+  border-right: 1px solid #ccc; }
+
+/* line 102, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.social-logo {
+  height: 20px;
+  width: 30px; }
+
+@media (min-width: 1200px) {
+  /* line 107, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  body .light-bg > .container {
+    max-width: none; } }
+@media only screen and (min-width: 922px) {
+  /* line 112, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  body .light-bg > .container {
+    max-width: none; } }
+@media only screen and (min-width: 768px) {
+  /* line 117, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  body .light-bg > .container {
+    max-width: none; } }
+@media only screen and (max-width: 1013px) {
+  /* line 123, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  .row-social {
+    border-right: 0; }
+
+  /* line 126, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  .row-social:before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    height: 1px;
+    width: 80%;
+    border-bottom: 1px dotted #ccc; }
+
+  /* line 135, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  body .light-bg > .container {
+    max-width: none; }
+    /* line 137, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+    body .light-bg > .container .nav-btn {
+      display: block;
+      margin-bottom: 5px; }
+    /* line 141, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+    body .light-bg > .container li > a {
+      padding-top: 2px; } }
+@media only screen and (max-width: 767px) {
+  /* line 148, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  body .light-bg > .container .btn {
+    min-width: 150px; }
+  /* line 151, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  body .light-bg > .container .btn-default {
+    width: 100%;
+    min-width: 125px; } }
+/* line 157, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.boldbrand {
+  font-weight: bold; }
+
+/* line 161, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.text-justify {
+  text-align: justify; }
+
+/* line 165, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.navbar-default .btn {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  margin-left: 0; }
+
+/* line 171, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+.nav-btn {
+  display: inline-block; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 175, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  .nav-btn {
+    display: inline; }
+
+  /* line 178, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  .navbar-right {
+    min-width: 830px; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1027px) {
+  /* line 183, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/main.css.scss */
+  body .light-bg > .container .navbar-right {
+    min-width: 500px; } }
+/* line 5, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.top-container {
+  background: linear-gradient(rgba(56, 149, 179, 0.4), #1065a7), url("../images/background-banners/main-img2.jpg") no-repeat right;
+  background-size: 1500px 1000px;
+  background-position: 0 -200px;
+  height: 525px;
+  margin-top: -20px;
+  padding: 20px 20px;
+  text-align: center;
+  color: #FFFFFF; }
+  /* line 20, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .top-container h1 {
+    font-weight: 100; }
+
+/* line 25, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.row {
+  padding-bottom: 20px 0 30px 0; }
+
+/* line 29, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.top-container-col {
+  margin-top: 20px;
+  padding: 2.2em;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #000000; }
+  /* line 35, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .top-container-col h2 {
+    font-weight: 100; }
+
+/* line 40, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.top-container-text {
+  padding: 2em; }
+
+/* line 45, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.row-involved {
+  margin-top: -160px;
+  padding: 0 10%; }
+
+/* line 51, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.event-description {
+  text-align: center;
+  width: 70%;
+  margin: 30px auto; }
+
+/* line 57, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.event-regions {
+  text-align: center;
+  color: white;
+  position: relative; }
+  /* line 63, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-regions .event-region {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    display: block; }
+  /* line 70, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-regions .event-region-shadow {
+    position: absolute;
+    background-color: #0A0A0A;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7; }
+  /* line 80, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-regions .event-region:hover {
+    font-style: normal;
+    text-decoration: none; }
+    /* line 84, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+    .event-regions .event-region:hover .event-region-shadow {
+      opacity: 0.9; }
+    /* line 88, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+    .event-regions .event-region:hover .event-region-text {
+      text-decoration: none; }
+  /* line 93, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-regions .event-region-shadow:hover {
+    opacity: 0.9; }
+  /* line 98, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-regions .event-region-image {
+    width: 100%;
+    height: auto; }
+  /* line 103, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-regions .event-region-text {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: -75px;
+    color: #fff; }
+
+/* line 115, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.container-past-challenges {
+  margin-top: 30px; }
+  /* line 118, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .container-past-challenges .carousel-winner {
+    margin-top: 30px;
+    background-color: #ffffff; }
+
+/* line 124, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.container-sponsors {
+  padding: 70px 10px 0 10px; }
+
+/* line 128, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.twitter-panel {
+  padding: 0 5%;
+  width: 100%;
+  text-align: center; }
+
+/* line 134, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+.footer-okfna {
+  width: 30px; }
+
+/* line 138, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+footer {
+  padding: 10px 10%;
+  line-height: 30px; }
+
+@media only screen and (max-width: 768px) {
+  /* line 145, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .top-container {
+    padding: 20px 25px; }
+
+  /* line 148, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .row-involved {
+    margin-top: -30%; }
+
+  /* line 152, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-description {
+    width: 90%; }
+
+  /* line 156, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
+  .event-regions .col-sm-3 {
+    margin: 10px 0;
+    padding: 10px; } }
+/* line 1, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-normal {
+  background: linear-gradient(rgba(56, 149, 179, 0.6), #1065a7), top left;
+  background-color: white;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 15, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-challenges {
+  background: linear-gradient(rgba(56, 149, 179, 0.6), rgba(16, 101, 167, 0.7)), url("../images/background-banners/challenge-img2.jpg") no-repeat center;
+  background-size: 1500px 1000px;
+  background-position: 0 -400px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 31, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-sponsors {
+  background: linear-gradient(rgba(56, 149, 179, 0.6), #1065a7), url("../images/background-banners/sponsor-img2.jpg") no-repeat center;
+  background-size: 1500px 1000px;
+  background-position: 0 -360px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 47, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-organisers {
+  background: linear-gradient(rgba(56, 149, 179, 0.6), rgba(16, 101, 167, 0.8)), url("../images/background-banners/organiser-img3.jpg") no-repeat center;
+  background-size: 1450px 900px;
+  background-position: 0 -300px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 63, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-sydney {
+  background: linear-gradient(rgba(56, 149, 179, 0.9), #1065a7), url("../images/locations/sydney.png") no-repeat left;
+  background-size: 1450px 500px;
+  background-position: 0 0;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 79, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-brisbane {
+  background: linear-gradient(rgba(56, 149, 179, 0.6), #1065a7), url("../images/locations/brisbane.png") no-repeat left;
+  background-size: 1500px 300px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 94, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-melbourne {
+  background: linear-gradient(rgba(56, 149, 179, 0.6), #1065a7), url("../images/locations/melbourne.png") no-repeat left;
+  background-size: 1500px 300px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 109, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.top-container-perth {
+  background: linear-gradient(rgba(56, 149, 179, 0.6), #1065a7), url("../images/locations/perth.png") no-repeat left;
+  background-size: 1500px 300px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white; }
+
+/* line 125, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.container-normal {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 550px; }
+
+/* line 130, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.thin-container-normal {
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  padding: 40px 0 80px 0;
+  color: black; }
+  /* line 139, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .thin-container-normal .col-md-4, .thin-container-normal .col-xs-6 {
+    padding-top: 20px; }
+
+/* line 144, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.location-side {
+  background-color: #EAEBEC;
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: lighter; }
+  /* line 149, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .location-side h3 {
+    font-weight: lighter; }
+
+/* line 153, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.text-side {
+  padding: 10px 20px;
+  text-align: left;
+  font-weight: lighter; }
+  /* line 157, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .text-side h3, .text-side h2 {
+    font-weight: lighter; }
+  /* line 160, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .text-side hr {
+    border-top: 1px dashed #ccc; }
+  /* line 164, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .text-side button {
+    float: right; }
+  /* line 167, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .text-side img {
+    border: .5px solid #ccc;
+    float: left;
+    height: 100px;
+    width: 150px;
+    margin-right: 20px; }
+  /* line 175, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .text-side .organiser-details p {
+    margin-bottom: 0; }
+
+/* line 182, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.challenge-title .organiser-details {
+  margin-top: 45px; }
+
+/* line 187, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.container-white-background {
+  background-color: white; }
+
+/* line 191, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+#map_canvas {
+  width: 100%;
+  height: 200px; }
+
+/* line 196, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.bottom-container {
+  background-color: #363435;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  padding: 50px 0 60px 0;
+  color: white; }
+  /* line 203, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .bottom-container h3 {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-top: 20px; }
+  /* line 208, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .bottom-container h4 {
+    font-weight: lighter;
+    margin-bottom: 20px; }
+
+/* line 214, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.quote-side {
+  background-color: #EAEBEC;
+  padding: 10px 20px 0 20px;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: lighter;
+  word-wrap: break-word; }
+  /* line 221, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .quote-side h3 {
+    font-weight: lighter; }
+
+/* line 225, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.quotes {
+  font-family: Georgia, serif;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-bottom: 2em;
+  margin-top: -1em;
+  padding: 0.35em 30px;
+  line-height: 1.45;
+  position: relative;
+  color: black; }
+
+/* line 236, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.quotes:before {
+  display: block;
+  padding-left: 10px;
+  content: "\201C";
+  font-size: 80px;
+  position: absolute;
+  left: -20px;
+  top: -25px; }
+
+/* line 245, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.quotes:after {
+  display: block;
+  content: "\201D";
+  font-size: 80px;
+  position: absolute;
+  right: 0px;
+  bottom: -70px; }
+
+/* line 253, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+#triangle-down {
+  width: 10px;
+  bottom: -30px;
+  margin: 0px auto;
+  position: relative;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid #EAEBEC; }
+
+/* line 262, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.circular-centered {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 350%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: -40px;
+  margin: 0px auto; }
+
+/* line 274, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.organiser-image {
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
+  border-radius: 50%;
+  float: left;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 15px;
+  margin-right: 20px; }
+
+/* line 287, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.organiser-details {
+  float: left;
+  margin-bottom: 20px; }
+
+/* line 293, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.right-info-box {
+  background-color: #EAEBEC;
+  padding: 20px 20px;
+  text-align: center;
+  font-weight: lighter;
+  border-bottom: 5px solid #c9c9c9;
+  margin-bottom: 20px; }
+  /* line 298, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .right-info-box h3 {
+    font-weight: lighter; }
+  /* line 303, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .right-info-box .btn {
+    min-width: 137px;
+    width: 100%;
+    max-width: 200px; }
+
+/* line 310, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.form-control {
+  max-width: 300px; }
+
+/* line 315, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.challenge-row .btn {
+  float: left;
+  margin: 10px 10px 10px 0; }
+/* line 319, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.challenge-row .grey-btn {
+  background-color: #718795;
+  color: #ffffff; }
+/* line 323, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.challenge-row .grey-btn:hover {
+  background-color: #3e5564; }
+/* line 324, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.challenge-row .white-btn {
+  background-color: #ffffff;
+  color: #718795;
+  border: 1px #718795 solid; }
+/* line 329, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.challenge-row .white-btn:hover {
+  color: #3e5564;
+  border: 1px #3e5564 solid;
+  background-color: #e1e8ec; }
+
+/* line 335, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.pagination {
+  margin: 0 0 10px 0; }
+  /* line 337, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .pagination li {
+    display: inline-block;
+    padding: 5px; }
+
+/* line 342, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+  background-color: #08b3a6;
+  border-color: #08b3a6;
+  color: #fff;
+  cursor: default;
+  z-index: 1; }
+
+/* line 349, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.pagination > li > a, .pagination > li > span {
+  background-color: #fff;
+  border: none;
+  float: none;
+  line-height: 1.42857;
+  margin: 0 auto;
+  padding: 6px 12px;
+  position: relative;
+  text-decoration: none;
+  border-radius: 20px; }
+
+/* line 361, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:last-child > a:hover, .pagination > li:last-child > span:hover, .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:first-child > a:hover, .pagination > li:first-child > span:hover {
+  border-radius: 20px; }
+
+/* line 365, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.pagination-container {
+  text-align: center; }
+
+/* line 369, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+.challenge-winner-label {
+  background-color: #2575d4;
+  padding: 5px 30px;
+  color: white;
+  float: right;
+  margin-top: -21px; }
+
+@media only screen and (max-width: 768px) {
+  /* line 379, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .form-control {
+    margin: 0 auto; }
+
+  /* line 382, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .thin-container-normal {
+    width: 90%; }
+
+  /* line 385, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_pages.scss */
+  .top-container-normal {
+    padding: 20px 25px; } }

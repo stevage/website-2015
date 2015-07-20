@@ -18,3 +18,4 @@ function initialize(lat, lng) {
   });
 
 }
+;
