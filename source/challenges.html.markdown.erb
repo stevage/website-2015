@@ -4,7 +4,7 @@ title: Challenges
 <script src="../js/list.js"></script>
 <script src="http://listjs.com/no-cdn/list.pagination.js"></script>
 <div class="container-white-background">
-  <div class="container-fluid top-container-normal">
+  <div class="top-container-challenges">
       <div class="row">
          <h1>Challenges</h1>
          <h3>View our medical research problems and submit your own</h3>
@@ -45,10 +45,7 @@ title: Challenges
               </div>
               <div class="challenge-row">
                 <div class="clearfix">
-                  <span class="challenge-winner-label clearfix">
-                    <span class="glyphicon glyphicon-star"></span> 2014 WINNER (2nd PLACE)
-                  </span>
-                  <h3 class="name">Maggie Zong</h3>
+                  <h3 class="name">Olivier Murtle</h3>
                   <p class="city"> Sydney | <a href="">Monash University</a></p>
                   <p class="description">Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open.</p>
                   <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
@@ -58,7 +55,10 @@ title: Challenges
               </div>
               <div class="challenge-row">
                 <div class="clearfix">
-                  <h3 class="name">Olivier Murtle</h3>
+                  <span class="challenge-winner-label clearfix">
+                    <span class="highlight glyphicon glyphicon-star"></span> 2014 WINNER (2nd PLACE)
+                  </span>
+                  <h3 class="name">Maggie Zong</h3>
                   <p class="city"> Sydney | <a href="">Monash University</a></p>
                   <p class="description">Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open.</p>
                   <button type="submit" class="btn-primary btn grey-btn">WORKING DEMO</button>
@@ -82,7 +82,7 @@ title: Challenges
 
         <script>
           var monkeyList = new List('challenge-list', {
-          valueNames: [ 'name', 'city', 'description' ],
+          valueNames: [ 'name', 'city', 'description', 'hightlight' ],
           page: 3,
           plugins: [ ListPagination({}) ]
         });

@@ -12,6 +12,54 @@
   padding-top: 20px;
   color: white;
 }
+.top-container-challenges {
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.6),
+      rgba(16, 101, 167, .7)
+    ),
+    url("../img/challenge-img2.jpg") no-repeat center;
+    background-size: 1500px 1000px;
+    background-position: 0 -400px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white;
+}
+.top-container-sponsors {
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.6),
+      rgba(16, 101, 167, 1)
+    ),
+    url("../img/sponsor-img2.jpg") no-repeat center;
+    background-size: 1500px 1000px;
+    background-position: 0 -360px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white;
+}
+.top-container-organisers {
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.6),
+      rgba(16, 101, 167, .8)
+    ),
+    url("../img/organiser-img3.jpg") no-repeat center;
+    background-size: 1450px 900px;
+    background-position: 0 -300px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white;
+}
 .top-container-sydney {
   background:
     linear-gradient(
