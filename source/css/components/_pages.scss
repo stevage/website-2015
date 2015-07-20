@@ -1,5 +1,71 @@
 .top-container-normal {
-  background: url("../img/top-image.jpg") no-repeat top right;
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.6),
+      rgba(16, 101, 167, 1)
+    ), top left;
+    background-color: white;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white;
+}
+.top-container-sydney {
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.9),
+      rgba(16, 101, 167, 1)
+    ),
+    url("../img/regions/sydney.png") no-repeat left;
+  background-size: 1450px 500px;
+  background-position: 0 0;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white;
+}
+.top-container-brisbane {
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.6),
+      rgba(16, 101, 167, 1)
+    ),
+    url("../img/regions/brisbane.png") no-repeat left;
+  background-size: 1500px 300px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white;
+}
+.top-container-melbourne {
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.6),
+      rgba(16, 101, 167, 1)
+    ),
+    url("../img/regions/melbourne.png") no-repeat left;
+  background-size: 1500px 300px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -20px;
+  padding-top: 20px;
+  color: white;
+}
+.top-container-perth {
+  background:
+    linear-gradient(
+      rgba(56, 149, 179, 0.6),
+      rgba(16, 101, 167, 1)
+    ),
+    url("../img/regions/perth.png") no-repeat left;
+  background-size: 1500px 300px;
   height: 200px;
   text-align: center;
   vertical-align: middle;
@@ -253,10 +319,10 @@
 }
 
 .challenge-winner-label {
-  background-color:#2575d4; 
-  padding:5px 30px; 
-  color:white; 
-  float:right; 
+  background-color:#2575d4;
+  padding:5px 30px;
+  color:white;
+  float:right;
   margin-top:-21px;
 }
 
