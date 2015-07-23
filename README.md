@@ -165,6 +165,20 @@ The erb file containing organisers related markup is located at:
     organisers.html.markdown.erb
 ```
 
+Organiser data should be added here:
+
+
+```
+    data/organisers.json
+```
+
+The organiser data template is here:
+
+
+```
+    partials/_organiserTemplate.erb
+```
+
 Any related images should be placed in:
 
 
