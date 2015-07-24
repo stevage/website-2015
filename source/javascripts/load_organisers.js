@@ -1,6 +1,5 @@
 $( document ).ready(function() {
 	$.get("data/organisers.json", function(data) {
-		console.log(data);
 		var template = $("#organiserList div.organiser");
 		$.each (data.organisers, function(index, organiser) {
 			var panel = template.clone();

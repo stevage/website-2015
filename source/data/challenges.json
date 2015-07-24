@@ -1,0 +1,52 @@
+{
+	"challenges" : [
+		{
+		"name" : "Challenge A",
+		"city" : "Melbourne",
+		"organisation" : "Monash University",
+		"organisationLink" : "#",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non augue risus. Mauris sed neque sed velit dapibus posuere in at metus. Cras nec tincidunt nisi. Sed quam felis, aliquet eleifend maximus quis, convallis id metus. Ut scelerisque neque auctor lectus ultrices, at suscipit risus aliquet.",
+		"workingDemoLink" : "#",
+		"detailsLink" : "/challenges_template.html",
+		"winner" : "2014 WINNER (1st PLACE)"
+		},
+		{
+		"name" : "Challenge B",
+		"city" : "Melbourne",
+		"organisation" : "RMIT University",
+		"organisationLink" : "#",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non augue risus. Mauris sed neque sed velit dapibus posuere in at metus. Cras nec tincidunt nisi. Sed quam felis, aliquet eleifend maximus quis, convallis id metus. Ut scelerisque neque auctor lectus ultrices, at suscipit risus aliquet.",
+		"workingDemoLink" : "#",
+		"detailsLink" : "#",
+		"winner" : "2014 WINNER (2nd PLACE)"
+		},
+		{
+		"name" : "Challenge C",
+		"city" : "Sydney",
+		"organisation" : "University of Sydney",
+		"organisationLink" : "#",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non augue risus. Mauris sed neque sed velit dapibus posuere in at metus. Cras nec tincidunt nisi. Sed quam felis, aliquet eleifend maximus quis, convallis id metus. Ut scelerisque neque auctor lectus ultrices, at suscipit risus aliquet.",
+		"workingDemoLink" : "#",
+		"detailsLink" : "#",
+		"winner" : "2014 WINNER (3rd PLACE)"
+		},
+		{
+		"name" : "Challenge D",
+		"city" : "Adelaide",
+		"organisation" : "University of Adelaide",
+		"organisationLink" : "#",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non augue risus. Mauris sed neque sed velit dapibus posuere in at metus. Cras nec tincidunt nisi. Sed quam felis, aliquet eleifend maximus quis, convallis id metus. Ut scelerisque neque auctor lectus ultrices, at suscipit risus aliquet.",
+		"workingDemoLink" : "#",
+		"detailsLink" : "#"
+		},
+		{
+		"name" : "Challenge E",
+		"city" : "Brisbane",
+		"description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam non augue risus. Mauris sed neque sed velit dapibus posuere in at metus. Cras nec tincidunt nisi. Sed quam felis, aliquet eleifend maximus quis, convallis id metus. Ut scelerisque neque auctor lectus ultrices, at suscipit risus aliquet.",
+		"organisation" : "University of Queensland",
+		"organisationLink" : "#",
+		"workingDemoLink" : "#",
+		"detailsLink" : "#"
+		}
+	]
+}
