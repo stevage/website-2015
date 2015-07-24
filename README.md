@@ -153,6 +153,20 @@ The erb file containing challenges related markup is located at:
     challenges.html.markdown.erb
 ```
 
+Challenges data should be added here:
+
+
+```
+    data/challenges.json
+```
+
+The challenges data template is here:
+
+
+```
+    partials/_challengesTemplate.erb
+```
+
 There are currently no related images for this page
 
 Organisers:
