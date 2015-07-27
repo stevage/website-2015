@@ -1,0 +1,49 @@
+<div class="top-container-sponsors">
+    <div class="row">
+       <h1>Sponsors</h1>
+       <h3>The companies that make a difference</h3>
+    </div>
+</div>
+<div class="clearfix thin-container-normal">
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'http://www.thoughtworks.com', :target => '_blank' do %><%= image_tag 'images/sponsors/thoughtworks.png', :class => 'sponsor' ,:alt => 'ThoughtWorks' %><% end%></div>
+    <div font->In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'http://www.garvan.org.au', :target => '_blank' do %><%= image_tag 'images/sponsors/Garvan.png', :class => 'sponsor' , :alt => 'Garvan Institute' %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'http://fishburners.org/', :target => '_blank' do %><%= image_tag 'images/sponsors/fishburners.png', :class => 'sponsor' , :alt => 'FishBurners' %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <!-- Unconfirmed Sponsors-->
+  <!--
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'http://www.v3.org.au/', :target => '_blank' do %><%= image_tag 'images/sponsors/v3.png', :class => 'sponsor' , :alt => 'V3 Alliance' %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'https://www.vlsci.org.au', :target => '_blank' do %><%= image_tag 'images/sponsors/vlsci.png', :class => 'sponsor' , :alt => 'VLSCI'  %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'http://changemakersfestival.org/event/healthhack-2/', :target => '_blank' do %><%= image_tag 'images/sponsors/change-makers-festival.png', :class => 'sponsor' , :alt => 'Part of the Change Makers Festival' %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'https://github.com/', :target => '_blank' do %><%= image_tag 'images/sponsors/github.png', :class => 'sponsor' , :alt => 'GitHub' %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'hhttp://www.monash.edu.au/', :target => '_blank' do %><%= image_tag 'images/sponsors/monash.png', :class => 'sponsor' , :alt => 'Monash University' %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  <div class="col-md-4 col-xs-6">
+    <div><% link_to 'https://www.nectar.org.au', :target => '_blank' do %><%= image_tag 'images/sponsors/nectar.png', :class => 'sponsor' , :alt => 'NeCTAR' %><% end%></div>
+    <div font->In a sense, reading the extensions from right to left, will tell you the parsings that the file will undergo, ending up as a file in the format of the leftmost extension. In the case of the example, converting an erb file to an html file when serving, and when building the file.</div>
+  </div>
+  -->
+</div>
+
+<%= partial "partials/sponsorCallout" %>
