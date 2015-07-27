@@ -2,11 +2,16 @@
     <head>
                 <title>Health Hack 2015</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link href="stylesheets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
-		<link href="images/favicon.gif?v=2" rel="icon" type="image/gif?v=2" />
+	    <link href="/stylesheets/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/images/favicon.gif?v=2" rel="icon" type="image/gif?v=2" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,700italic,400,700,300,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-		<link href="stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+		<script src="./javascripts/list.js"></script>
+		<script src="http://listjs.com/no-cdn/list.pagination.js"></script>
+		<script src="./javascripts/jquery-1.10.1.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="../javascripts/load_google_maps.js"></script>
 		<!--[if lt IE 9]>
 	      <script src="../../assets/js/html5shiv.js"></script>
 	      <script src="../../assets/js/respond.min.js"></script>
@@ -29,15 +34,15 @@
       <span class="icon-bar"></span>
     </button>
     <a href="/" class="navbar-brand boldbrand">
-        <img alt="HealthHack Logo" src="images/healthhack-logo/HH_Logo.svg" />
+        <img alt="HealthHack Logo" src="/images/healthhack-logo/HH_Logo.svg" />
     </a>
   </div>
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav navbar-right">
-        <li><a title="Challenges" href="challenges.html">Challenges</a></li>
-        <li><a title="Sponsors" href="sponsors.html">Sponsors</a></li>
-        <li><a title="Event Organisers" href="sorganisers.html">Event Organisers</a></li>
+        <li><a title="Challenges" href="/challenges.html">Challenges</a></li>
+        <li><a title="Sponsors" href="/sponsors.html">Sponsors</a></li>
+        <li><a title="Event Organisers" href="/organisers.html">Event Organisers</a></li>
         <li><a href="mailto:info@healthhack.com.au">Contact</a></li>
       <div class="nav-btn">
         <span><a href="mailto:info@healthhack.com.au"><button class="btn btn-primary">SUBMIT A CHALLENGE</button></a></span>
@@ -146,7 +151,7 @@ $(window).resize(function(){
     </div>
     <div class="row event-regions">
         <div class="col-sm-3">
-                <a href="locations/brisbane" class="event-region">
+                <a href="/locations/brisbane.html" class="event-region">
                   <img class="event-region-image" src="images/locations/brisbane.png" />
                   <span class="event-region-shadow"></span>
                   <span class="event-region-text">
@@ -157,7 +162,7 @@ $(window).resize(function(){
                 </a>
         </div>
         <div class="col-sm-3">
-            <a href="locations/melbourne" class="event-region">
+            <a href="/locations/melbourne.html" class="event-region">
               <img class="event-region-image" src="images/locations/melbourne.png" />
               <span class="event-region-shadow"></span>
               <span class="event-region-text">
@@ -168,7 +173,7 @@ $(window).resize(function(){
             </a>
         </div>
         <div class="col-sm-3">
-            <a href="locations/sydney" class="event-region">
+            <a href="/locations/sydney.html" class="event-region">
               <img class="event-region-image" src="images/locations/sydney.png" />
               <span class="event-region-shadow"></span>
               <span class="event-region-text">
@@ -179,7 +184,7 @@ $(window).resize(function(){
             </a>
         </div>
         <div class="col-sm-3">
-            <a href="locations/perth" class="event-region">
+            <a href="/locations/perth.html" class="event-region">
               <img class="event-region-image" src="images/locations/perth.png" />
               <span class="event-region-shadow"></span>
               <span class="event-region-text">
@@ -259,13 +264,16 @@ $(window).resize(function(){
                 <div class="clearfix min-height">
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="http://www.thoughtworks.com"><img class="sponsor" alt="ThoughtWorks" src="/images/sponsors/thoughtworks.png" /></a></div>
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="http://www.garvan.org.au"><img class="sponsor" alt="Garvan Institute" src="/images/sponsors/Garvan.png" /></a></div>
-                  <div class="col-md-4 col-xs-6"><a target="_blank" href="http://www.v3.org.au/"><img class="sponsor" alt="V3 Alliance" src="/images/sponsors/v3.png" /></a></div>
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="http://fishburners.org/"><img class="sponsor" alt="FishBurners" src="/images/sponsors/fishburners.png" /></a></div>
+                  <!--Unconfirmed Sponsors-->
+                  <!--
+                  <div class="col-md-4 col-xs-6"><a target="_blank" href="http://www.v3.org.au/"><img class="sponsor" alt="V3 Alliance" src="/images/sponsors/v3.png" /></a></div>
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="https://www.vlsci.org.au"><img class="sponsor" alt="VLSCI" src="/images/sponsors/vlsci.png" /></a></div>
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="http://changemakersfestival.org/event/healthhack-2/"><img class="sponsor" alt="Part of the Change Makers Festival" src="/images/sponsors/change-makers-festival.png" /></a></div>
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="https://github.com/"><img class="sponsor" alt="GitHub" src="/images/sponsors/github.png" /></a></div>
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="hhttp://www.monash.edu.au/"><img class="sponsor" alt="Monash University" src="/images/sponsors/monash.png" /></a></div>
                   <div class="col-md-4 col-xs-6"><a target="_blank" href="https://www.nectar.org.au"><img class="sponsor" alt="NeCTAR" src="/images/sponsors/nectar.png" /></a></div>
+                  -->
                 </div>
                 <div class="col-footer"><a href="/sponsors" target="_blank">ALL SPONSORS</a></div>
             </div>
@@ -275,7 +283,7 @@ $(window).resize(function(){
 
         <footer class="light-bg text-muted row">
     <div class="col-xs-8 text-left">
-        <div>HealthHack is an <a href="http://au.okfn.org/code-of-conduct/" target="_blank"> <img alt="Open Knowledge Foundation Australia" class="footer-okfna" src="images/sponsors/okfna.png" /></a>
+        <div>HealthHack is an <a href="http://au.okfn.org/code-of-conduct/" target="_blank"> <img alt="Open Knowledge Foundation Australia" class="footer-okfna" src="/images/sponsors/okfna.png" /></a>
             <a href="http://au.okfn.org/code-of-conduct/" target="_blank">Open Knowledge Foundation Australia event </a>
         </div>
     </div>
@@ -285,7 +293,7 @@ $(window).resize(function(){
 </footer>
 
         	<script src="javascripts/jquery-1.10.1.min.js"></script>
-	<script src="javascripts/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/javascripts/bootstrap.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 
       var _gaq = _gaq || [];
