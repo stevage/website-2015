@@ -6,7 +6,7 @@ $( document ).ready(function() {
 			if (challenge.winner) {
 				var winnerPanel = $("<span></span>");
 				winnerPanel.html(
-					"<span class=\"glyphicon glyphicon-star\"></span>" + " " + 
+					"<span class=\"glyphicon glyphicon-star\"></span>" + " " +
                     challenge.winner);
 				winnerPanel.addClass("challenge-winner-label");
 				winnerPanel.addClass("clearfix");
@@ -16,7 +16,7 @@ $( document ).ready(function() {
 			panel.find("p.city span").text(challenge.city);
 			panel.find("p.city a").text(challenge.organisation);
 			panel.find("p.city a").attr("href", challenge.organisationLink);
-			panel.find("p.description").text(challenge.description);
+			panel.find("p.summary").text(challenge.summary);
 			panel.find("a.workingDemoLink").attr("href", challenge.workingDemoLink);
 			panel.find("a.detailsLink").attr("href", challenge.detailsLink);
 			panel.appendTo("#challenge-list div.list");
@@ -29,5 +29,8 @@ $( document ).ready(function() {
 	      page: 3,
 	      plugins: [ ListPagination({}) ]
 	    });
+	});
+	$('.pagination-container').click(function() {
+  		$(document).scrollTop(300);
 	});
 });

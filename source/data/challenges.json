@@ -1,21 +1,27 @@
 {
 	"challenges" : [
 		{
+		"id" : "test",
 		"name" : "An online pedigree drawing tool that can be linked to patient data",
 		"city" : "Sydney",
 		"organisation" : "Garvan Institute",
+		"organisationImg" : "images/sponsors/Garvan.png",
 		"organisationLink" : "http://www.garvan.org.au/",
-		"description" : "My proposition for the HealthHack is to build a prototype of a tool which will allow to draw pedigree charts and export the drawn information in a standard file format. The tool should be easy to use and also easy to integrate into existing frameworks. There are a number of existing pedigree drawing open source projects but none of them offer the functionality described above. Maybe we can hack some of those into doing what we need.",
+		"presenters": "Sir Blah and Blah",
+		"summary" : "My proposition for the HealthHack is to build a prototype of a tool which will allow to draw pedigree charts and export the drawn information in a standard file format. The tool should be easy to use and also easy to integrate into existing frameworks. There are a number of existing pedigree drawing open source projects but none of them offer the functionality described above. Maybe we can hack some of those into doing what we need.",
+		"description" : "Tracking clinical features through families and linking them to genetic variants is a frequent task in clinical genetics and genetics research. This is frequently done through pedigree drawings (family trees). Unfortunately, due to the lack of easy to use pedigree drawing programs, this is usually done manually on a piece of paper. This makes pedigree drawings difficult to handle and also precludes any computational analysis. For example, you cannot click on an individual in a paper-drawn pedigree to open the associated database record. </br>My proposition for the HealthHack is to build a prototype of a tool which will allow to draw pedigree charts and export the drawn information in a standard file format. The tool should be easy to use and also easy to integrate into existing frameworks. There are a number of existing pedigree drawing open source projects but none of them offer the functionality described above. Maybe we can hack some of those into doing what we need. </br>Update: The Phenotips Project has a nice pedigree drawing tool, but its not freestanding. The Phenotips Team has been planning to make it freestanding, there is already an open issue on their Github page. I have contacted the Phenotips Team and they would be pleased if we could help them with this task. They will participate remotely and answer questions.",
 		"workingDemoLink" : "http://www.youtube.com/watch?v=SOY9mx1irnY&feature=youtu.be",
-		"detailsLink" : "/challenges_template.html",
-		"winner" : "2014 WINNER (1st PLACE)"
+		"detailsLink" : "/challenge1.html",
+		"winner" : "2014 WINNER (1st PLACE)",
+		"team" : "Awesome",
+		"teamLink" : "#"
 		},
 		{
 		"name" : "Automated way of comparing sequencing results",
 		"city" : "Sydney",
 		"organisation" : "Garvan Institute",
 		"organisationLink" : "http://www.garvan.org.au/",
-		"description" : "Our lab needs an automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format.",
+		"summary" : "Our lab needs an automated way of comparing sequencing results to a template, identifying the point mutations and amino acid substitutions, and presenting the analyses in an appropriate table format.",
 		"workingDemoLink" : "https://www.youtube.com/watch?v=z2uUeWUg61U",
 		"detailsLink" : "#",
 		"winner" : "2014 WINNER (2nd PLACE)"
@@ -25,7 +31,7 @@
 		"city" : "Sydney",
 		"organisation" : "Garvan Institute",
 		"organisationLink" : "http://www.garvan.org.au/",
-		"description" : "We’d like to be able to integrate, visualise and interpret the information that the sequencing pipelines generate in real-time, to substantially improve data quality & prevent poor data being used to guide clinical decision making.",
+		"summary" : "We’d like to be able to integrate, visualise and interpret the information that the sequencing pipelines generate in real-time, to substantially improve data quality & prevent poor data being used to guide clinical decision making.",
 		"workingDemoLink" : "https://www.youtube.com/watch?v=8ZGAXwVAOiU",
 		"detailsLink" : "#",
 		"winner" : "2014 WINNER (‘Spirit of HealthHack’ prize)"
@@ -43,7 +49,7 @@
 		{
 		"name" : "A flexible smartphone app platform for research questions that link mood to behavioural decision-making",
 		"city" : "Melbourne",
-		"description" : "We are a group of Monash researchers in psychology, psychiatry, and statistical time-series analysis that would like to develop a smartphone app that logs location, time, emotional state (through questionnaires), and some measures of alertness (e.g., through a simple reaction time task embedded in the app).",
+		"summary" : "We are a group of Monash researchers in psychology, psychiatry, and statistical time-series analysis that would like to develop a smartphone app that logs location, time, emotional state (through questionnaires), and some measures of alertness (e.g., through a simple reaction time task embedded in the app).",
 		"organisation" : "Monash University",
 		"organisationLink" : "http://www.monash.edu/",
 		"workingDemoLink" : "#",
@@ -53,7 +59,7 @@
 		{
 		"name" : "Prioritising gene variants as they churn off the genomics pipeline",
 		"city" : "Melbourne",
-		"description" : "Toward this goal, we are keen to develop a novel, user-friendly module that automates a series of sequence- and structure-based protein analyses, and systematic review of the literature.",
+		"summary" : "Toward this goal, we are keen to develop a novel, user-friendly module that automates a series of sequence- and structure-based protein analyses, and systematic review of the literature.",
 		"organisation" : "---",
 		"organisationLink" : "#",
 		"workingDemoLink" : "#",
