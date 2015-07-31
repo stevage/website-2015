@@ -17,7 +17,15 @@ $( document ).ready(function() {
 			panel.find("p.city a").text(challenge.organisation);
 			panel.find("p.city a").attr("href", challenge.organisationLink);
 			panel.find("p.summary").text(challenge.summary);
-			panel.find("a.workingDemoLink").attr("href", challenge.workingDemoLink);
+			if (challenge.workingDemoLink) {
+				var demoPanel = $("<a></a>");
+				demoPanel.html(
+					"<button type=\"submit\" class=\"btn-primary btn grey-btn\">WORKING DEMO</button>");
+				demoPanel.addClass("workingDemoLink");
+				demoPanel.attr("href", challenge.workingDemoLink);
+				demoPanel.prependTo(panel.find("div.challenge-links"));
+			}
+			//panel.find("a.workingDemoLink").attr("href", challenge.workingDemoLink);
 			panel.find("a.detailsLink").attr("href", challenge.detailsLink);
 			panel.appendTo("#challenge-list div.list");
 		});

@@ -41,7 +41,7 @@
 		"city" : "Melbourne",
 		"organisation" : "NHMRC",
 		"organisationLink" : "https://www.nhmrc.gov.au/",
-		"description" : "If we could quickly generate some user-friendly, easy-to-read graphics that clearly explain where the funding goes each year, it would allow individuals, institutes and other interested parties to readily view the funding landscape.",
+		"summary" : "If we could quickly generate some user-friendly, easy-to-read graphics that clearly explain where the funding goes each year, it would allow individuals, institutes and other interested parties to readily view the funding landscape.",
 		"workingDemoLink" : "https://viz-my-grant.shinyapps.io/view/",
 		"detailsLink" : "#",
 		"winner" : "2014 WINNER (1st PLACE)"
@@ -52,7 +52,6 @@
 		"summary" : "We are a group of Monash researchers in psychology, psychiatry, and statistical time-series analysis that would like to develop a smartphone app that logs location, time, emotional state (through questionnaires), and some measures of alertness (e.g., through a simple reaction time task embedded in the app).",
 		"organisation" : "Monash University",
 		"organisationLink" : "http://www.monash.edu/",
-		"workingDemoLink" : "#",
 		"detailsLink" : "#",
 		"winner" : "2014 WINNER (2nd PLACE)"
 		},
@@ -62,7 +61,6 @@
 		"summary" : "Toward this goal, we are keen to develop a novel, user-friendly module that automates a series of sequence- and structure-based protein analyses, and systematic review of the literature.",
 		"organisation" : "---",
 		"organisationLink" : "#",
-		"workingDemoLink" : "#",
 		"detailsLink" : "#",
 		"winner" : "2014 WINNER (‘Spirit of HealthHack’ prize)"
 		}
