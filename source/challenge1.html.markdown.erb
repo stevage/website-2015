@@ -1,21 +1,19 @@
 ---
-title: Organisers
+title: Challenges
 ---
-<div class="container-white-background">
-  <div class="top-container-organisers">
-      <div class="row">
-         <h1>Event Organisers</h1>
-         <h3>The people who make it happen</h3>
-      </div>
-  </div>
+<div id="challenge-page-container">
+  <div id="challenge-id" hidden="true">1</div>
+<div class="container-white-background challenge-page">
+
+  <%= partial "partials/challengeBannerTemplate" %>
+
   <div class="thin-container-normal">
     <div class="row">
-      <div class="col-md-9 text-side" id="organiserList">
 
-        <%= partial "partials/organiserTemplate" %>
-        <script src="./javascripts/load_organisers.js"></script>
+      <%= partial "partials/challengeContentTemplate" %>
 
-      </div>
+      <script src="./javascripts/load_challenge_page.js"></script>
+
       <div class="col-md-3">
         <div class="right-info-box">
           <h3>Got a medical research problem that you want to solve?</h3>
@@ -30,4 +28,5 @@ title: Organisers
       </div>
     </div>
   </div>
+</div>
 </div>
