@@ -1,15 +1,19 @@
         <title><%= current_page.data.title || "HTML5 Boilerplate" %></title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <%= stylesheet_link_tag 'bootstrap.min' %>
+
 		<%= favicon_tag 'favicon.gif?v=2' %>
+
+	    <%= stylesheet_link_tag 'bootstrap.min' %>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,700italic,400,700,300,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 		<%= stylesheet_link_tag 'main' %>
-		<%= javascript_include_tag 'list.js' %> 
+
 		<script src="http://listjs.com/no-cdn/list.pagination.js"></script>
-		<%= javascript_include_tag 'jquery-1.10.1.min.js' %>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<%= javascript_include_tag 'bootstrap.min' %>
 		<%= javascript_include_tag 'load_google_maps.js' %>
+		<%= javascript_include_tag 'list.js' %> 
 		<!--[if lt IE 9]>
 	      <script src="../../assets/js/html5shiv.js"></script>
 	      <script src="../../assets/js/respond.min.js"></script>

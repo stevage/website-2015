@@ -2,43 +2,39 @@
 title: Challenges
 ---
 <div class="container-white-background">
-  <div class="top-container-challenges">
-      <div class="row">
-         <h1>Challenges</h1>
-         <h3>View our medical research problems and submit your own</h3>
-      </div>
-  </div>
-  <div class="thin-container-normal">
-    <div class="row">
-      <div class="col-md-9 text-side">
-        <div id="challenge-list">
-          Search Challenges: <input class="search" placeholder="Search" />
-          <hr/>
-            <div class="list" >
-
-              <%= partial "partials/challengesTemplate" %>
-
-            </div>
-          <div class="pagination-container"><span class="pagination"></span></div>
+    <div class="top-container-challenges">
+        <div class="row">
+           <h1>Challenges</h1>
+           <h3>View our medical research problems and submit your own</h3>
         </div>
-      </div>
-
-      <script src="./javascripts/load_challenges.js"></script>
-
-      <div class="col-md-3">
-        <div class="right-info-box">
-          <h3>Got a medical research problem that you want to solve?</h3>
-          <p>Drop us a message with the details and we'll get back to you</p>
-          <div class="clearfix"><button type="submit" class="btn-primary btn">SUBMIT A CHALLENGE</button></div>
-        </div>
-        <div class="quote-side">
-          <div class="circular-centered" style="background-image: url('../images/misc/top-image.jpg')"></div>
-          <div class="quotes">This is a sample quote that is not very inspiring but still somewhat helpful</div>
-          <p>John Smith <br>
-              ThoughtWorks Sydney</p>
-          <div id="triangle-down"></div>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="thin-container-normal">
+        <div class="row">
+            <div class="col-md-9 text-side">
+            <div id="challenge-list">
+                Search Challenges: <input class="search" placeholder="Search" />
+                <hr/>
+                <div class="list" >
+                        <%= partial "partials/challengesTemplate" %>
+                    </div>
+                    <div class="pagination-container">
+                        <span class="pagination"></span>
+                    </div>
+                </div>
+            </div>
+       
+            <script src="./javascripts/load_challenges.js"></script>
+
+            <div class="col-md-3">
+                <%= partial(:submitProblemCallout, :locals => { :className => "right-info-box" }) %>
+                <div class="quote-side">
+                    <div class="circular-centered" style="background-image: url('../images/misc/top-image.jpg')"></div>
+                    <div class="quotes">This is a sample quote that is not very inspiring but still somewhat helpful</div>
+                    <p>John Smith <br>
+                        ThoughtWorks Sydney</p>
+                    <div id="triangle-down"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

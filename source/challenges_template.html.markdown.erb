@@ -24,16 +24,8 @@ title: Challenges
         <a  href="#"><b>VIEW TEAM INFORMATION</b></a>
       </div>
       <div class="col-md-3">
-        <div class="right-info-box">
-          <h3>Got a medical research problem that you want to solve?</h3>
-          <p>Drop us a message with the details and we'll get back to you</p>
-          <div class="clearfix"><button type="submit" class="btn-primary btn">SUBMIT A CHALLENGE</button></div>
-        </div>
-        <div class="right-info-box">
-          <h3>Get involved, join the Health Hack in your city</h3>
-          <p>Whether you are a developer, UX designer, data analyst or researcher, we want you.</p>
-          <div class="clearfix"><button type="submit" class="btn-default btn">GET INVOLVED</button></div>
-        </div>
+          <%= partial(:submitProblemCallout, :locals => { :className => "right-info-box" }) %>
+          <%= partial(:getInvolvedCallout, :locals => { :className => "right-info-box" }) %>
       </div>
     </div>
   </div>

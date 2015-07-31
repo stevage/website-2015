@@ -1,83 +1,64 @@
 <div class="container-fluid top-container">
     <div class="row">
-       <h1>A data hack for medical <br>research problems</h1>
-       <h3>Sydney, Melbourne, Brisbane & Perth</h3>
-       <h3>23 - 25 October 2015</h3>
+        <h1>A data hack for medical <br>research problems</h1>
+        <h3>Sydney, Melbourne, Brisbane & Perth</h3>
+        <h3>23 - 25 October 2015</h3>
     </div>
     <div class="row">
         <h4 class="taller-line-height">A FREE weekend dedicated to solving problems that medical researchers face,
-            <br>whether you have a challenge yourself or want to donate your skills to the hack.</h4>
+        <br>whether you have a challenge yourself or want to donate your skills to the hack.</h4>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row row-involved">
         <div class="col-md-6">
-            <div class="top-container-col">
-                <h2>Got a medical research problem that you want to solve?</h2>
-                <div class="top-container-text">
-                    <p>Drop us a message with the details <br>and we’ll get back to you.</p>
-                </div>
-                <a href="mailto:info@healthhack.com.au"><button class="btn btn-primary"> SUBMIT A CHALLENGE</button></a>
-            </div>
-
+            <%= partial(:submitProblemCallout, :locals => { :className => "top-container-col" }) %>
         </div>
         <div class="col-md-6">
-            <div class="top-container-col">
-                <h2>Have a skill you’d like to donate to the hack?</h2>
-                <div class="top-container-text">
-                    <p>Whether you’re a developer, UX designer, data analyst or researcher, we want you.</p>
-                </div>
-                <a href="http://healthhack2015.eventbrite.com.au/"><button class="btn btn-default"> GET INVOLVED</button></a>
-            </div>
+            <%= partial(:getInvolvedCallout, :locals => { :className => "top-container-col" }) %>
         </div>
     </div>
 </div>
 
-<div class="clearfix"> 
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
 <script>
 
-equalheight = function(container){
+equalheight = function(container) {
 
-var currentTallest = 0,
-     currentRowStart = 0,
-     rowDivs = new Array(),
-     $el,
-     topPosition = 0;
- $(container).each(function() {
+    var currentTallest = 0,
+        currentRowStart = 0,
+        rowDivs = new Array(),
+        $el,
+        topPosition = 0;
+    
+    $(container).each(function() {
+        $el = $(this);
+        $($el).height('auto')
+        topPostion = $el.position().top;
 
-   $el = $(this);
-   $($el).height('auto')
-   topPostion = $el.position().top;
-
-   if (currentRowStart != topPostion) {
-     for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-       rowDivs[currentDiv].height(currentTallest);
-     }
-     rowDivs.length = 0; // empty the array
-     currentRowStart = topPostion;
-     currentTallest = $el.height();
-     rowDivs.push($el);
-   } else {
-     rowDivs.push($el);
-     currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
-  }
-   for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
-     rowDivs[currentDiv].height(currentTallest);
-   }
- });
+        if (currentRowStart != topPostion) {
+            for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                rowDivs[currentDiv].height(currentTallest);
+            }
+            rowDivs.length = 0; // empty the array
+            currentRowStart = topPostion;
+            currentTallest = $el.height();
+            rowDivs.push($el);
+        } else {
+            rowDivs.push($el);
+            currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+        }
+        for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+            rowDivs[currentDiv].height(currentTallest);
+        }
+    });
 }
 
 $(window).load(function() {
-  equalheight('.row .top-container-col');
+    equalheight('.row .top-container-col');
 });
 
-
 $(window).resize(function(){
-  equalheight('.row .top-container-col');
+    equalheight('.row .top-container-col');
 });
 
 </script>
