@@ -1,12 +1,20 @@
 {
 	"organisers" : [
 		{
-		"name" : "Kelvin Nicholson",
-		"role" : "Project Manager",
+		"name" : "Leila Alem",
+		"role" : "Principal Consultant",
 		"city" : "Sydney",
-		"email" : "knichols@thoughtworks.com",
-		"photo" : "images/organisers/kelvin.nicholson.jpg",
-		"bio" : "Having worked in four countries and is a holder of multiple passports, Kelvin has had a unique opportunity to observe how different societies view open data. Having worked in government he was a relentless internal promoter of the virtues of open knowledge, and continues this promotion as a member of OKFN. His initial interest in open knowledge originated from seeing the benefits to society of releasing open data, especially within the transport domain. It is his belief that open data benefits both the organisation releasing the data, as well as the community it serves. He has participated in (or assisted with organising) all of Australia's GovHack events (2009, 2012, 2013, and 2014). In his spare time, Kelvin enjoys programming and working on his side technology-related projects, including building web-based services, and collecting environmental data using Arduinos. You can find him at the local Python or Quantified Self meet-ups, attending local talks on improving city liveability, or out bushwalking with his wife. Kelvin has a BSc in Information Systems, as well as a Masters in Transport Management."
+		"email" : "leila.alem@thoughtworks.com",
+		"photo" : "images/organisers/leila.alem.png",
+		"bio" : "Dr Leila Alem is a principal consultant at Thoughtworks and principal scientist in Human Computer Interaction. She has 10+ years of experience in designing, deploying and evaluating innovative ICT based solutions and services for the health sector.  Leila has worked in the telehealth space connecting Australian hospitals to deliver new health services over the broadband. Under her leadership her team won a number of innovation awards in recognition of the impact of their work. Leila has lead a national telemonitoring trial of patients with chronic diseases. </br></br>She has evaluated the impact of telemonitoring of patients  on the number of admission to hospital and length of stay but also evaluating the intervention on patient outcomes such as quality of live, managing own condition etc. Her drive is to explore new frontiers of HCI research  including wearable technology, augmented reality, natural User interaction  to augment field health workers in deprived areas to deliver better health outcomes to people who most need it. </br></br>She is currently develeppling a tele health proejct in rural Morocco drawing on her previous work which can be seen at www.csiro.au/remote"
+		},
+		{
+		"name" : "Mike Imelfort",
+		"role" : "Consultant",
+		"city" : "Brisbane",
+		"email" : "mike@mikeimelfort.com",
+		"photo" : "images/organisers/mike.imelfort.png",
+		"bio" : "Dr Mike Imelfort is a recovering scientist who likes working with wonderful people who love doing wonderful things."
 		},
 		{
 		"name" : "Maia Sauren",
@@ -14,7 +22,23 @@
 		"city" : "Melbourne",
 		"email" : "msauren@thoughtworks.com",
 		"photo" : "images/organisers/maia.sauren.jpg",
-		"bio" : "Dr Maia Sauren is a biomedical engineering researcher turned software consultant. Maia moonlights for the Open Knowledge Foundation, a not for profit that aims to help organisations make data and information available and open."
+		"bio" : "Dr Maia Sauren is a biomedical researcher turned software consultant. Maia is co-chair of Open Knowledge Australia, a not for profit organisation dedicated to helping individuals and organisations share data, information and resources. She has been heavily involved in forming the Open Knowledge community in Melbourne and beyond. </br></br>In 2013, Maia started HealthHack, a weekend hackathon bridging the gap between scientists and software technologists, that has since grown into a national annual event. Maia is on the steering committee for Women in Science Australia, and has been an executive committee member of Australian Science Communicators."
+		},
+		{
+		"name" : "Mitchell Stanton-Cook",
+		"role" : "Operational Bioinformatician",
+		"city" : "Brisbane",
+		"email" : "m.stantoncook@gmail.com",
+		"photo" : "images/organisers/mitchell.stanton.cook.png",
+		"bio" : "Mitchell Stanton-Cook is an Operational Bioinformatician at the University of Queensland. At work he develops solutions for the efficient storage, processing and analysis of microbial genomics data sets. He spends his spare time participating at tech meetups and hackathons."
+		},
+		{
+		"name" : "Michael Walker",
+		"role" : "Modeller/Data Scientist",
+		"city" : "Melbourne",
+		"email" : "walkerm1@student.unimelb.edu.au",
+		"photo" : "images/organisers/michael.walker.png",
+		"bio" : "Dr Michael Walker is a theoretical physicist turned modeller/data scientist. He has been a postdoctoral researcher and lecturer in Korea, followed by a postdoctoral position in Japan, before modelling flower growth with a biological modelling group in the south of France. He participated in the last two healthhack events and is keen to get more involved with the open source and hacking community."
 		}
 	]
 }
