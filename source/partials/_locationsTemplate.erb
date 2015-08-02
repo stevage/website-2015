@@ -57,7 +57,7 @@
         var site_data = data["<%= "#{siteName}" %>"];
         google.maps.event.addDomListener(window, 'load', function () {
             initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
-        });        
+        });
         $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
         $("#loc-contact").html(site_data["contact"].join("<br>"));
         $("#loc-city-main").html(site_data["where_readable"][1]);
