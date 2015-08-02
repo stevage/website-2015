@@ -4,7 +4,7 @@
                 <title>Perth</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link href="../images/favicon.gif?v=2" rel="icon" type="image/gif?v=2" />
+		<link href="../favicon.ico" rel="icon" type="image/ico" />
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,700italic,400,700,300,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -19,12 +19,12 @@
 
 		<script src="../javascripts/load_google_maps.js" type="text/javascript"></script>
 		<script src="../javascripts/list.js" type="text/javascript"></script> 
+		<script src="../javascripts/beyond_css.js" type="text/javascript"></script> 
 		
 		<!--[if lt IE 9]>
 	      <script src="../../assets/js/html5shiv.js"></script>
 	      <script src="../../assets/js/respond.min.js"></script>
 	    <![endif]-->
-
 	</head>
     <body>
         <!--[if lt IE 7]>
@@ -142,11 +142,10 @@
         var site_data = data["Perth"];
         google.maps.event.addDomListener(window, 'load', function () {
             initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
-        });        
+        });
         $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
         $("#loc-contact").html(site_data["contact"].join("<br>"));
         $("#loc-city-main").html(site_data["where_readable"][1]);
-        console.log(site_data);
     }); 
 </script>
 
