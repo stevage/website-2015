@@ -79,4 +79,13 @@ layout: home
             $("#event-regions").append($loc_col_div);
         });
     });
+
+    $(window).load(function() {
+        equalheight('.row .top-container-col');
+    });
+
+    $(window).resize(function(){
+        equalheight('.row .top-container-col');
+    });
+
 </script>
