@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+    <!-- Layout for the langing page -->
     <head>
         <%= partial "head" %>
     </head>
@@ -9,13 +10,12 @@
         <div class="light-bg">
             <div class="container light-bg">
             <div class="header"></div>
-                <%= partial "partials/nav" %>
+                <%= partial "nav" %>
             </div>
         </div>
-        <%= partial "partials/top" %>
+        <%= partial "top" %>
         <%= yield %>
-        <%= partial "partials/sponsors" %>
-        <%= partial "partials/footer" %>
-        <%= partial "partials/end" %>
+        <%= partial "twitterSponsorsSection" %>
+        <%= partial "footer" %>
     </body>
 </html>

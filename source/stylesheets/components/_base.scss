@@ -1,4 +1,83 @@
+//-----------------------------------------------------------------------------
+//  Custom base styles
+//
 
+.container-white-background {
+    background-color: white;
+}
+
+// 85% width container used on most pages
+.thin-container-normal {
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 0 80px 0;
+    color: black;
+    .col-md-4, .col-xs-6 {
+        padding-top: 20px;
+    }
+}
+
+// Things in boxes on RHS
+.location-side {
+    background-color: #EAEBEC;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: lighter;
+    h3 {
+        font-weight: lighter;
+    }
+}
+
+// Used for RHS callouts
+.right-info-box {
+    background-color: #EAEBEC;
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: lighter;
+    h3 {
+        font-weight: lighter;
+    }
+    border-bottom: 5px solid #c9c9c9;
+    margin-bottom: 20px;
+    .btn {
+        min-width: 137px;
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+// Text next to side boxes
+.text-side {
+    padding: 10px 20px;
+    text-align: left;
+    font-weight: lighter;
+    h3, h2 {
+        font-weight: lighter;
+    }
+    hr {
+        border-top: 1px dashed #ccc;
+    }
+    button {
+        float: right;
+    }
+    img {
+        border: .5px solid #ccc;
+        float:left;
+        height: 100px;
+        width: 150px;
+        margin-right: 20px;
+    }
+    .organiser-details {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
 
 /* ==========================================================================
    Author's custom styles
@@ -17,7 +96,12 @@ a:focus {
 }
 
 .light-bg {
-  background-color: #FFFFFF;
+    min-width: 100%;
+    background-color: #FFFFFF;
+}
+
+.navbar-brand {
+    height: initial;
 }
 
 .navbar-nav {
