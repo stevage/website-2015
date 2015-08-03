@@ -41,7 +41,7 @@
                         <p>23 - 25 October 2015</p>
                         <h3>Where</h3>
                         <p id='loc-where-long'></p>
-                        <div id="map_canvas"></div>
+                        <div id="map-canvas"></div>
                         <h3>Contact</h3>
                         <p id='loc-contact'></p>
                     </div>
@@ -53,13 +53,18 @@
     </div>
 </div>
 <script>
-    $.get("../data/locations.json", function(data) {
-        var site_data = data["<%= "#{siteName}" %>"];
-        google.maps.event.addDomListener(window, 'load', function () {
+    location_specific = function() {
+        $.get("../data/locations.json", function(data) {
+            var site_data = data["<%= "#{siteName}" %>"];
             initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
+            $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
+            $("#loc-contact").html(site_data["contact"].join("<br>"));
+            $("#loc-city-main").html(site_data["where_readable"][1]);
         });
-        $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
-        $("#loc-contact").html(site_data["contact"].join("<br>"));
-        $("#loc-city-main").html(site_data["where_readable"][1]);
-    }); 
+    };
+
+    $(document).ready(function() {
+        location_specific();
+    });
+
 </script>

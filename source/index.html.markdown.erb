@@ -15,7 +15,7 @@ layout: home
 </div>
 
 <div class="container-fluid container-past-challenges">
-    <h2 class="text-center">Past Challenges</h2>
+    <h2 class="text-center">Previous Challenge Highlights</h2>
     <div id="winners-carousel" class="carousel slide carousel-winner"  data-ride="carousel" data-interval="false">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -62,7 +62,7 @@ layout: home
 </div>
 <script>
     // build the mini location squares
-    $.get("../data/locations.json", function(data) {
+    $.get("./data/locations.json", function(data) {
         $.each (Object.keys(data), function(index, city) {
             var $loc_col_div = $("<div>", { class: "col-sm-3" });
             var $loc_href = $("<a>", { href: data[city]["page"], class: "event-region" });

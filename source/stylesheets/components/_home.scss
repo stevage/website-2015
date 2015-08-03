@@ -55,9 +55,10 @@
 
 // Event Information section
 .event-description {
-    text-align: center;
-    width: 70%;
+    text-align: justify;
+    width: 100%;
     margin: 30px auto;
+    font-size: larger;
 }
 
 .event-regions {
@@ -131,7 +132,7 @@
 //  Lower page containers
 //
 
-.container-sponsors {
+.container-social-sponsors {
     padding: 70px 10px 0 10px;
 }
 

@@ -1,16 +1,13 @@
     <div class="col-md-4 col-xs-12 sponsor-block-cn">
-      <div class="sponsor-block-inner">
-        <div class="sponsor-img-div"><a id="<%= "#{sponsorName}" %>-href" target="_blank" href=""><img id="<%= "#{sponsorName}" %>-img" alt="" class="sponsor-img" src="" /></a></div>
-        <div id="<%= "#{sponsorName}" %>-desc" font-=""></div>
-      </div>
+        <div class="sponsor-block-inner">
+            <div class="sponsor-img-div">
+                <a id="<%= "#{sponsorName}" %>-href" target="_blank" href="">
+                    <img id="<%= "#{sponsorName}" %>-img" alt="" class="sponsor-img" src="">
+                </a>
+            </div>
+            <div id="<%= "#{sponsorName}" %>-desc" font-=""></div>
+        </div>
     </div>
     <script>
-    $.get("../data/sponsors.json", function(data) {
-        var s_name = "<%= "#{sponsorName}" %>";
-        var sponsor_data = data[s_name];
-        $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-        $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-        $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-        $("#"+s_name+"-desc").html(sponsor_data["text"]);
-    }); 
+        sponsor_names.push("<%= "#{sponsorName}" %>");
     </script>

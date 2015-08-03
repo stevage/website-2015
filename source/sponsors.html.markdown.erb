@@ -1,6 +1,12 @@
 ---
 title: Health Hack - Sponsors
 ---
+<script>
+    // reset on each load
+    window.sponsor_names = [];
+</script>
+
+
 <div class="container-white-background">
 <div class="top-container-base top-container-sponsors">
     <div class="row">
@@ -15,13 +21,12 @@ title: Health Hack - Sponsors
     <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "rivercitylabs" }) %>
 </div>
 <script>
-    $(window).load(function() {
-        equalheight('.sponsor-block-cn');
-        centrewithin('.sponsor-block-cn');
-    });
-    $(window).resize(function() {
-        equalheight('.sponsor-block-cn');
-        centrewithin('.sponsor-block-cn');
+    $(document).ready(function() {
+        load_sponsors(true, sponsor_names);
+
+        $(window).resize(function() {
+            load_sponsors(false, sponsor_names);
+        });
     });
 </script>
 <%= partial "sponsorCallout" %>
