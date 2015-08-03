@@ -12,7 +12,7 @@
 		
 		<link href="stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
 
-		<script src="http://listjs.com/no-cdn/list.pagination.js"></script>
+		<!--script src="http://listjs.com/no-cdn/list.pagination.js"></script-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -63,7 +63,11 @@
 
             </div>
         </div>
-        <div class="container-white-background">
+        <script>
+    window.sponsor_names = [];
+</script>
+
+<div class="container-white-background">
 <div class="top-container-base top-container-sponsors">
     <div class="row">
         <h1>Sponsors</h1>
@@ -72,127 +76,87 @@
 </div>
 <div class="clearfix thin-container-normal">
         <div class="col-md-4 col-xs-12 sponsor-block-cn">
-      <div class="sponsor-block-inner">
-        <div class="sponsor-img-div"><a id="thoughtworks-href" target="_blank" href=""><img id="thoughtworks-img" alt="" class="sponsor-img" src="" /></a></div>
-        <div id="thoughtworks-desc" font-=""></div>
-      </div>
+        <div class="sponsor-block-inner">
+            <div class="sponsor-img-div">
+                <a id="thoughtworks-href" target="_blank" href="">
+                    <img id="thoughtworks-img" alt="" class="sponsor-img" src="" />
+                </a>
+            </div>
+            <div id="thoughtworks-desc" font-=""></div>
+        </div>
     </div>
     <script>
-    
-    load_sponsors = function() {
-        $.get("./data/sponsors.json", function(data) {
-            var s_name = "thoughtworks";
-            var sponsor_data = data[s_name];
-            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-            $("#"+s_name+"-desc").html(sponsor_data["text"]);
-        });
-    };
-
-    $(window).load(function() {
-        load_sponsors();
-    });
-
-    $(window).resize(function(){
-        load_sponsors();
-    });
-
+        sponsor_names.push("thoughtworks");
     </script>
         <div class="col-md-4 col-xs-12 sponsor-block-cn">
-      <div class="sponsor-block-inner">
-        <div class="sponsor-img-div"><a id="garvan-href" target="_blank" href=""><img id="garvan-img" alt="" class="sponsor-img" src="" /></a></div>
-        <div id="garvan-desc" font-=""></div>
-      </div>
+        <div class="sponsor-block-inner">
+            <div class="sponsor-img-div">
+                <a id="garvan-href" target="_blank" href="">
+                    <img id="garvan-img" alt="" class="sponsor-img" src="" />
+                </a>
+            </div>
+            <div id="garvan-desc" font-=""></div>
+        </div>
     </div>
     <script>
-    
-    load_sponsors = function() {
-        $.get("./data/sponsors.json", function(data) {
-            var s_name = "garvan";
-            var sponsor_data = data[s_name];
-            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-            $("#"+s_name+"-desc").html(sponsor_data["text"]);
-        });
-    };
-
-    $(window).load(function() {
-        load_sponsors();
-    });
-
-    $(window).resize(function(){
-        load_sponsors();
-    });
-
+        sponsor_names.push("garvan");
     </script>
         <div class="col-md-4 col-xs-12 sponsor-block-cn">
-      <div class="sponsor-block-inner">
-        <div class="sponsor-img-div"><a id="fishburners-href" target="_blank" href=""><img id="fishburners-img" alt="" class="sponsor-img" src="" /></a></div>
-        <div id="fishburners-desc" font-=""></div>
-      </div>
+        <div class="sponsor-block-inner">
+            <div class="sponsor-img-div">
+                <a id="fishburners-href" target="_blank" href="">
+                    <img id="fishburners-img" alt="" class="sponsor-img" src="" />
+                </a>
+            </div>
+            <div id="fishburners-desc" font-=""></div>
+        </div>
     </div>
     <script>
-    
-    load_sponsors = function() {
-        $.get("./data/sponsors.json", function(data) {
-            var s_name = "fishburners";
-            var sponsor_data = data[s_name];
-            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-            $("#"+s_name+"-desc").html(sponsor_data["text"]);
-        });
-    };
-
-    $(window).load(function() {
-        load_sponsors();
-    });
-
-    $(window).resize(function(){
-        load_sponsors();
-    });
-
+        sponsor_names.push("fishburners");
     </script>
         <div class="col-md-4 col-xs-12 sponsor-block-cn">
-      <div class="sponsor-block-inner">
-        <div class="sponsor-img-div"><a id="rivercitylabs-href" target="_blank" href=""><img id="rivercitylabs-img" alt="" class="sponsor-img" src="" /></a></div>
-        <div id="rivercitylabs-desc" font-=""></div>
-      </div>
+        <div class="sponsor-block-inner">
+            <div class="sponsor-img-div">
+                <a id="rivercitylabs-href" target="_blank" href="">
+                    <img id="rivercitylabs-img" alt="" class="sponsor-img" src="" />
+                </a>
+            </div>
+            <div id="rivercitylabs-desc" font-=""></div>
+        </div>
     </div>
     <script>
-    
-    load_sponsors = function() {
-        $.get("./data/sponsors.json", function(data) {
-            var s_name = "rivercitylabs";
-            var sponsor_data = data[s_name];
-            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-            $("#"+s_name+"-desc").html(sponsor_data["text"]);
-        });
-    };
-
-    $(window).load(function() {
-        load_sponsors();
-    });
-
-    $(window).resize(function(){
-        load_sponsors();
-    });
-
+        sponsor_names.push("rivercitylabs");
     </script>
 </div>
 <script>
-    $(window).load(function() {
-        equalheight('.sponsor-block-cn');
-        centrewithin('.sponsor-block-cn');
+    function load_sponsors(load_data) {
+        if  (load_data) {
+            $.get("./data/sponsors.json", function(data) {
+                $.each(sponsor_names, function(index, s_name) {
+                    var sponsor_data = data[s_name];
+                    $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+                    $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+                    $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
+                    $("#"+s_name+"-desc").html(sponsor_data["text"]);
+                });
+                equalheight('.sponsor-block-cn');
+                centrewithin('.sponsor-block-cn');
+            });
+
+        } else {
+            equalheight('.sponsor-block-cn');
+            centrewithin('.sponsor-block-cn');
+        }
+    }
+
+    $(document).ready(function() {
+        load_sponsors(true);
+
+        $(window).resize(function() {
+            load_sponsors(false);
+        });
     });
-    $(window).resize(function() {
-        equalheight('.sponsor-block-cn');
-        centrewithin('.sponsor-block-cn');
-    });
+
 </script>
 <div class="bottom-container">
     <h3 class="sideoffset">Want to sponsor the Health Hack?

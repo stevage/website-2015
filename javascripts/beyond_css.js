@@ -30,14 +30,10 @@ equalheight = function(container) {
 };
 
 centrewithin = function(container) {
-    // center a div within another div using margins
+    // vertically center the first div within another div using margins
     $(container).each(function() {
         var $outer = $(this);
         var $inner = $outer.children().first();
-
-        console.log($outer.html());
-        console.log($inner.html());
-        console.log("poss");
         var $mrg = ($outer.height() - $inner.height())/2;
         $($inner.children()[1]).css('margin-top',$mrg+'px');
     });
