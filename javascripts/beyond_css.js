@@ -38,3 +38,23 @@ centrewithin = function(container) {
         $($inner.children()[1]).css('margin-top',$mrg+'px');
     });
 };
+
+load_sponsors = function(load_data, names) {
+    if  (load_data) {
+        $.get("./data/sponsors.json", function(data) {
+            $.each(names, function(index, s_name) {
+                var sponsor_data = data[s_name];
+                $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+                $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+                $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
+                $("#"+s_name+"-desc").html(sponsor_data["text"]);
+            });
+            equalheight('.sponsor-block-cn');
+            centrewithin('.sponsor-block-cn');
+        });
+
+    } else {
+        equalheight('.sponsor-block-cn');
+        centrewithin('.sponsor-block-cn');
+    }
+};

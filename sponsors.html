@@ -64,6 +64,7 @@
             </div>
         </div>
         <script>
+    // reset on each load
     window.sponsor_names = [];
 </script>
 
@@ -129,34 +130,13 @@
     </script>
 </div>
 <script>
-    function load_sponsors(load_data) {
-        if  (load_data) {
-            $.get("./data/sponsors.json", function(data) {
-                $.each(sponsor_names, function(index, s_name) {
-                    var sponsor_data = data[s_name];
-                    $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-                    $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-                    $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
-                    $("#"+s_name+"-desc").html(sponsor_data["text"]);
-                });
-                equalheight('.sponsor-block-cn');
-                centrewithin('.sponsor-block-cn');
-            });
-
-        } else {
-            equalheight('.sponsor-block-cn');
-            centrewithin('.sponsor-block-cn');
-        }
-    }
-
     $(document).ready(function() {
-        load_sponsors(true);
+        load_sponsors(true, sponsor_names);
 
         $(window).resize(function() {
-            load_sponsors(false);
+            load_sponsors(false, sponsor_names);
         });
     });
-
 </script>
 <div class="bottom-container">
     <h3 class="sideoffset">Want to sponsor the Health Hack?
