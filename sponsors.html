@@ -78,14 +78,26 @@
       </div>
     </div>
     <script>
-    $.get("./data/sponsors.json", function(data) {
-        var s_name = "thoughtworks";
-        var sponsor_data = data[s_name];
-        $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-        $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-        $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-        $("#"+s_name+"-desc").html(sponsor_data["text"]);
-    }); 
+    
+    load_sponsors = function() {
+        $.get("./data/sponsors.json", function(data) {
+            var s_name = "thoughtworks";
+            var sponsor_data = data[s_name];
+            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
+            $("#"+s_name+"-desc").html(sponsor_data["text"]);
+        });
+    };
+
+    $(window).load(function() {
+        load_sponsors();
+    });
+
+    $(window).resize(function(){
+        load_sponsors();
+    });
+
     </script>
         <div class="col-md-4 col-xs-12 sponsor-block-cn">
       <div class="sponsor-block-inner">
@@ -94,14 +106,26 @@
       </div>
     </div>
     <script>
-    $.get("./data/sponsors.json", function(data) {
-        var s_name = "garvan";
-        var sponsor_data = data[s_name];
-        $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-        $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-        $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-        $("#"+s_name+"-desc").html(sponsor_data["text"]);
-    }); 
+    
+    load_sponsors = function() {
+        $.get("./data/sponsors.json", function(data) {
+            var s_name = "garvan";
+            var sponsor_data = data[s_name];
+            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
+            $("#"+s_name+"-desc").html(sponsor_data["text"]);
+        });
+    };
+
+    $(window).load(function() {
+        load_sponsors();
+    });
+
+    $(window).resize(function(){
+        load_sponsors();
+    });
+
     </script>
         <div class="col-md-4 col-xs-12 sponsor-block-cn">
       <div class="sponsor-block-inner">
@@ -110,14 +134,26 @@
       </div>
     </div>
     <script>
-    $.get("./data/sponsors.json", function(data) {
-        var s_name = "fishburners";
-        var sponsor_data = data[s_name];
-        $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-        $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-        $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-        $("#"+s_name+"-desc").html(sponsor_data["text"]);
-    }); 
+    
+    load_sponsors = function() {
+        $.get("./data/sponsors.json", function(data) {
+            var s_name = "fishburners";
+            var sponsor_data = data[s_name];
+            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
+            $("#"+s_name+"-desc").html(sponsor_data["text"]);
+        });
+    };
+
+    $(window).load(function() {
+        load_sponsors();
+    });
+
+    $(window).resize(function(){
+        load_sponsors();
+    });
+
     </script>
         <div class="col-md-4 col-xs-12 sponsor-block-cn">
       <div class="sponsor-block-inner">
@@ -126,14 +162,26 @@
       </div>
     </div>
     <script>
-    $.get("./data/sponsors.json", function(data) {
-        var s_name = "rivercitylabs";
-        var sponsor_data = data[s_name];
-        $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-        $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-        $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
-        $("#"+s_name+"-desc").html(sponsor_data["text"]);
-    }); 
+    
+    load_sponsors = function() {
+        $.get("./data/sponsors.json", function(data) {
+            var s_name = "rivercitylabs";
+            var sponsor_data = data[s_name];
+            $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+            $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+            $("#"+s_name+"-img").attr("src", "images/sponsors/" + sponsor_data["img"]);
+            $("#"+s_name+"-desc").html(sponsor_data["text"]);
+        });
+    };
+
+    $(window).load(function() {
+        load_sponsors();
+    });
+
+    $(window).resize(function(){
+        load_sponsors();
+    });
+
     </script>
 </div>
 <script>
