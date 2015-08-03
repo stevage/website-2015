@@ -164,7 +164,7 @@
 </div>
 <script>
     // build the mini location squares
-    $.get("data/locations.json", function(data) {
+    $.get("./data/locations.json", function(data) {
         $.each (Object.keys(data), function(index, city) {
             var $loc_col_div = $("<div>", { class: "col-sm-3" });
             var $loc_href = $("<a>", { href: data[city]["page"], class: "event-region" });
