@@ -486,7 +486,7 @@ h1 {
     min-width: 500px; } }
 /* line 5, /home/mimelfor/working/currentProjects/hh/healthhack-website/source/stylesheets/components/_home.scss */
 .top-container {
-  background: url("../images/background-banners/HH_HomeImage_2x.jpg") no-repeat;
+  background: url("../images/background-banners/HH_HomeImage_1x.jpg") no-repeat;
   background-size: cover;
   height: 525px;
   margin-top: -20px;
