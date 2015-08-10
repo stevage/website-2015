@@ -247,19 +247,6 @@
         "summary" : "Epilepsy is a disorder of brain functions that takes the form of recurring seizures. 3-4% of the Australian population will be diagnosed with epilepsy. There are a range of seizure types that people can experience, a variety of seizure triggers, a wide range of antiepileptic drugs and therapeutic doses, and over the course of a person’s epilepsy story the impact of epilepsy on a their life will vary. Patient history information is usually stored in narrative text making longitudinal analysis difficult. The tool that we would like to developed will be used by clinicians to visualise patient data, and find correlations between seizure frequency, medication, severity of impact on life, and any potential surgery."
         },
         {
-        "name" : "Prioritising gene variants as they churn off the genomics pipeline",
-        "city" : "Melbourne",
-        "year": 2014,
-        "presenters": "Dr Marguerite Evans-Galea and Dr Charles Galea",
-        "summary" : "In order to help us identity which genes are most likely to contribute to the disease, we would like to develop a tool to better potential pathogenic gene and help clinicians to predict disease outcome and trajectory.",
-          "description": [
-            "The ‘omics’ era is upon us and genome sequencing is increasingly being integrated into clinical practice and used to develop personalised medicines. In searching for new genes responsible for a given disease, large cohorts of individuals will have their DNA sequenced and evaluated by qualified geneticists and bioinformaticians, to determine which genes are most likely to contribute to the disease state.",
-            "This can be particularly challenging, however, when exploring multigenic complex diseases such as autism or schizophrenia. After a series of analyses and filtering processes, sometimes >200 gene variants will be identified as possible candidates. Researchers must then decide the best candidate genes to move into their basic and translational research programs. Laboratory studies and disease models are costly in both time and funding, so it is essential to maximise our ability to prioritise candidate genes from the genomics pipeline.",
-            "Toward this goal, we are keen to develop a novel, user-friendly module that automates a series of sequence- and structure-based protein analyses, and systematic review of the literature. This will complement existing filters to better prioritise potential pathogenic gene variants. It will also enhance the ability of clinicians to predict disease outcome and trajectory.",
-            "Once this module is optimised and demonstrated to work well, it could be incorporated into almost any hospital/institute’s ‘omics’ pipeline."
-          ]
-      },
-        {
         "name" : "Superbug Analytics",
         "city" : "Melbourne",
         "year": 2014,
