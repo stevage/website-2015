@@ -1,52 +1,60 @@
 {
 	"organisers" : [
 		{
-		"name" : "Leila Alem",
-		"role" : "Principal Consultant",
-		"city" : "Sydney",
-		"email" : "leila.alem@thoughtworks.com",
-		"photo" : "images/organisers/leila.alem.png",
-		"bio" : "Dr Leila Alem is a principal consultant at Thoughtworks and principal scientist in Human Computer Interaction. She has 10+ years of experience in designing, deploying and evaluating innovative ICT based solutions and services for the health sector.  Leila has worked in the telehealth space connecting Australian hospitals to deliver new health services over the broadband. Under her leadership her team won a number of innovation awards in recognition of the impact of their work. Leila has lead a national telemonitoring trial of patients with chronic diseases. </br></br>She has evaluated the impact of telemonitoring of patients  on the number of admission to hospital and length of stay but also evaluating the intervention on patient outcomes such as quality of live, managing own condition etc. Her drive is to explore new frontiers of HCI research  including wearable technology, augmented reality, natural User interaction  to augment field health workers in deprived areas to deliver better health outcomes to people who most need it. </br></br>She is currently develeppling a tele health proejct in rural Morocco drawing on her previous work which can be seen at www.csiro.au/remote"
+			"name" : "Leila Alem",
+			"role" : "Principal Consultant",
+			"city" : "Sydney",
+			"email" : "leila.alem@thoughtworks.com",
+			"photo" : "images/organisers/leila.alem.png",
+			"bio" : "Dr Leila Alem is a principal consultant at Thoughtworks and principal scientist in Human Computer Interaction. She has 10+ years of experience in designing, deploying and evaluating innovative ICT based solutions and services for the health sector.  Leila has worked in the telehealth space connecting Australian hospitals to deliver new health services over the broadband. Under her leadership her team won a number of innovation awards in recognition of the impact of their work. Leila has lead a national telemonitoring trial of patients with chronic diseases. </br></br>She has evaluated the impact of telemonitoring of patients  on the number of admission to hospital and length of stay but also evaluating the intervention on patient outcomes such as quality of live, managing own condition etc. Her drive is to explore new frontiers of HCI research  including wearable technology, augmented reality, natural User interaction  to augment field health workers in deprived areas to deliver better health outcomes to people who most need it. </br></br>She is currently develeppling a tele health proejct in rural Morocco drawing on her previous work which can be seen at www.csiro.au/remote"
 		},
 		{
-		"name" : "Mike Imelfort",
-		"role" : "Consultant",
-		"city" : "Brisbane",
-		"email" : "mike@mikeimelfort.com",
-		"photo" : "images/organisers/mike.imelfort.png",
-		"bio" : "Dr Mike Imelfort is a recovering scientist who likes working with wonderful people who love doing wonderful things."
+			"name" : "Mike Imelfort",
+			"role" : "Consultant",
+			"city" : "Brisbane",
+			"email" : "mike@mikeimelfort.com",
+			"photo" : "images/organisers/mike.imelfort.png",
+			"bio" : "Dr Mike Imelfort is a recovering scientist who likes working with wonderful people who love doing wonderful things."
 		},
 		{
-		"name" : "Maggie Mu",
-		"role" : "Senior Consultant",
-		"city" : "Sydney",
-		"email" : "mmu@thoughtworks.com",
-		"photo" : "images/organisers/maggie.mu.jpg",
-		"bio" : "Maggie Mu is a senior consultant at Thoughtworks. She has worked in the medical industry as a Software Engineer and has helped deliver several patient flow system and decision support systems for hospitals and clinics. Maggie loves solving complex medical problems and developing software to help others."
+			"name" : "Maggie Mu",
+			"role" : "Senior Consultant",
+			"city" : "Sydney",
+			"email" : "mmu@thoughtworks.com",
+			"photo" : "images/organisers/maggie.mu.jpg",
+			"bio" : "Maggie Mu is a senior consultant at Thoughtworks. She has worked in the medical industry as a Software Engineer and has helped deliver several patient flow system and decision support systems for hospitals and clinics. Maggie loves solving complex medical problems and developing software to help others."
 		},
 		{
-		"name" : "Maia Sauren",
-		"role" : "Consultant",
-		"city" : "Melbourne",
-		"email" : "msauren@thoughtworks.com",
-		"photo" : "images/organisers/maia.sauren.jpg",
-		"bio" : "Dr Maia Sauren is a biomedical researcher turned software consultant. Maia is co-chair of Open Knowledge Australia, a not for profit organisation dedicated to helping individuals and organisations share data, information and resources. She has been heavily involved in forming the Open Knowledge community in Melbourne and beyond. </br></br>In 2013, Maia started HealthHack, a weekend hackathon bridging the gap between scientists and software technologists, that has since grown into a national annual event. Maia is on the steering committee for Women in Science Australia, and has been an executive committee member of Australian Science Communicators."
+			"name" : "Maia Sauren",
+			"role" : "Consultant",
+			"city" : "Melbourne",
+			"email" : "msauren@thoughtworks.com",
+			"photo" : "images/organisers/maia.sauren.jpg",
+			"bio" : "Dr Maia Sauren is a biomedical researcher turned software consultant. Maia is co-chair of Open Knowledge Australia, a not for profit organisation dedicated to helping individuals and organisations share data, information and resources. She has been heavily involved in forming the Open Knowledge community in Melbourne and beyond. </br></br>In 2013, Maia started HealthHack, a weekend hackathon bridging the gap between scientists and software technologists, that has since grown into a national annual event. Maia is on the steering committee for Women in Science Australia, and has been an executive committee member of Australian Science Communicators."
 		},
 		{
-		"name" : "Mitchell Stanton-Cook",
-		"role" : "Operational Bioinformatician",
-		"city" : "Brisbane",
-		"email" : "m.stantoncook@gmail.com",
-		"photo" : "images/organisers/mitchell.stanton.cook.png",
-		"bio" : "Mitchell Stanton-Cook is an Operational Bioinformatician at the University of Queensland. At work he develops solutions for the efficient storage, processing and analysis of microbial genomics data sets. He spends his spare time participating at tech meetups and hackathons."
+			"name" : "Mitchell Stanton-Cook",
+			"role" : "Operational Bioinformatician",
+			"city" : "Brisbane",
+			"email" : "m.stantoncook@gmail.com",
+			"photo" : "images/organisers/mitchell.stanton.cook.png",
+			"bio" : "Mitchell Stanton-Cook is an Operational Bioinformatician at the University of Queensland. At work he develops solutions for the efficient storage, processing and analysis of microbial genomics data sets. He spends his spare time participating at tech meetups and hackathons."
 		},
 		{
-		"name" : "Michael Walker",
-		"role" : "Modeller/Data Scientist",
-		"city" : "Melbourne",
-		"email" : "walkerm1@student.unimelb.edu.au",
-		"photo" : "images/organisers/michael.walker.png",
-		"bio" : "Dr Michael Walker is a theoretical physicist turned modeller/data scientist. He has been a postdoctoral researcher and lecturer in Korea, followed by a postdoctoral position in Japan, before modelling flower growth with a biological modelling group in the south of France. He participated in the last two healthhack events and is keen to get more involved with the open source and hacking community."
+			"name": "Fiona Tweedie",
+			"role" : "Co-chair of Open Knowledge Australia",
+			"city" : "Melbourne",
+			"email" : "fiona.c.tweedie@gmail.com",
+			"photo" : "images/organisers/fiona.tweedie.png",
+			"bio" : "Dr Fiona Tweedie is co-chair of Open Knowledge Australia and believes strongly in the power of community to share skills and create positive change. To that end, she has previously been involved in running GovHack, HealthHack and THATCamp. She leads the Research Bazaar training program at the University of Melbourne."
+		},
+		{
+			"name" : "Michael Walker",
+			"role" : "Modeller/Data Scientist",
+			"city" : "Melbourne",
+			"email" : "walkerm1@student.unimelb.edu.au",
+			"photo" : "images/organisers/michael.walker.png",
+			"bio" : "Dr Michael Walker is a theoretical physicist turned modeller/data scientist. He has been a postdoctoral researcher and lecturer in Korea, followed by a postdoctoral position in Japan, before modelling flower growth with a biological modelling group in the south of France. He participated in the last two healthhack events and is keen to get more involved with the open source and hacking community."
 		}
 	]
 }
