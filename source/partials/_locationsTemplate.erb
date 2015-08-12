@@ -54,7 +54,7 @@
 </div>
 <script>
     location_specific = function() {
-        $.get("../data/locations.json", function(data) {
+        $.get("./data/locations.json", function(data) {
             var site_data = data["<%= "#{siteName}" %>"];
             initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
             $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
