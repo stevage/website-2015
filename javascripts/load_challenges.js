@@ -9,11 +9,11 @@ $( document ).ready(function() {
 			if (challenge.winner) {
 				var winner_panel = $("<span>", { class: "clearfix, challenge-winner-label",
 					                             html: "<span class=\"glyphicon glyphicon-star\"></span>" + " " + challenge.winner });
-                panel.find("#"+custom_row_id).prepend(winner_panel);
+                panel.prepend(winner_panel);
 			}
 
 			panel.find("h2.name").text(challenge.name);
-			panel.find("p.city span").text(challenge.city);
+			panel.find("p.city span").text(challenge.city + " ("+ challenge.year + ")");
 
 			if (challenge.organisationImg) {
 				panel.find("p.city a").text(challenge.organisation);
@@ -41,10 +41,12 @@ $( document ).ready(function() {
 			panel.find("div.organiser-details a").attr("href", challenge.organisationLink);
 
 			var desc_text = "";
-			$.each(challenge.description, function(index, desc_line) {
+		    if(challenge.description) {
+			  $.each(challenge.description, function (index, desc_line) {
 				desc_text += desc_line + "<br><br>";
-			});
-			panel.find("div.challenge-data p.description").html(desc_text);
+			  });
+			  panel.find("div.challenge-data p.description").html(desc_text);
+			}
 			
 			//	panel.find("div.challenge-data a.team").attr("href", challenge.teamLink);
 			if (challenge.team) {
@@ -60,25 +62,35 @@ $( document ).ready(function() {
 				panel.find("div.challenge-links").append(demo_panel);
 			}
 
-			// show / hide details buttons
-			var details_panel = $("<div>", { class: "detailsLink"});
-			var show_more_button = $("<button>", { class: "btn-primary btn white-btn", id: "show-more-"+index, html: "DETAILS" });
-			var show_less_button = $("<button>", { class: "hide btn-primary btn white-btn", id: "show-less-"+index, html: "HIDE DETAILS" });
-			details_panel.append(show_more_button);
-			details_panel.append(show_less_button);
-			panel.find("div.challenge-links").append(details_panel);
+		   if(challenge.description) {
+			 // show / hide details buttons
+			 var details_panel = $("<div>", {class: "detailsLink"});
+			 var show_more_button = $("<button>", {
+			   class: "btn-primary btn white-btn",
+			   id: "show-more-" + index,
+			   html: "DETAILS"
+			 });
+			 var show_less_button = $("<button>", {
+			   class: "hide btn-primary btn white-btn",
+			   id: "show-less-" + index,
+			   html: "HIDE DETAILS"
+			 });
+			 details_panel.append(show_more_button);
+			 details_panel.append(show_less_button);
+			 panel.find("div.challenge-links").append(details_panel);
 
-		    show_more_button.click(function () {
-		        $('#show-more-'+index).addClass("hide");
-		        $('#show-less-'+index).removeClass("hide");
-		        $('#'+custom_id).fadeIn("slow");
-		    });
+			 show_more_button.click(function () {
+			   $('#show-more-' + index).addClass("hide");
+			   $('#show-less-' + index).removeClass("hide");
+			   $('#' + custom_id).fadeIn("slow");
+			 });
 
-		    show_less_button.click(function () {
-		        $('#show-less-'+index).addClass("hide");
-		        $('#show-more-'+index).removeClass("hide");    
-		        $('#'+custom_id).fadeOut("slow");
-		    });
+			 show_less_button.click(function () {
+			   $('#show-less-' + index).addClass("hide");
+			   $('#show-more-' + index).removeClass("hide");
+			   $('#' + custom_id).fadeOut("slow");
+			 });
+		   }
 
 			$("#challenge-list div.list").append(panel);
 		});
@@ -88,7 +100,7 @@ $( document ).ready(function() {
 	}).always(function() {
 	      var monkeyList = new List('challenge-list', {
 	      valueNames: [ 'name', 'city', 'description', 'hightlight' ],
-	      page: 3,
+	      page: 7,
 	      plugins: [ ListPagination({}) ]
 	    });
 	});
