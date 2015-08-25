@@ -16,7 +16,7 @@
 	"Perth" : {
 		"where_readable" : ["ThoughtWorks Perth", "20/44 St. Georges Tce", "Perth WA 6000"],
 		"where_coords" : [-31.955214, 115.859343],
-		"contact" : ["TBA"],
+		"contact" : ["David Colls", "Diana Adorno"],
 		"image-sm" : "images/locations/perth.png",
 		"page": "perth.html"
 		},
