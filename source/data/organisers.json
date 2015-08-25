@@ -1,12 +1,28 @@
 {
 	"organisers" : [
 		{
+			"name" : "Diana Adorno",
+			"role" : "Product Designer & Researcher",
+			"city" : "Perth",
+			"email" : "dadorno@thoughtworks.com",
+			"photo" : "images/organisers/diana.adorno.png",
+			"bio" : "Diana is a designer, researcher and strategist who works with digital products with an Agile and Lean approach. She continually experiments with different aspects of the design process to reveal intuitive, feasible, innovative designs as well as transformation for people and organisations."
+		},
+		{
 			"name" : "Leila Alem",
 			"role" : "Principal Consultant",
 			"city" : "Sydney",
 			"email" : "leila.alem@thoughtworks.com",
 			"photo" : "images/organisers/leila.alem.png",
 			"bio" : "Dr Leila Alem is a principal consultant at Thoughtworks and principal scientist in Human Computer Interaction. She has 10+ years of experience in designing, deploying and evaluating innovative ICT based solutions and services for the health sector.  Leila has worked in the telehealth space connecting Australian hospitals to deliver new health services over the broadband. Under her leadership her team won a number of innovation awards in recognition of the impact of their work. Leila has lead a national telemonitoring trial of patients with chronic diseases. </br></br>She has evaluated the impact of telemonitoring of patients  on the number of admission to hospital and length of stay but also evaluating the intervention on patient outcomes such as quality of live, managing own condition etc. Her drive is to explore new frontiers of HCI research  including wearable technology, augmented reality, natural User interaction  to augment field health workers in deprived areas to deliver better health outcomes to people who most need it. </br></br>She is currently develeppling a tele health proejct in rural Morocco drawing on her previous work which can be seen at www.csiro.au/remote"
+		},
+		{
+			"name" : "David Colls",
+			"role" : "Innovation Management",
+			"city" : "Perth",
+			"email" : "dcolls@thoughtworks.com",
+			"photo" : "images/organisers/david.colls.png",
+			"bio" : "As an experienced leader of product R&D and organisational change initiatives, and an experienced software developer and mathematical modeller, David helps leaders and teams create environments for delivering great products."
 		},
 		{
 			"name" : "Mike Imelfort",
@@ -41,12 +57,12 @@
 			"bio" : "Mitchell Stanton-Cook is an Operational Bioinformatician at the University of Queensland. At work he develops solutions for the efficient storage, processing and analysis of microbial genomics data sets. He spends his spare time participating at tech meetups and hackathons."
 		},
 		{
-		"name" : "Michael Walker",
-		"role" : "Modeller/Data Scientist",
-		"city" : "Melbourne",
-		"email" : "walkerm1@student.unimelb.edu.au",
-		"photo" : "images/organisers/michael.walker.png",
-		"bio" : "Dr Michael Walker is a theoretical physicist turned modeller/data scientist. He has been a postdoctoral researcher and lecturer in Korea, followed by a postdoctoral position in Japan, before modelling flower growth with a biological modelling group in the south of France. He participated in the last two healthhack events and is keen to get more involved with the open source and hacking community."
+			"name" : "Michael Walker",
+			"role" : "Modeller/Data Scientist",
+			"city" : "Melbourne",
+			"email" : "walkerm1@student.unimelb.edu.au",
+			"photo" : "images/organisers/michael.walker.png",
+			"bio" : "Dr Michael Walker is a theoretical physicist turned modeller/data scientist. He has been a postdoctoral researcher and lecturer in Korea, followed by a postdoctoral position in Japan, before modelling flower growth with a biological modelling group in the south of France. He participated in the last two healthhack events and is keen to get more involved with the open source and hacking community."
 		},
 		{
 			"name" : "Fiona Tweedie",
@@ -63,22 +79,6 @@
 			"email" : "walkerm1@student.unimelb.edu.au",
 			"photo" : "images/organisers/michael.walker.png",
 			"bio" : "Dr Michael Walker is a theoretical physicist turned modeller/data scientist. He has been a postdoctoral researcher and lecturer in Korea, followed by a postdoctoral position in Japan, before modelling flower growth with a biological modelling group in the south of France. He participated in the last two healthhack events and is keen to get more involved with the open source and hacking community."
-		},
-		{
-		"name" : "Diana Adorno",
-		"role" : "Product Designer & Researcher",
-		"city" : "Perth",
-		"email" : "dadorno@thoughtworks.com",
-		"photo" : "images/organisers/diana.adorno.png",
-		"bio" : "Diana is a designer, researcher and strategist who works with digital products with an Agile and Lean approach. She continually experiments with different aspects of the design process to reveal intuitive, feasible, innovative designs as well as transformation for people and organisations."
-		},
-		{
-		"name" : "David Colls",
-		"role" : "Innovation Management",
-		"city" : "Perth",
-		"email" : "dcolls@thoughtworks.com",
-		"photo" : "images/organisers/david.colls.png",
-		"bio" : "As an experienced leader of product R&D and organisational change initiatives, and an experienced software developer and mathematical modeller, David helps leaders and teams create environments for delivering great products."
 		}
 	]
 }
