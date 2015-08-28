@@ -7,7 +7,7 @@ NOTE: This README is part of the 'slim' branch - a cut down version of the site 
 
 To help develop the site you'll need to install middleman.
 
-Getting started: The "shut my eyes and run stuff" approach
+Getting started. Using the dev scripts:
 ----------
 
     # On a clean Ubuntu Precise:
@@ -16,8 +16,8 @@ Getting started: The "shut my eyes and run stuff" approach
     \curl -sSL https://get.rvm.io | bash -s stable --ruby
     source ~/.rvm/scripts/rvm
     git clone https://github.com/HealthHackAu/website-2015.git
-    cd website 
-
+    
+    cd website-2015
     bundle install
 
     # Build the content:
@@ -26,55 +26,11 @@ Getting started: The "shut my eyes and run stuff" approach
     # Run locally:
     middleman server
 
-Getting started: the more considered approach
-----------
-
-Follow these instructions apart from bits you know already and you can
-just ignore :D.
-
-You need the following:
-
-+ RVM or similar (basic install instructions
-  [here](https://rvm.io/rvm/install) )
-
-+ Check out the source code for the website:
-
-
-```
-    https://github.com/HealthHackAu/website-2015.git
-```
-
-Or use the GitHub client.
-
-+ cd into the directory and you will be given a prompt to activate the
-  rvmrc file that tells RVM which ruby and gemset to use - type in
-  'yes' here
-
-+ Install the gems:
-
-
-```
-    bundle install
-```
-
-+ To build the website:
-
-
-```
-    middleman build
-```
-
-This generates all the static html to a folder called build/
-
-+ To see the website running:
-
-
-```
-    middleman server
-```
-
 This will start serving the site and give you an address to go to in
 your browser.
+
+If you're on the organising team and want to develop on the website you can find more instructions here:
+https://healthhack-2015.slack.com/archives/website/p1440762529000002
 
 Changing + previewing
 ----------
@@ -102,13 +58,18 @@ rebuild the site files. Should be a fairly low-friction workflow.
 Checking in your changes!
 ----------
 
-Do this!
+If you're going to be doing a lot of work on the site and you're not able to push changes to the main repo then please ask for permission to do so. Otherwise, make your changes and submit a pull request. 
 
 Editing pages
 ----------
 
 Pages with .markdown in the file extension are built in kramdown
 Check out (http://kramdown.rubyforge.org/syntax.html) for syntax
+
+Style
+----------
+
+Please use 4 spaces instead of tabs. I hate tabs.
 
 Working with specific pages:
 ----------
@@ -209,19 +170,18 @@ Each of the four locations has its own page located at:
 
 
 ```
-    locations/city.erb
+    <city>.erb
 ```
 
 The images for each city are located at:
 
 
 ```
-    images/locations/city.png
+    images/locations/<city>.png
 ```
 
-NOTE: If you are taking responsibility for updating a cities page then you need to modify the <p>Area Location/Date</p> field in:
-
+The data asscoiated with the locations pages is located at:
 
 ```
-    index.html.markdown.erb
+    data/locations.json
 ```
