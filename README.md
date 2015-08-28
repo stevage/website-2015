@@ -7,7 +7,7 @@ NOTE: This README is part of the 'slim' branch - a cut down version of the site 
 
 To help develop the site you'll need to install middleman.
 
-Getting started. Using the dev scripts:
+Getting started:
 ----------
 
     # On a clean Ubuntu Precise:
