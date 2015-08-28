@@ -1,4 +1,10 @@
 {
+    "qcif" : {
+        "displayName": "QCIF",
+        "href": "http://www.qcif.edu.au",
+        "img": "qcif.png",
+        "text": "QCIF (the Queensland Cyber Infrastructure Foundation) provides the high-performance services, infrastructure and support required to achieve excellence in computation and data-driven collaborative research and its application in industry. QCIF operates with its members and partners delivering services to research throughout Queensland and increasingly via Commonwealth programs to the nation."
+    },
     "garvan" : {
         "displayName": "Garvan Institute",
         "href": "http://www.garvan.org.au",
