@@ -71,14 +71,6 @@
 			"email" : "fiona.c.tweedie@gmail.com",
 			"photo" : "images/organisers/fiona.tweedie.png",
 			"bio" : "Dr Fiona Tweedie is co-chair of Open Knowledge Australia and believes strongly in the power of community to share skills and create positive change. To that end, she has previously been involved in running GovHack, HealthHack and THATCamp. She leads the Research Bazaar training program at the University of Melbourne."
-		},
-		{
-			"name" : "Michael Walker",
-			"role" : "Modeller/Data Scientist",
-			"city" : "Melbourne",
-			"email" : "walkerm1@student.unimelb.edu.au",
-			"photo" : "images/organisers/michael.walker.png",
-			"bio" : "Dr Michael Walker is a theoretical physicist turned modeller/data scientist. He has been a postdoctoral researcher and lecturer in Korea, followed by a postdoctoral position in Japan, before modelling flower growth with a biological modelling group in the south of France. He participated in the last two healthhack events and is keen to get more involved with the open source and hacking community."
 		}
 	]
 }
