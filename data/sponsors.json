@@ -1,0 +1,32 @@
+{
+    "qcif" : {
+        "displayName": "QCIF",
+        "href": "http://www.qcif.edu.au",
+        "img": "qcif.png",
+        "text": "QCIF (the Queensland Cyber Infrastructure Foundation) provides the high-performance services, infrastructure and support required to achieve excellence in computation and data-driven collaborative research and its application in industry. QCIF operates with its members and partners delivering services to research throughout Queensland and increasingly via Commonwealth programs to the nation."
+    },
+    "garvan" : {
+        "displayName": "Garvan Institute",
+        "href": "http://www.garvan.org.au",
+        "img": "garvan.png",
+        "text": "The Garvan Institute of Medical Research is one of Australia’s leading biomedical research institutes, pioneering study into the most widespread diseases affecting our community today, including cancer, neurodegenerative and mental diseases, disorders of the immune system, diabetes and obesity, osteoporosis and other skeletal disorders."
+        },
+    "rivercitylabs" : {
+        "displayName": "River City Labs",
+        "href": "http://www.rivercitylabs.net",
+        "img": "rivercitylabs.png",
+        "text": "River City Labs is passionate about supporting the folks we care about; those out there taking risks and working on the latest great ideas in the mobile, Internet, telecoms and technology space."        
+        },
+    "thoughtworks" : {
+        "displayName": "ThoughtWorks",
+        "href": "http://www.thoughtworks.com",
+        "img": "thoughtworks.png",
+        "text": "ThoughtWorks is a software company and a community of passionate, purpose-led individuals. We think disruptively to deliver technology to address our clients' toughest challenges, all while seeking to revolutionize the IT industry and create positive social change."
+        },
+    "fishburners" : {
+        "displayName": "Fishburners",
+        "href": "http://fishburners.org",
+        "img": "fishburners.png",
+        "text": "Fishburners is more than just a coworking space, we’re a passionate community of startups. Our vision is to bring together the best startups in Australia and help grow the tech scene here in Sydney."
+        }
+}
