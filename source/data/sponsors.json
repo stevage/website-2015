@@ -1,9 +1,15 @@
 {
     "boomworks": {
         "displayName": "Boomworks",
-        "href": "http://www.boomworks.com.au/",
+        "href": "http://www.boomworks.com.au",
         "img": "boomworks.png",
         "text": "Boomworks is a team of diverse and talented individuals with deep insights into the behaviours and technologies  driving the connected world. At Boomworks, we believe in uncovering insights and defining strategies, and shape them into new ideas to enable change in the digital realm. We believe in building authentic relationships and connecting businesses with  our customers.We craft meaningful experiences that embody our beliefs. It's our knack of seeing the small details in the big picture that sets us apart  from everyone else."
+    },
+    "rcc" : {
+        "displayName": "RCC",
+        "href": "http://www.rcc.uq.edu.au",
+        "img": "rcc.png",
+        "text": "The Research Computing Centre (RCC), established in 2011, provides coordinated management and support of The University of Queensland’s sustained and substantial investment in eResearch.  The RCC is an innovative and multidisciplinary environment that supports research collaboration to facilitate discoveries in science and engineering, humanities, and social sciences, through advanced computation, data analysis and other digital research tools."
     },
     "qcif" : {
         "displayName": "QCIF",
