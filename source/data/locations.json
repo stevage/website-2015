@@ -7,9 +7,9 @@
 		"page": "brisbane.html"
 		},
 	"Sydney" : {
-		"where_readable" : ["The Garvin Institute","384 Victoria St, Darlinghurst", "Sydney NSW 2010"],
+		"where_readable" : ["Garvan Institute of Medical Research","384 Victoria St, Darlinghurst", "Sydney NSW 2010"],
 		"where_coords" : [-33.879144, 151.221782],
-		"contact" : ["TBA"],
+		"contact" : ["Liviu Constantinescu", "Peter Budd"],
 		"image-sm" : "images/locations/sydney.png",
 		"page": "sydney.html"
 		},

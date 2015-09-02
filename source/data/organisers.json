@@ -71,6 +71,14 @@
 			"email" : "fiona.c.tweedie@gmail.com",
 			"photo" : "images/organisers/fiona.tweedie.png",
 			"bio" : "Dr Fiona Tweedie is co-chair of Open Knowledge Australia and believes strongly in the power of community to share skills and create positive change. To that end, she has previously been involved in running GovHack, HealthHack and THATCamp. She leads the Research Bazaar training program at the University of Melbourne."
+		},
+		{
+			"name" : "Liviu Constantinescu",
+			"role" : "Information Architect",
+			"city" : "Sydney",
+			"email" : "l.constantinescu@garvan.org.au",
+			"photo" : "images/organisers/liviu.constantinescu.jpg",
+			"bio" : "Dr Liviu Constantinescu is a scientist and software developer with the Kinghorn Centre for Clinical Genomics. He has worked extensively in clinical research, specialising in multimedia technology, m-Health, networks and infrastructure. He also whips up some pretty mean graphic designs, when the mood strikes him. This is his second year assisting with HealthHack, and the Garvan Institute's first time hosting the event."
 		}
 	]
 }
