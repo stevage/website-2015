@@ -1,0 +1,30 @@
+{
+	"Brisbane" : {
+		"where_readable" : ["River City Labs", "2/282 Wickham St", "Fortitude Valley 4006"],
+		"where_coords" : [-27.4565241, 153.0344888],
+		"contact" : ["Mitchell Stanton-Cook", "Mike Imelfort"],
+		"image-sm" : "images/locations/brisbane.png",
+		"page": "brisbane.html"
+		},
+	"Sydney" : {
+		"where_readable" : ["Garvan Institute of Medical Research","384 Victoria St, Darlinghurst", "Sydney NSW 2010"],
+		"where_coords" : [-33.879144, 151.221782],
+		"contact" : ["Liviu Constantinescu", "Peter Budd"],
+		"image-sm" : "images/locations/sydney.png",
+		"page": "sydney.html"
+		},
+	"Perth" : {
+		"where_readable" : ["ThoughtWorks Perth", "20/44 St. Georges Tce", "Perth WA 6000"],
+		"where_coords" : [-31.955214, 115.859343],
+		"contact" : ["David Colls", "Diana Adorno"],
+		"image-sm" : "images/locations/perth.png",
+		"page": "perth.html"
+		},
+	"Melbourne" : {
+		"where_readable" : ["ThoughtWorks Melbourne","23/303 Collins St","Melbourne VIC 3000"],
+		"where_coords" : [-37.816685, 144.963967],
+		"contact" : ["TBA"],
+		"image-sm" : "images/locations/melbourne.png",
+		"page": "melbourne.html"
+	}
+}
