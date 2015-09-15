@@ -170,6 +170,18 @@ margin-top: 5px;
 }
 .nav-btn {
 	display: inline-block;
+	.dropdown-menu {
+		background-color: #404141;
+		min-width: 200px;
+	}
+
+	.dropdown-menu>li>a {
+		color: #ffffff;
+	}
+	.dropdown-menu>li>a:focus,
+	.dropdown-menu>li>a:hover {
+		  background-color: #000000;
+	}
 }
 @media screen and (-webkit-min-device-pixel-ratio:0) {
 	.nav-btn {

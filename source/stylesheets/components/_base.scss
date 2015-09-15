@@ -73,7 +73,7 @@
         margin-right: 20px;
     }
     img.sponsor {
-        height: auto;    
+        height: auto;
     }
     .organiser-details {
         p {
@@ -113,9 +113,9 @@ a:focus {
     color: #FFFFFF;
     font-size: 1em;
   }
-  .btn {
-    width: 100%;
+  .btn, .dropdown {
     max-width: 150px;
+    display: inline;
   }
 }
 
