@@ -471,28 +471,31 @@ h1 {
 /* line 171, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
 .nav-btn {
   display: inline-block; }
-  /* line 173, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
+  /* line 174, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
+  .nav-btn .dropdown {
+    min-width: 200px; }
+  /* line 177, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
   .nav-btn .dropdown-menu {
     background-color: #404141;
     min-width: 200px; }
-  /* line 178, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
+  /* line 182, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
   .nav-btn .dropdown-menu > li > a {
     color: #ffffff; }
-  /* line 181, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
+  /* line 185, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
   .nav-btn .dropdown-menu > li > a:focus,
   .nav-btn .dropdown-menu > li > a:hover {
     background-color: #000000; }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 187, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
+  /* line 191, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
   .nav-btn {
     display: inline; }
 
-  /* line 190, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
+  /* line 194, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
   .navbar-right {
     min-width: 830px; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1027px) {
-  /* line 195, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
+  /* line 199, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container .navbar-right {
     min-width: 500px; } }
 /* line 5, /Users/mmu/Projects/healthhack/hh-devkit (2)/website-2015/source/stylesheets/components/_home.scss */
