@@ -7,14 +7,14 @@ title: Health Hack - Sponsors
 </script>
 
 
-<div class="container-white-background">
+<div id="sponsor-page" class="sponsor-section container-white-background">
 <div class="top-container-base top-container-sponsors">
     <div class="row">
         <h1>Sponsors</h1>
         <h3>The companies that make a difference</h3>
     </div>
 </div>
-<div id="sponsor-page" class="clearfix thin-container-normal">
+<div class="clearfix thin-container-normal">
     <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "rivercitylabs" }) %>
     <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "thoughtworks" }) %>
     <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "garvan" }) %>
@@ -23,6 +23,7 @@ title: Health Hack - Sponsors
     <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "qcif" }) %>
     <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "rcc" }) %>
     <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "yorkbutter" }) %>
+    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "hopgood" }) %>
 </div>
 <script>
     $(document).ready(function() {
