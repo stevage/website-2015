@@ -58,3 +58,28 @@ load_sponsors = function(load_data, names) {
         centrewithin('.sponsor-block-cn');
     }
 };
+
+load_location_sponsors = function(load_data, site_name, names) {
+    if  (load_data) {
+        $.get("./data/sponsors.json", function(data) {
+            var sn = site_name.toLowerCase();
+            $.each(names, function(index, s_name) {
+                var sponsor_data = data[s_name];
+                if (sponsor_data["location"].indexOf(sn) != -1) {
+                    $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+                    $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+                    $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
+                    $("#"+s_name+"-desc").html(sponsor_data["text"]);
+                } else {
+                    $("#"+s_name+"-block").remove();
+                }
+            });
+            equalheight('.sponsor-block-cn');
+            centrewithin('.sponsor-block-cn');
+        });
+
+    } else {
+        equalheight('.sponsor-block-cn');
+        centrewithin('.sponsor-block-cn');
+    }
+};
