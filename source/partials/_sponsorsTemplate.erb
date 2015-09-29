@@ -1,13 +1,12 @@
-    <div id="<%= "#{sponsorName}" %>-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="<%= "#{sponsorName}" %>-href" target="_blank" href="">
-                    <img id="<%= "#{sponsorName}" %>-img" alt="" class="sponsor-img" src="">
-                </a>
-            </div>
-            <div id="<%= "#{sponsorName}" %>-desc" font-=""></div>
+<div id="<%= "#{sponsorName}" %>-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="<%= "#{sponsorName}" %>-img-div">
+            <a id="<%= "#{sponsorName}" %>-href" target="_blank" href="">
+                <img id="<%= "#{sponsorName}" %>-img" alt="" class="sponsor-img" src="">
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("<%= "#{sponsorName}" %>");
-    </script>
+</div>
+<script>
+    sponsor_names.push("<%= "#{sponsorName}" %>");
+</script>

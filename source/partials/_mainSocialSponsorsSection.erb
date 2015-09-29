@@ -1,6 +1,12 @@
 <script>
-    // reset on each load
-    window.sponsor_logo_names = [];
+    window.sponsor_names = [];
+    $(document).ready(function() {
+        load_sponsors(true, sponsor_names, "", "logos_only");
+
+        $(window).resize(function() {
+            load_sponsors(false, sponsor_names, "", "logos_only");
+        });
+    });
 </script>
 <div class="container-fluid container-social-sponsors">
     <div class="row">
@@ -13,35 +19,13 @@
             </div>
         </div>
         <div class="col-md-6 less-padding-centred">
-            <h3 class="sideoffset">Our Sponsors</h3>
+            <h3 class="sideoffset">Our Major Sponsors</h3>
             <div class="row-sponsors">
                 <div class="clearfix min-height">
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "rivercitylabs" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "thoughtworks" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "curtin" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "garvan" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "boomworks" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "fishburners" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "qcif" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "rcc" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "yorkbutter" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "hopgood" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "ace" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "agrf" }) %>
-                    <%= partial(:sponsorsLogoTemplate, :locals => { :sponsorName => "tanda" }) %>
-
+                    <%= partial(:sponsorList) %>
                 </div>
                 <div class="col-footer"><a href="sponsors.html" target="_blank">ALL SPONSORS</a></div>
             </div>
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function() {
-        load_sponsors(true, sponsor_logo_names);
-
-        $(window).resize(function() {
-            load_sponsors(false, sponsor_logo_names);
-        });
-    });
-</script>

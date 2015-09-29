@@ -39,39 +39,32 @@ centrewithin = function(container) {
     });
 };
 
-load_sponsors = function(load_data, names) {
-    if  (load_data) {
-        $.get("./data/sponsors.json", function(data) {
-            $.each(names, function(index, s_name) {
-                var sponsor_data = data[s_name];
-                $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-                $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-                $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
-                $("#"+s_name+"-desc").html(sponsor_data["text"]);
-            });
-            equalheight('.sponsor-block-cn');
-            centrewithin('.sponsor-block-cn');
-        });
-
-    } else {
-        equalheight('.sponsor-block-cn');
-        centrewithin('.sponsor-block-cn');
-    }
-};
-
-load_location_sponsors = function(load_data, site_name, names) {
+load_sponsors = function(load_data, names, site_name, page_type) {
     if  (load_data) {
         $.get("./data/sponsors.json", function(data) {
             var sn = site_name.toLowerCase();
             $.each(names, function(index, s_name) {
                 var sponsor_data = data[s_name];
-                if (sponsor_data["location"].indexOf(sn) != -1) {
-                    $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
-                    $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
-                    $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
-                    $("#"+s_name+"-desc").html(sponsor_data["text"]);
+                $("#"+s_name+"-href").attr("href", sponsor_data["href"]);
+                $("#"+s_name+"-img").attr("alt", sponsor_data["displayName"]);
+                $("#"+s_name+"-img").attr("src", "./images/sponsors/" + sponsor_data["img"]);
+                if("logos_only" == page_type) {
+                    // only allow gold, platinum or national sponsors on the main small logos section
+                    if("gold" == sponsor_data["type"] || "platinum" == sponsor_data["type"]) {
+                        $("#"+s_name+"-img-div").addClass("sponsor-logo-img-div");      // half width logos
+                        $("#"+s_name+"-block").addClass("col-xs-6");                        
+                    } else {
+                        $("#"+s_name+"-block").remove();
+                    }
                 } else {
-                    $("#"+s_name+"-block").remove();
+                    if ("location" == page_type && -1 == sponsor_data["location"].indexOf(sn)) {
+                        $("#"+s_name+"-block").remove();
+                    } else {                    
+                        $("#"+s_name+"-img-div").addClass("sponsor-img-div");
+                        $("#"+s_name+"-block").addClass("col-xs-12");
+                        var $text_div = $("<div>", { "html": sponsor_data["text"] });
+                        $text_div.insertAfter("#"+s_name+"-img-div");
+                    }
                 }
             });
             equalheight('.sponsor-block-cn');

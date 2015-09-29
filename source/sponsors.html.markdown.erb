@@ -2,8 +2,14 @@
 title: Health Hack - Sponsors
 ---
 <script>
-    // reset on each load
     window.sponsor_names = [];
+    $(document).ready(function() {
+        load_sponsors(true, sponsor_names, "", "main");
+
+        $(window).resize(function() {
+            load_sponsors(false, sponsor_names, "", "main");
+        });
+    });    
 </script>
 
 
@@ -15,29 +21,8 @@ title: Health Hack - Sponsors
     </div>
 </div>
 <div class="clearfix thin-container-normal">
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "rivercitylabs" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "thoughtworks" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "curtin" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "garvan" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "boomworks" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "fishburners" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "qcif" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "rcc" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "yorkbutter" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "hopgood" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "ace" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "agrf" }) %>
-    <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "tanda" }) %>
+    <%= partial(:sponsorList) %>
 </div>
-<script>
-    $(document).ready(function() {
-        load_sponsors(true, sponsor_names);
-
-        $(window).resize(function() {
-            load_sponsors(false, sponsor_names);
-        });
-    });
-</script>
 <%= partial "sponsorCallout" %>
 
 

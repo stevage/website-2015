@@ -1,6 +1,23 @@
 <script>
-    // reset on each load
     window.sponsor_names = [];
+    location_specific = function() {
+        $.get("./data/locations.json", function(data) {
+            var site_data = data["<%= "#{siteName}" %>"];
+            initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
+            $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
+            $("#loc-contact").html(site_data["contact"].join("<br>"));
+            $("#loc-city-main").html(site_data["where_readable"][1]);
+        });
+    };
+
+    $(document).ready(function() {
+        location_specific();
+        load_sponsors(true, sponsor_names, '<%= "#{siteName}" %>', "location");
+
+        $(window).resize(function() {
+            load_sponsors(false, sponsor_names, '<%= "#{siteName}" %>', "location");
+        });
+    });
 </script>
 <div class="container-white-background">
     <div class="container-fluid top-container-base top-container-<%= "#{siteName}" %>">
@@ -75,40 +92,7 @@
     <div id="sponsor-page" class="clearfix thin-container-normal" style="padding-top: 0px;">
         <h3>Sponsors for the <%= "#{siteName}" %> event</h3>
         <br>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "rivercitylabs" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "thoughtworks" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "curtin" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "garvan" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "boomworks" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "fishburners" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "qcif" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "rcc" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "yorkbutter" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "hopgood" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "ace" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "agrf" }) %>
-        <%= partial(:sponsorsTemplate, :locals => { :sponsorName => "tanda" }) %>
-
+        <%= partial(:sponsorList) %>
     </div>
     <hr>                
 </div>
-<script>
-    location_specific = function() {
-        $.get("./data/locations.json", function(data) {
-            var site_data = data["<%= "#{siteName}" %>"];
-            initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
-            $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
-            $("#loc-contact").html(site_data["contact"].join("<br>"));
-            $("#loc-city-main").html(site_data["where_readable"][1]);
-        });
-    };
-
-    $(document).ready(function() {
-        location_specific();
-        load_location_sponsors(true, '<%= "#{siteName}" %>', sponsor_names);
-
-        $(window).resize(function() {
-            load_location_sponsors(false, '<%= "#{siteName}" %>', sponsor_names);
-        });
-    });
-</script>
