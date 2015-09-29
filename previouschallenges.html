@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <!-- Layout for challenges / sponsors pages etc... -->
     <head>
-                <title>Challenges</title>
+                <title>Previous Challenges</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link href="favicon.ico" rel="icon" type="image/ico" />
@@ -49,7 +49,8 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav navbar-right">
-            <li><a title="Challenges" href="challenges.html">Challenges</a></li>
+            <!--li><a title="Current Challenges" href="currentchallenges.html">Current Challenges</a></li-->
+            <li><a title="Previous Challenges" href="previouschallenges.html">Previous Challenges</a></li>
             <li><a title="Sponsors" href="sponsors.html">Sponsors</a></li>
             <li><a title="Event Organisers" href="organisers.html">Event Organisers</a></li>
             <li><a href="mailto:info@healthhack.com.au">Contact</a></li>
@@ -98,10 +99,16 @@
 
             </div>
         </div>
-        <div class="container-white-background">
+        <script>
+    $( document ).ready(function() {
+        load_challenges(2014);
+    });    
+</script>
+
+<div class="container-white-background">
     <div class="top-container-base top-container-challenges">
         <div class="row">
-           <h1>Challenges</h1>
+           <h1>Previous Challenges</h1>
            <h3>View previous years problems and submit your own</h3>
         </div>
     </div>
