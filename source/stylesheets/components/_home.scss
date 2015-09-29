@@ -34,12 +34,21 @@
     h2 {
         font-weight: 100;
     }
+    .btn {
+      vertical-align: baseline;
+      font-size: 14px;
+      padding: 10px 20px;
+    }
 }
 
 .top-container-text {
     padding: 2em;
 }
 
+.top-container-dropdown {
+    width:200px;
+    margin: 0 auto;
+}
 .row-involved {
     margin-top: -160px;
     padding: 0 10%;
@@ -136,6 +145,11 @@
     padding: 0 5%;
     width: 100%;
     text-align: center;
+}
+
+.container-social-sponsors #curtin-img {
+  height: 56px;
+  margin-top: 10px;
 }
 
 .footer-okfna {

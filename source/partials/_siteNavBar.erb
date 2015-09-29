@@ -17,10 +17,12 @@
             <li><%= link_to "Sponsors", "/sponsors.html", title: "Sponsors" %></li>
             <li><%= link_to "Event Organisers", "/organisers.html", title: "Event Organisers" %></li>
             <li><a href="mailto:info@healthhack.com.au">Contact</a></li>
-            <div class="nav-btn">
-                <span><a href="mailto:info@healthhack.com.au"><button class="btn btn-primary">SUBMIT A CHALLENGE</button></a></span>
-                <span><%= partial(:getInvolvedButton, :locals => { :id => "nav" }) %></span>
-            </div>
+            <li>
+              <ul class="nav nav-btn">
+                  <li><a href="mailto:info@healthhack.com.au"><button class="btn btn-primary">SUBMIT A CHALLENGE</button></a></li>
+                  <li><%= partial(:getInvolvedButton, :locals => { :id => "nav" }) %></li>
+              </ul>
+            </li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->

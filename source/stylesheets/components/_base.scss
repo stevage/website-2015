@@ -113,19 +113,12 @@ a:focus {
     color: #FFFFFF;
     font-size: 1em;
   }
-  .btn, .dropdown {
-    max-width: 150px;
-    display: inline;
-  }
 }
 
 .navbar-default {
   border: none;
   background: #FFFFFF;
   padding-top: 0px;
-  .btn {
-    margin-top: -9px;
-  }
 }
 
 .btn {
@@ -138,7 +131,7 @@ a:focus {
   font-weight: bold;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus, .btn:active {
   color: #FFFFFF;
 }
 
@@ -146,7 +139,7 @@ a:focus {
   background-color: #404141;
 }
 
-.btn-default:hover {
+.btn-default:hover, .btn-default:focus, .btn-default:active  {
   background-color: #000000;
 }
 
@@ -154,7 +147,7 @@ a:focus {
   background-color: $btn-default-color;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: $btn-defaul-hovert-color;
 }
 
@@ -162,7 +155,7 @@ a:focus {
   color: $btn-default-color;
 }
 
-.btn-link:hover {
+.btn-link:hover, .btn-link:focus, .btn-link:active  {
   color: $btn-defaul-hovert-color;
 }
 
@@ -250,7 +243,7 @@ h1 {
     height: 40px;
     background-color: #EFF0F1;
     border-radius: 100%;
-    padding: 7px 0;
+    padding: 4px 0;
     color: black;
     font-weight: 100;
     margin-top: -20px;
@@ -318,4 +311,22 @@ h1 {
   .carousel-indicators {
     display: none;
   }
+}
+
+.dropdown-default {
+  min-width: 200px;
+
+  .dropdown-menu {
+    background-color: #404141;
+    min-width: 200px;
+  }
+
+  .dropdown-menu>li>a {
+    color: #ffffff;
+  }
+  .dropdown-menu>li>a:focus,
+  .dropdown-menu>li>a:hover {
+      background-color: #000000;
+  }
+
 }
