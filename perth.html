@@ -53,10 +53,11 @@
             <li><a title="Sponsors" href="sponsors.html">Sponsors</a></li>
             <li><a title="Event Organisers" href="organisers.html">Event Organisers</a></li>
             <li><a href="mailto:info@healthhack.com.au">Contact</a></li>
-            <div class="nav-btn">
-                <span><a href="mailto:info@healthhack.com.au"><button class="btn btn-primary">SUBMIT A CHALLENGE</button></a></span>
-                <span><!--a href="#"><http://healthhack2015.eventbrite.com.au/"-->
-<div class="dropdown">
+            <li>
+              <ul class="nav nav-btn">
+                  <li><a href="mailto:info@healthhack.com.au"><button class="btn btn-primary">SUBMIT A CHALLENGE</button></a></li>
+                  <li><!--a href="#"><http://healthhack2015.eventbrite.com.au/"-->
+<div class="dropdown dropdown-default">
   <button class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">GET INVOLVED
     <span class="caret"></span>
   </button>
@@ -87,8 +88,9 @@
         });
     });
 </script>
-</span>
-            </div>
+</li>
+              </ul>
+            </li>
         </ul>
     </div>
     <!-- /.navbar-collapse -->
@@ -97,8 +99,25 @@
             </div>
         </div>
         <script>
-    // reset on each load
     window.sponsor_names = [];
+    location_specific = function() {
+        $.get("./data/locations.json", function(data) {
+            var site_data = data["Perth"];
+            initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
+            $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
+            $("#loc-contact").html(site_data["contact"].join("<br>"));
+            $("#loc-city-main").html(site_data["where_readable"][1]);
+        });
+    };
+
+    $(document).ready(function() {
+        location_specific();
+        load_sponsors(true, sponsor_names, 'Perth', "location");
+
+        $(window).resize(function() {
+            load_sponsors(false, sponsor_names, 'Perth', "location");
+        });
+    });
 </script>
 
 <div class="container-white-background">
@@ -181,8 +200,9 @@
         <p>Whether you’re a developer, UX designer, data analyst or researcher, we want you.</p>
     </div>
     <div class="clearfix">
+        <div class="top-container-dropdown">
         <!--a href="#"><http://healthhack2015.eventbrite.com.au/"-->
-<div class="dropdown">
+<div class="dropdown dropdown-default">
   <button class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">GET INVOLVED
     <span class="caret"></span>
   </button>
@@ -214,8 +234,10 @@
     });
 </script>
 
+        </div>
     </div>
 </div>
+
                 </div>
             </div>
         </div>
@@ -224,200 +246,153 @@
     <div id="sponsor-page" class="clearfix thin-container-normal" style="padding-top: 0px;">
         <h3>Sponsors for the Perth event</h3>
         <br />
-            <div id="rivercitylabs-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="rivercitylabs-href" target="_blank" href="">
-                    <img id="rivercitylabs-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="rivercitylabs-desc" font-=""></div>
+        <div id="rivercitylabs-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="rivercitylabs-img-div">
+            <a id="rivercitylabs-href" target="_blank" href="">
+                <img id="rivercitylabs-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("rivercitylabs");
-    </script>
-            <div id="thoughtworks-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="thoughtworks-href" target="_blank" href="">
-                    <img id="thoughtworks-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="thoughtworks-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("rivercitylabs");
+</script><div id="thoughtworks-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="thoughtworks-img-div">
+            <a id="thoughtworks-href" target="_blank" href="">
+                <img id="thoughtworks-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("thoughtworks");
-    </script>
-            <div id="curtin-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="curtin-href" target="_blank" href="">
-                    <img id="curtin-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="curtin-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("thoughtworks");
+</script><div id="curtin-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="curtin-img-div">
+            <a id="curtin-href" target="_blank" href="">
+                <img id="curtin-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("curtin");
-    </script>
-            <div id="garvan-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="garvan-href" target="_blank" href="">
-                    <img id="garvan-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="garvan-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("curtin");
+</script><div id="garvan-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="garvan-img-div">
+            <a id="garvan-href" target="_blank" href="">
+                <img id="garvan-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("garvan");
-    </script>
-            <div id="boomworks-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="boomworks-href" target="_blank" href="">
-                    <img id="boomworks-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="boomworks-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("garvan");
+</script><div id="boomworks-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="boomworks-img-div">
+            <a id="boomworks-href" target="_blank" href="">
+                <img id="boomworks-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("boomworks");
-    </script>
-            <div id="fishburners-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="fishburners-href" target="_blank" href="">
-                    <img id="fishburners-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="fishburners-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("boomworks");
+</script><div id="fishburners-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="fishburners-img-div">
+            <a id="fishburners-href" target="_blank" href="">
+                <img id="fishburners-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("fishburners");
-    </script>
-            <div id="qcif-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="qcif-href" target="_blank" href="">
-                    <img id="qcif-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="qcif-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("fishburners");
+</script><div id="yorkbutter-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="yorkbutter-img-div">
+            <a id="yorkbutter-href" target="_blank" href="">
+                <img id="yorkbutter-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("qcif");
-    </script>
-            <div id="rcc-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="rcc-href" target="_blank" href="">
-                    <img id="rcc-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="rcc-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("yorkbutter");
+</script><div id="ace-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="ace-img-div">
+            <a id="ace-href" target="_blank" href="">
+                <img id="ace-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("rcc");
-    </script>
-            <div id="yorkbutter-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="yorkbutter-href" target="_blank" href="">
-                    <img id="yorkbutter-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="yorkbutter-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("ace");
+</script><div id="hopgood-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="hopgood-img-div">
+            <a id="hopgood-href" target="_blank" href="">
+                <img id="hopgood-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("yorkbutter");
-    </script>
-            <div id="hopgood-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="hopgood-href" target="_blank" href="">
-                    <img id="hopgood-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="hopgood-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("hopgood");
+</script><div id="qcif-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="qcif-img-div">
+            <a id="qcif-href" target="_blank" href="">
+                <img id="qcif-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("hopgood");
-    </script>
-            <div id="ace-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="ace-href" target="_blank" href="">
-                    <img id="ace-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="ace-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("qcif");
+</script><div id="rcc-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="rcc-img-div">
+            <a id="rcc-href" target="_blank" href="">
+                <img id="rcc-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("ace");
-    </script>
-            <div id="agrf-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="agrf-href" target="_blank" href="">
-                    <img id="agrf-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="agrf-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("rcc");
+</script><div id="agrf-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="agrf-img-div">
+            <a id="agrf-href" target="_blank" href="">
+                <img id="agrf-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("agrf");
-    </script>
-            <div id="tanda-block" class="col-md-4 col-xs-12 sponsor-block-cn">
-        <div class="sponsor-block-inner">
-            <div class="sponsor-img-div">
-                <a id="tanda-href" target="_blank" href="">
-                    <img id="tanda-img" alt="" class="sponsor-img" src="" />
-                </a>
-            </div>
-            <div id="tanda-desc" font-=""></div>
+</div>
+<script>
+    sponsor_names.push("agrf");
+</script><div id="tanda-block" class="col-md-4 sponsor-block-cn">
+    <div class="sponsor-block-inner">
+        <div id="tanda-img-div">
+            <a id="tanda-href" target="_blank" href="">
+                <img id="tanda-img" alt="" class="sponsor-img" src="" />
+            </a>
         </div>
     </div>
-    <script>
-        sponsor_names.push("tanda");
-    </script>
-
+</div>
+<script>
+    sponsor_names.push("tanda");
+</script>
     </div>
     <hr />                
 </div>
-<script>
-    location_specific = function() {
-        $.get("./data/locations.json", function(data) {
-            var site_data = data["Perth"];
-            initialize(site_data["where_coords"][0], site_data["where_coords"][1]);
-            $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
-            $("#loc-contact").html(site_data["contact"].join("<br>"));
-            $("#loc-city-main").html(site_data["where_readable"][1]);
-        });
-    };
-
-    $(document).ready(function() {
-        location_specific();
-        load_location_sponsors(true, 'Perth', sponsor_names);
-
-        $(window).resize(function() {
-            load_location_sponsors(false, 'Perth', sponsor_names);
-        });
-    });
-</script>
-
 
         <footer class="light-bg text-muted row">
     <div class="col-xs-8 text-left">

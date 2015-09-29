@@ -107,21 +107,14 @@ a:focus {
   .navbar-nav a {
     color: #FFFFFF;
     font-size: 1em; }
-  /* line 116, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
-  .navbar-nav .btn, .navbar-nav .dropdown {
-    max-width: 150px;
-    display: inline; }
 
-/* line 122, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 118, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .navbar-default {
   border: none;
   background: #FFFFFF;
   padding-top: 0px; }
-  /* line 126, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
-  .navbar-default .btn {
-    margin-top: -9px; }
 
-/* line 131, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 124, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn {
   color: #FFFFFF;
   border-radius: 40px;
@@ -131,93 +124,93 @@ a:focus {
   font-size: 0.9em;
   font-weight: bold; }
 
-/* line 141, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
-.btn:hover {
+/* line 134, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+.btn:hover, .btn:focus, .btn:active {
   color: #FFFFFF; }
 
-/* line 145, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 138, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-default {
   background-color: #404141; }
 
-/* line 149, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
-.btn-default:hover {
+/* line 142, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+.btn-default:hover, .btn-default:focus, .btn-default:active {
   background-color: #000000; }
 
-/* line 153, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 146, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-primary {
   background-color: #08B3A6; }
 
-/* line 157, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
-.btn-primary:hover {
+/* line 150, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background-color: #089388; }
 
-/* line 161, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 154, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .btn-link {
   color: #08B3A6; }
 
-/* line 165, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
-.btn-link:hover {
+/* line 158, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+.btn-link:hover, .btn-link:focus, .btn-link:active {
   color: #089388; }
 
-/* line 169, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 162, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 a {
   color: #08B3A6; }
 
-/* line 173, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 166, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 a:hover {
   color: #089388; }
 
-/* line 177, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 170, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 li .btn {
   margin-top: -15px; }
 
-/* line 183, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 176, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 p {
   font-size: 1.2em;
   line-height: 1.6; }
 
-/* line 189, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 182, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .taller-line-height {
   line-height: 1.7; }
 
-/* line 193, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 186, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 h1 {
   font-size: 4em; }
 
-/* line 197, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 190, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .font-light {
   font-weight: 100; }
 
-/* line 201, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 194, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .text-center {
   text-align: center; }
 
-/* line 205, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 198, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-indicators {
   bottom: -50px; }
 
-/* line 210, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 203, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-indicators li {
   background-color: #BDBDBD;
   width: 10px !important;
   height: 10px !important; }
 
-/* line 217, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 210, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-indicators li.active {
   background-color: #2375D2;
   margin: 1px; }
 
-/* line 222, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 215, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-control {
   width: 5%; }
 
-/* line 226, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 219, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-inner-left,
 .carousel-inner-right {
   width: 50%;
   display: inline-block; }
 
-/* line 233, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 226, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-inner-right {
   position: absolute;
   top: 50%;
@@ -227,52 +220,52 @@ h1 {
   transform: translateY(-50%);
   padding: 0 5%; }
 
-/* line 243, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 236, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
   outline: 0; }
-  /* line 248, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 241, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon,
   .carousel-control.right .glyphicon {
     width: 40px;
     height: 40px;
     background-color: #EFF0F1;
     border-radius: 100%;
-    padding: 7px 0;
+    padding: 4px 0;
     color: black;
     font-weight: 100;
     margin-top: -20px;
     margin-left: -20px; }
 
-/* line 262, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+/* line 255, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
 .panel {
   background-color: transparent; }
 
 @media only screen and (max-width: 768px) {
-  /* line 267, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 260, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   h1 {
     font-size: 3em; }
 
-  /* line 271, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 264, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   h3 {
     font-size: 20px; }
 
-  /* line 274, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 267, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   h4 {
     font-size: 16px; }
 
-  /* line 277, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 270, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   p {
     font-size: 1em; }
 
-  /* line 281, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 274, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-inner-left,
   .carousel-inner-right {
     width: 100%;
     display: block; }
 
-  /* line 287, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 280, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-inner-right {
     position: relative;
     transform: none;
@@ -281,26 +274,41 @@ h1 {
     margin-top: 40px;
     text-align: center; }
 
-  /* line 297, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 290, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .container-past-challenges .carousel-control {
     width: 50%; }
 
-  /* line 305, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 298, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon,
   .carousel-control.right .glyphicon {
     margin-top: 5px; }
-  /* line 309, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 302, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon-chevron-left,
   .carousel-control.right .glyphicon-chevron-left {
     margin-left: 25%; }
-  /* line 313, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 306, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-control.left .glyphicon-chevron-right,
   .carousel-control.right .glyphicon-chevron-right {
     left: 20px; }
 
-  /* line 318, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  /* line 311, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
   .carousel-indicators {
     display: none; } }
+/* line 316, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+.dropdown-default {
+  min-width: 200px; }
+  /* line 319, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  .dropdown-default .dropdown-menu {
+    background-color: #404141;
+    min-width: 200px; }
+  /* line 324, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  .dropdown-default .dropdown-menu > li > a {
+    color: #ffffff; }
+  /* line 327, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_base.scss */
+  .dropdown-default .dropdown-menu > li > a:focus,
+  .dropdown-default .dropdown-menu > li > a:hover {
+    background-color: #000000; }
+
 /* line 5, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 #galleria {
   height: 620px; }
@@ -367,37 +375,32 @@ h1 {
   margin-left: 0;
   margin-top: 20px;
   font-weight: lighter; }
-/* line 65, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-.col-md-6 a {
-  vertical-align: baseline;
-  font-size: 18px;
-  font-weight: 600; }
 
-/* line 72, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+/* line 67, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .col-footer {
   padding: 20px 0 30px 0; }
 
-/* line 76, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+/* line 71, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .less-padding-centred {
   text-align: center;
   padding-right: 0;
   word-wrap: break-word; }
 
-/* line 82, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+/* line 77, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .row-sponsors, .row-social {
   width: 100%; }
-  /* line 84, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 79, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-sponsors .col-md-4, .row-sponsors .col-xs-6, .row-social .col-md-4, .row-social .col-xs-6 {
     min-height: 120px; }
-  /* line 87, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 82, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-sponsors .min-height, .row-social .min-height {
     min-height: 380px; }
 
-/* line 91, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+/* line 86, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .row-social {
   padding: 0 10px; }
 
-/* line 95, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+/* line 90, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .row-social:after {
   content: "";
   position: absolute;
@@ -408,29 +411,48 @@ h1 {
   height: 80%;
   border-right: 1px solid #ccc; }
 
-/* line 106, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+/* line 101, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
 .social-logo {
   height: 20px;
   width: 30px; }
 
+/* line 105, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+.boldbrand {
+  font-weight: bold; }
+
+/* line 109, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+.text-justify {
+  text-align: justify; }
+
+/* line 113, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+.nav-btn {
+  display: inline-block; }
+  /* line 115, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  .nav-btn li {
+    display: inline-block;
+    padding-top: 10px; }
+  /* line 119, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  .nav-btn .dropdown-default {
+    padding-right: 20px; }
+
 @media (min-width: 1200px) {
-  /* line 111, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 125, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; } }
 @media only screen and (min-width: 922px) {
-  /* line 116, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 130, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; } }
 @media only screen and (min-width: 768px) {
-  /* line 121, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 135, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; } }
 @media only screen and (max-width: 1013px) {
-  /* line 127, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 141, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-social {
     border-right: 0; }
 
-  /* line 130, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 144, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   .row-social:before {
     content: "";
     position: absolute;
@@ -440,68 +462,32 @@ h1 {
     width: 80%;
     border-bottom: 1px dotted #ccc; }
 
-  /* line 139, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 153, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container {
     max-width: none; }
-    /* line 141, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+    /* line 155, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
     body .light-bg > .container .nav-btn {
       display: block;
-      margin-bottom: 5px; }
-    /* line 145, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+      margin-bottom: 5px;
+      margin-top: 5px; }
+    /* line 160, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
     body .light-bg > .container li > a {
       padding-top: 2px; } }
 @media only screen and (max-width: 767px) {
-  /* line 152, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  /* line 168, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container .btn {
-    min-width: 150px; }
-  /* line 155, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+    width: 100%; }
+  /* line 171, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
   body .light-bg > .container .btn-default {
-    width: 100%;
-    min-width: 125px; } }
-/* line 161, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-.boldbrand {
-  font-weight: bold; }
+    width: 100%; }
 
-/* line 165, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-.text-justify {
-  text-align: justify; }
+  /* line 176, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  .nav-btn li {
+    display: block; }
 
-/* line 169, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-.navbar-default .btn {
-  margin-top: 5px;
-  margin-bottom: 8px;
-  margin-left: 0; }
-
-/* line 175, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-.nav-btn {
-  display: inline-block; }
-  /* line 178, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-  .nav-btn .dropdown {
-    min-width: 200px; }
-  /* line 181, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-  .nav-btn .dropdown-menu {
-    background-color: #404141;
-    min-width: 200px; }
-  /* line 186, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-  .nav-btn .dropdown-menu > li > a {
-    color: #ffffff; }
-  /* line 189, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-  .nav-btn .dropdown-menu > li > a:focus,
-  .nav-btn .dropdown-menu > li > a:hover {
-    background-color: #000000; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  /* line 195, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-  .nav-btn {
-    display: inline; }
-
-  /* line 198, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-  .navbar-right {
-    min-width: 830px; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1027px) {
-  /* line 203, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
-  body .light-bg > .container .navbar-right {
-    min-width: 500px; } }
+  /* line 179, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/main.css.scss */
+  .nav-btn .dropdown-default {
+    padding: 10px 15px; } }
 /* line 5, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .top-container {
   background: url("../images/background-banners/HH_HomeImage_1x.jpg") no-repeat;
@@ -529,35 +515,45 @@ h1 {
   /* line 34, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .top-container-col h2 {
     font-weight: 100; }
+  /* line 37, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  .top-container-col .btn {
+    vertical-align: baseline;
+    font-size: 14px;
+    padding: 10px 20px; }
 
-/* line 39, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 44, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .top-container-text {
   padding: 2em; }
 
-/* line 43, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 48, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+.top-container-dropdown {
+  width: 200px;
+  margin: 0 auto; }
+
+/* line 52, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .row-involved {
   margin-top: -160px;
   padding: 0 10%; }
 
-/* line 53, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 62, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .event-description {
   text-align: justify;
   width: 100%;
   margin: 30px auto;
   font-size: larger; }
 
-/* line 60, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 69, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .event-regions {
   text-align: center;
   color: white;
   position: relative; }
-  /* line 66, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 75, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region {
     color: #fff;
     cursor: pointer;
     position: relative;
     display: block; }
-  /* line 73, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 82, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-shadow {
     position: absolute;
     background-color: #0A0A0A;
@@ -566,24 +562,24 @@ h1 {
     left: 0;
     right: 0;
     opacity: 0.7; }
-  /* line 83, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 92, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region:hover {
     font-style: normal;
     text-decoration: none; }
-    /* line 87, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+    /* line 96, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
     .event-regions .event-region:hover .event-region-shadow {
       opacity: 0.9; }
-    /* line 91, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+    /* line 100, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
     .event-regions .event-region:hover .event-region-text {
       text-decoration: none; }
-  /* line 96, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 105, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-shadow:hover {
     opacity: 0.9; }
-  /* line 101, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 110, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-image {
     width: 100%;
     height: auto; }
-  /* line 106, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 115, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .event-region-text {
     position: absolute;
     top: 50%;
@@ -593,47 +589,52 @@ h1 {
     margin-top: -75px;
     color: #fff; }
 
-/* line 118, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 127, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .container-past-challenges {
   margin-top: 30px; }
-  /* line 121, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 130, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .container-past-challenges .carousel-winner {
     margin-top: 30px;
     background-color: #ffffff; }
 
-/* line 131, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 140, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .container-social-sponsors {
   padding: 70px 10px 0 10px; }
 
-/* line 135, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 144, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .twitter-panel {
   padding: 0 5%;
   width: 100%;
   text-align: center; }
 
-/* line 141, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 150, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+.container-social-sponsors #curtin-img {
+  height: 56px;
+  margin-top: 10px; }
+
+/* line 155, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 .footer-okfna {
   width: 30px; }
 
-/* line 145, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+/* line 159, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
 footer {
   padding: 10px 10%;
   line-height: 30px; }
 
 @media only screen and (max-width: 768px) {
-  /* line 152, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 166, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .top-container {
     padding: 20px 25px; }
 
-  /* line 155, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 169, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .row-involved {
     margin-top: -30%; }
 
-  /* line 158, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 172, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-description {
     width: 90%; }
 
-  /* line 161, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
+  /* line 175, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_home.scss */
   .event-regions .col-sm-3 {
     margin: 10px 0;
     padding: 10px; } }
@@ -749,6 +750,15 @@ footer {
   background-color: #e1e8ec; }
 
 /* line 170, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+.search {
+  height: 35px;
+  min-width: 300px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px; }
+
+/* line 179, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .circular-centered {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -760,29 +770,29 @@ footer {
   top: -40px;
   margin: 0px auto; }
 
-/* line 186, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 195, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-block-cn {
   position: relative; }
 
-/* line 190, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 199, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-block-inner {
   vertical-align: middle; }
 
-/* line 194, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 203, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-img-div {
   height: 100px;
   margin-bottom: 20px; }
 
-/* line 199, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 208, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-logo-img-div {
   height: 80px;
   margin-bottom: 10px; }
 
-/* line 204, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 213, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .sponsor-img {
   height: 100%; }
 
-/* line 212, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 221, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .bottom-container {
   background-color: #363435;
   text-align: center;
@@ -790,21 +800,21 @@ footer {
   position: relative;
   padding: 50px 0 60px 0;
   color: white; }
-  /* line 219, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 228, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .bottom-container h3 {
     margin-bottom: 20px;
     margin-left: 0;
     margin-top: 20px; }
-  /* line 224, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 233, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .bottom-container h4 {
     font-weight: lighter;
     margin-bottom: 20px; }
 
-/* line 230, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 239, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .form-control {
   max-width: 300px; }
 
-/* line 238, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 247, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .quote-side {
   background-color: #EAEBEC;
   padding: 10px 20px 0 20px;
@@ -812,11 +822,11 @@ footer {
   text-align: center;
   font-weight: lighter;
   word-wrap: break-word; }
-  /* line 245, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 254, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .quote-side h3 {
     font-weight: lighter; }
 
-/* line 250, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 259, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .quotes {
   font-family: Georgia, serif;
   font-size: 1.2em;
@@ -828,7 +838,7 @@ footer {
   position: relative;
   color: black; }
 
-/* line 262, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 271, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .quotes:before {
   display: block;
   padding-left: 10px;
@@ -838,7 +848,7 @@ footer {
   left: -20px;
   top: -25px; }
 
-/* line 272, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 281, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .quotes:after {
   display: block;
   content: "\201D";
@@ -847,7 +857,7 @@ footer {
   right: 0px;
   bottom: -70px; }
 
-/* line 281, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 290, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 #triangle-down {
   width: 10px;
   bottom: -30px;
@@ -857,7 +867,7 @@ footer {
   border-right: 20px solid transparent;
   border-top: 40px solid #EAEBEC; }
 
-/* line 295, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 304, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .organiser-image {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -870,20 +880,20 @@ footer {
   top: 15px;
   margin-right: 20px; }
 
-/* line 308, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 317, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .organiser-details {
   float: left;
   margin-bottom: 20px; }
 
-/* line 317, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 326, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .pagination {
   margin: 0 0 10px 0; }
-  /* line 319, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 328, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .pagination li {
     display: inline-block;
     padding: 5px; }
 
-/* line 325, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 334, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
   background-color: #08b3a6;
   border-color: #08b3a6;
@@ -891,7 +901,7 @@ footer {
   cursor: default;
   z-index: 1; }
 
-/* line 332, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 341, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .pagination > li > a, .pagination > li > span {
   background-color: #fff;
   border: none;
@@ -903,23 +913,23 @@ footer {
   text-decoration: none;
   border-radius: 20px; }
 
-/* line 344, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 353, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .pagination > li:last-child > a, .pagination > li:last-child > span, .pagination > li:last-child > a:hover, .pagination > li:last-child > span:hover, .pagination > li:first-child > a, .pagination > li:first-child > span, .pagination > li:first-child > a:hover, .pagination > li:first-child > span:hover {
   border-radius: 20px; }
 
-/* line 348, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+/* line 357, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
 .pagination-container {
   text-align: center; }
 
 @media only screen and (max-width: 768px) {
-  /* line 353, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 362, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .form-control {
     margin: 0 auto; }
 
-  /* line 356, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 365, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .thin-container-normal {
     width: 90%; }
 
-  /* line 359, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
+  /* line 368, /home/mimelfor/working/currentProjects/hh/website-2015/source/stylesheets/components/_pages.scss */
   .top-container-normal {
     padding: 20px 25px; } }
