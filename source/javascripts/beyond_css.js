@@ -76,3 +76,19 @@ load_sponsors = function(load_data, names, site_name, page_type) {
         centrewithin('.sponsor-block-cn');
     }
 };
+
+load_custom_faqs = function(scope, site_name, faq_data) {
+    if (0 != faq_data[scope].length) {
+        var $target = $("#"+scope+"-faq");
+        if("site" == scope) {
+            // put the main header in for this site
+            $target.append($("<h3>", { html: "Frequently Asked Questions - For " + site_name }));
+            $target.append($("<br>"));
+        }
+        $.each(faq_data[scope], function(idx, faq) {
+            $target.append($("<h4>", { html: faq[0] }));
+            $target.append($("<p>", { html: faq[1] }));
+            $target.append($("<br>"));
+        });
+    } 
+};

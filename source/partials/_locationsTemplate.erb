@@ -7,6 +7,10 @@
             $("#loc-where-long").html(site_data["where_readable"][0] + '<br>' + site_data["where_readable"][1] +'<br>' + site_data["where_readable"][2] );
             $("#loc-contact").html(site_data["contact"].join("<br>"));
             $("#loc-city-main").html(site_data["where_readable"][1]);
+
+            load_custom_faqs("site", "<%= "#{siteName}" %>", site_data["faqs"]);
+            load_custom_faqs("participant", "<%= "#{siteName}" %>", site_data["faqs"]);
+            load_custom_faqs("owner", "<%= "#{siteName}" %>", site_data["faqs"]);
         });
     };
 
@@ -46,6 +50,9 @@
                     <li>Sunday afternoon: Teams present their solutions, judging and prizes</li>
                 </ol>
                 <hr/>
+
+                <span id="site-faq"></span>
+
                 <h3>Frequently Asked Questions - Problem Owners</h3><br/>
 
                 <h4>Participants need special access to work on my problem. Can we set up generic accounts, download stuff, and prepare before the weekend?</h4>
@@ -60,6 +67,8 @@
                 <h4>What if nobody wants to works on my problem?</h4>
                 <p>Sometimes it happens that an idea just does not get the attention it deserves, through no fault of anyone. Maybe there aren’t the right skills in the room, or there is more of an interest in something else. In that case you are welcome to stay and participate ­perhaps join another team and provide your expertise, or you are welcome to go home and have an unexpectedly free weekend.</p><br/>
 
+                <span id="owner-faq"></span>
+
                 <h3>Frequently Asked Questions - Participants</h3><br/>
 
                 <h4>What do I need to bring?</h4>
@@ -70,6 +79,9 @@
 
                 <h4>Will there be food?</h4>
                 <p>Yes! We will provide food and drinks over the weekend. Each city will be doing things slightly differently, but you’ll know ahead of time what to expect. We will be catering for vegetarians and those with lactose and gluten intolerances so please let us know when you register if there are other ways we can help look after you.</p><br/>
+
+                <span id="participant-faq"></span>
+
             </div>
             <div class="row">
                 <div class="col-md-3">
