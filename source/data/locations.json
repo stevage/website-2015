@@ -4,27 +4,31 @@
 		"where_coords" : [-27.4565241, 153.0344888],
 		"contact" : ["Mitchell Stanton-Cook", "Mike Imelfort"],
 		"image-sm" : "images/locations/brisbane.png",
-		"page": "brisbane.html"
+		"page": "brisbane.html",
+		"faqs" : []
 		},
 	"Sydney" : {
 		"where_readable" : ["The Kinghorn Cancer Centre","370 Victoria St, Darlinghurst NSW 2010", "Sydney NSW 2010"],
 		"where_coords" : [-33.879144, 151.221782],
 		"contact" : ["Liviu Constantinescu", "Peter Budd"],
 		"image-sm" : "images/locations/sydney.png",
-		"page": "sydney.html"
+		"page": "sydney.html",
+		"faqs" : []
 		},
 	"Perth" : {
 		"where_readable" : ["Curtin University", "Applied Chemistry, Building 500, Kent St", "Bentley WA 6014"],
 		"where_coords" : [-32.0061951,115.8944182],
 		"contact" : ["David Colls", "Diana Adorno"],
 		"image-sm" : "images/locations/perth.png",
-		"page": "perth.html"
+		"page": "perth.html",
+		"faqs" : []
 		},
 	"Melbourne" : {
 		"where_readable" : ["ThoughtWorks Melbourne","23/303 Collins St","Melbourne VIC 3000"],
 		"where_coords" : [-37.816685, 144.963967],
 		"contact" : ["Fiono Tweedie"],
 		"image-sm" : "images/locations/melbourne.png",
-		"page": "melbourne.html"
+		"page": "melbourne.html",
+		"faqs" : []
 	}
 }
