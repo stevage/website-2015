@@ -3,7 +3,7 @@
         "displayName": "Boomworks",
         "href": "http://www.boomworks.com.au",
         "img": "boomworks.png",
-        "text": "Boomworks is a team of diverse and talented individuals with deep insights into the behaviours and technologies  driving the connected world. At Boomworks, we believe in uncovering insights and defining strategies, and shape them into new ideas to enable change in the digital realm. We believe in building authentic relationships and connecting businesses with  our customers.We craft meaningful experiences that embody our beliefs. It's our knack of seeing the small details in the big picture that sets us apart  from everyone else.",
+        "text": "Boomworks is a team of diverse and talented individuals with deep insights into the behaviours and technologies driving the connected world. At Boomworks, we believe in uncovering insights and defining strategies, and shape them into new ideas to enable change in the digital realm. We believe in building authentic relationships and connecting businesses with our customers.We craft meaningful experiences that embody our beliefs. It's our knack of seeing the small details in the big picture that sets us apart from everyone else.",
         "location": ["sydney"],
         "scope": "local",
         "type": "silver"
@@ -58,6 +58,15 @@
         "href": "http://fishburners.org",
         "img": "fishburners.png",
         "text": "Fishburners is more than just a coworking space, we’re a passionate community of startups. Our vision is to bring together the best startups in Australia and help grow the tech scene here in Sydney.",
+        "location": ["sydney"],
+        "scope": "local",
+        "type": "unknown"
+    },
+    "fishburners" : {
+        "displayName": "Github",
+        "href": "https://github.com/",
+        "img": "github.png",
+        "text": "GitHub is the best place to share code with friends, co-workers, classmates, and complete strangers. Over three million people use GitHub to build amazing things together.",
         "location": ["sydney"],
         "scope": "local",
         "type": "unknown"
